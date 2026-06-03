@@ -1,6 +1,6 @@
 # ai-toolkit
 
-Repositorio para almacenar skills propios hechos por mí sobre las tecnologías que utilizo.
+Repositorio para almacenar skills personales sobre las tecnologías que utilizo.
 
 ## Estructura
 

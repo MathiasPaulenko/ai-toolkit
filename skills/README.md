@@ -1,6 +1,6 @@
 # Skills
 
-Guarda aquí tus skills personalizados organizados por tecnología.
+Guarda aquí tus skills personales organizados por tecnología.
 
 Ejemplo sugerido:
 
