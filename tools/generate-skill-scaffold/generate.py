@@ -86,11 +86,11 @@ def main():
     (dest_dir / "assets").mkdir(exist_ok=True)
 
     print(f"\n✅ Skill scaffold created at: {dest_dir}")
-    print(f"   Next steps:")
+    print("   Next steps:")
     print(f"   1. Edit {dest_dir / 'SKILL.md'}")
-    print(f"   2. Add reference docs to references/")
-    print(f"   3. Add templates/scripts to assets/")
-    print(f"   4. Run validate-resource to verify")
+    print("   2. Add reference docs to references/")
+    print("   3. Add templates/scripts to assets/")
+    print("   4. Run validate-resource to verify")
     return 0
 
 

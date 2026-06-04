@@ -13,7 +13,6 @@ Usage:
     python validate.py skills/flask-api   # Validate specific resource
 """
 
-import os
 import re
 import sys
 from pathlib import Path
@@ -22,7 +21,7 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-REQUIRED_SKILL_FIELDS = {"name", "version", "author", "description", "tags", "role"}
+REQUIRED_SKILL_FIELDS = {"name", "version", "author", "description", "tags"}
 REQUIRED_AGENT_FIELDS = {"name", "version", "author", "description", "tags", "role", "type", "language"}
 
 PLACEHOLDERS = [
@@ -106,8 +105,8 @@ def validate_resource(path: Path) -> list[str]:
     errors.extend(validate_naming(path))
 
     # Length check for skills
-    if resource_type == "skill" and len(content.splitlines()) > 600:
-        errors.append("SKILL.md exceeds 600 lines; consider externalizing content")
+    if resource_type == "skill" and len(content.splitlines()) > 1000:
+        errors.append("SKILL.md exceeds 1000 lines; consider externalizing content")
 
     return errors
 

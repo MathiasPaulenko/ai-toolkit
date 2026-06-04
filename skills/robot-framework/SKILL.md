@@ -851,7 +851,7 @@ robot-tests:
 - [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 - [SeleniumLibrary Documentation](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 - [RequestsLibrary Documentation](https://marketsquare.github.io/robotframework-requests/)
-- [DatabaseLibrary Documentation](https://franz-see.github.io/Robotframework-Database-Library/)
+- [DatabaseLibrary Documentation](https://github.com/franz-see/Robotframework-Database-Library)
 - [Robot Framework Built-in Keywords](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
 - [pabot — Parallel Executor](https://pabot.org/)
 - [Robot Framework Listener Interface](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#listener-interface)

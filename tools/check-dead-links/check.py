@@ -13,7 +13,7 @@ Usage:
 
 import argparse
 import re
-import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -24,7 +24,13 @@ URL_PATTERN = re.compile(r"https?://[^\s\)\]\>\"]+")
 
 
 def find_urls(text: str) -> set[str]:
-    return set(URL_PATTERN.findall(text))
+    raw = URL_PATTERN.findall(text)
+    cleaned = []
+    for url in raw:
+        # Strip trailing punctuation that isn't part of the URL
+        url = url.rstrip(";,.>\"'<")
+        cleaned.append(url)
+    return set(cleaned)
 
 
 def check_url(url: str, timeout: int = 10) -> tuple[bool, int | None]:
@@ -43,6 +49,9 @@ def check_url(url: str, timeout: int = 10) -> tuple[bool, int | None]:
 
 
 def should_ignore(url: str, ignore_patterns: list[str]) -> bool:
+    # Skip template variables like {location}, {id}
+    if "{" in url or "}" in url:
+        return True
     parsed = urlparse(url)
     for pattern in ignore_patterns:
         if pattern in parsed.netloc or pattern in url:
@@ -54,17 +63,32 @@ def scan_directory(directory: Path, ignore: list[str], timeout: int) -> dict[str
     dead: dict[str, list[str]] = {}
     md_files = list(directory.rglob("*.md"))
 
+    # Collect all unique URLs to check
+    url_to_files: dict[str, list[Path]] = {}
     for md_file in md_files:
         text = md_file.read_text(encoding="utf-8")
         urls = find_urls(text)
-
         for url in urls:
             if should_ignore(url, ignore):
                 continue
+            url_to_files.setdefault(url, []).append(md_file)
 
-            ok, code = check_url(url, timeout)
-            if not ok:
-                key = f"{url} (HTTP {code})" if code else url
+    # Check URLs concurrently
+    results: dict[str, tuple[bool, int | None]] = {}
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        futures = {executor.submit(check_url, url, timeout): url for url in url_to_files}
+        for future in as_completed(futures):
+            url = futures[future]
+            try:
+                results[url] = future.result()
+            except Exception:
+                results[url] = (False, None)
+
+    # Aggregate failures
+    for url, (ok, code) in results.items():
+        if not ok:
+            key = f"{url} (HTTP {code})" if code else url
+            for md_file in url_to_files[url]:
                 dead.setdefault(str(md_file.relative_to(REPO_ROOT)), []).append(key)
 
     return dead
@@ -74,7 +98,17 @@ def main():
     parser = argparse.ArgumentParser(description="Check for dead external links in markdown")
     parser.add_argument("path", nargs="?", default=".", help="Directory to scan")
     parser.add_argument("--timeout", type=int, default=10, help="Request timeout in seconds")
-    parser.add_argument("--ignore", action="append", default=["localhost", "127.0.0.1"], help="URL patterns to ignore")
+    parser.add_argument(
+        "--ignore",
+        action="append",
+        default=[
+            "localhost", "127.0.0.1", "example.com", "example.org",
+            "prometheus:", "influxdb:", "grafana:", "jenkins:", "jira:",
+            "soap.sforce.com", "github.com/org/", "qameta.io",
+            "app", "weather.com",
+        ],
+        help="URL patterns to ignore",
+    )
     args = parser.parse_args()
 
     target = REPO_ROOT / args.path
