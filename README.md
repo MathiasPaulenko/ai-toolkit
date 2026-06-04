@@ -2,13 +2,13 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (104)
+## Resources (109)
 
 | Category | Count |
 |-----------|----------|
 | [Skills](#skills) | 23 |
 | [Agents](#agents) | 4 |
-| [Prompts](#prompts) | 54 |
+| [Prompts](#prompts) | 59 |
 | [Rules](#rules) | 8 |
 | [Workflows](#workflows) | 9 |
 | [Tools](#tools) | 6 |
@@ -100,6 +100,12 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `generate-test-environment-setup-guide` | Environment |
 | `generate-flaky-test-diagnosis` | Flakiness |
 | `generate-qa-metrics-dashboard` | KPIs / DORA |
+| `generate-bdd-scenario` | BDD / Gherkin |
+| `generate-visual-regression-test` | Percy / Chromatic |
+| `generate-mutation-test` | Pitest / Stryker |
+| `generate-qa-risk-analysis` | Risk matrix |
+| `generate-test-data-strategy` | Data masking / GDPR |
+| `generate-accessibility-audit` | WCAG / axe |
 
 #### Ebook Writing (15)
 
