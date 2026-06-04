@@ -2,15 +2,15 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (117)
+## Resources (132)
 
 | Category | Count |
 |-----------|----------|
-| [Skills](#skills) | 22 |
-| [Agents](#agents) | 7 |
-| [Prompts](#prompts) | 59 |
-| [Rules](#rules) | 11 |
-| [Workflows](#workflows) | 12 |
+| [Skills](#skills) | 26 |
+| [Agents](#agents) | 9 |
+| [Prompts](#prompts) | 64 |
+| [Rules](#rules) | 13 |
+| [Workflows](#workflows) | 14 |
 | [Tools](#tools) | 6 |
 
 ### Skills
@@ -35,11 +35,14 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `appian-lowcode` | `appian`, `low-code`, `bpm` |
 | `prestashop-module` | `prestashop`, `php`, `e-commerce` |
 | `octane-alm` | `octane`, `alm`, `defect-management` |
-| `playwright-e2e` | `e2e`, `playwright`, `testing`, `automation` |
 | `testcontainers` | `integration-testing`, `docker`, `databases`, `kafka` |
 | `pytest-advanced` | `pytest`, `python`, `fixtures`, `plugins` |
 | `postman-api-automation` | `api-testing`, `postman`, `newman`, `rest` |
 | `appium-mobile` | `mobile`, `appium`, `ios`, `android` |
+| `karate-api-testing` | `api-testing`, `karate`, `bdd`, `rest` |
+| `k6-load-testing` | `load-testing`, `k6`, `performance`, `grafana` |
+| `webdriverio` | `e2e`, `webdriverio`, `selenium`, `cross-browser` |
+| `xctest-ios` | `ios`, `xctest`, `swift`, `unit-testing` |
 
 ### Agents
 
@@ -52,6 +55,8 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `qa-automation-engineer` | `coding` |
 | `performance-tester` | `research` |
 | `qa-lead` | `governance` |
+| `api-tester` | `coding` |
+| `accessibility-tester` | `review` |
 
 ### Prompts (39)
 
@@ -109,6 +114,11 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `generate-qa-risk-analysis` | Risk matrix |
 | `generate-test-data-strategy` | Data masking / GDPR |
 | `generate-accessibility-audit` | WCAG / axe |
+| `generate-chaos-engineering-tests` | Gremlin / Chaos Mesh |
+| `generate-api-fuzzing-scenarios` | Hypothesis / schemathesis |
+| `generate-shift-left-strategy` | Shift-left / TDD |
+| `generate-test-automation-roi-report` | ROI / Business case |
+| `generate-canary-test-strategy` | Canary / Feature flags |
 
 #### Ebook Writing (15)
 
@@ -145,6 +155,8 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `test-automation-rules` | Review |
 | `performance-testing-rules` | Review |
 | `mobile-testing-rules` | Review |
+| `api-testing-rules` | Review |
+| `ci-cd-testing-rules` | Review |
 
 ### Workflows
 
@@ -162,6 +174,8 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `setup-e2e-automation` | Bootstrap E2E automation with CI/CD |
 | `performance-test-session` | Structured performance testing: SLA → script → execute → analyze |
 | `visual-regression-setup` | Configure Chromatic/Percy/Loki with baselines and CI |
+| `bug-triage` | Structured bug triage process |
+| `qa-release-gate` | Quality gate before production release |
 
 ### Tools
 
