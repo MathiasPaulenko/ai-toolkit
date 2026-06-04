@@ -95,7 +95,7 @@ JOIN order_items i ON i.order_id = o.id;
 
 ```bash
 # Cleanup script for CI
-curl -X DELETE http://test-api/cleanup-all-data
+curl -X DELETE http://localhost:8080/cleanup-all-data
 # Or database truncate
 truncate table orders, customers, sessions restart identity cascade;
 ```

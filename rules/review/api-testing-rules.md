@@ -114,7 +114,7 @@ responses.add(responses.GET, "https://payments.example.com/charge",
               json={"status": "approved"}, status=200)
 
 # Bad
-res = requests.post("https://stripe.com/charge")  # Real API call
+res = requests.post("https://api.example.com/charge")  # Real API call
 ```
 
 ### Rule 5.2: Verify Mock Interactions

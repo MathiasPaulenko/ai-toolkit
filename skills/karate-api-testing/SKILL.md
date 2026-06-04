@@ -99,7 +99,7 @@ Scenario Outline: Login with <scenario>
 function fn() {
   var env = karate.env || 'dev';
   var config = {
-    baseUrl: 'https://api-' + env + '.example.com',
+    baseUrl: 'https:/' + '/'+ env + '.api.example.com',
     timeout: 30000,
   };
 

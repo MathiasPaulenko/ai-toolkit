@@ -752,7 +752,7 @@ gunicorn -w 4 -b 0.0.0.0:5000 "wsgi:create_app()"
 ## 14. References
 
 - [Flask Documentation](https://flask.palletsprojects.com/)
-- [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/)
+- [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io/en/latest/)
 - [Flask-Migrate](https://flask-migrate.readthedocs.io/)
 - [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/)
 - [Flask-Marshmallow](https://flask-marshmallow.readthedocs.io/)

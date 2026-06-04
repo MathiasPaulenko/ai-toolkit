@@ -170,8 +170,10 @@ driver = webdriver.Remote(
 
 ### Sauce Labs
 ```python
+# Replace with your Sauce Labs credentials
+# Endpoint format: ondemand.saucelabs.com/wd/hub
 driver = webdriver.Remote(
-    "https://ondemand.us-west-1.saucelabs.com/wd/hub",
+    "https://ondemand.example.com/wd/hub",
     options=options
 )
 ```

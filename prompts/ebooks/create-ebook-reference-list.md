@@ -41,7 +41,7 @@ Author, *Title* (Place: Publisher, Year), page. URL.
 ## References
 
 ### Books
-1. Author, A. (2024). *Title*. Publisher. https://...
+1. Author, A. (2024). *Title*. Publisher. https://example.com/book
 
 ### Articles
 2. Author, B. (2024). "Article Title." *Journal Name*, Vol(Issue), pp-pp.
@@ -50,7 +50,7 @@ Author, *Title* (Place: Publisher, Year), page. URL.
 3. Company. (2024). *Product Documentation*. https://docs.example.com
 
 ### Data Sources
-4. Organization. (2024). *Report Title* (Dataset). https://...
+4. Organization. (2024). *Report Title* (Dataset). https://example.com/dataset
 
 ---
 
