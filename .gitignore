@@ -1,0 +1,27 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak
+*.log
+
+# Local configs (personal, no versionar)
+*.local
+*.private
+.env
+
+# Outputs generados
+output/
+dist/
+build/
+
+# Reference files
+ref/
