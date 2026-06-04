@@ -49,6 +49,9 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `test-architect` | `review` |
 | `security-auditor` | `governance` |
 | `devops-automator` | `automation` |
+| `qa-automation-engineer` | `coding` |
+| `performance-tester` | `research` |
+| `qa-lead` | `governance` |
 
 ### Prompts (39)
 
