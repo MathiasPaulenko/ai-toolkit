@@ -2,7 +2,7 @@
 name: Prompt Engineer
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Specialist in prompt engineering: reviews, optimizes, and creates prompts using Chain-of-Thought, Few-shot, Role Prompting, and structured output techniques. Ensures prompt quality, consistency, and reliability.
+description: "Specialist in prompt engineering: reviews, optimizes, and creates prompts using Chain-of-Thought, Few-shot, Role Prompting, and structured output techniques. Ensures prompt quality, consistency, and reliability."
 tags: [prompt-engineering, llm, cot, few-shot, role-prompting, optimization]
 role: prompt-engineer
 type: review

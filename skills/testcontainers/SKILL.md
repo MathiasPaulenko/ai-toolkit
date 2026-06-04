@@ -2,7 +2,7 @@
 name: Testcontainers
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Integration testing with Testcontainers: PostgreSQL, Redis, Kafka, RabbitMQ, localstack. Spin up real dependencies in Docker for reliable integration tests.
+description: "Integration testing with Testcontainers: PostgreSQL, Redis, Kafka, RabbitMQ, localstack. Spin up real dependencies in Docker for reliable integration tests."
 tags: [integration-testing, testcontainers, docker, databases, kafka]
 role: qa-engineer
 model: any

@@ -2,7 +2,7 @@
 name: Postman API Automation
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: API testing and automation with Postman/Newman: collections, environments, pre/post scripts, CI/CD reporting, and data-driven testing.
+description: "API testing and automation with Postman/Newman: collections, environments, pre/post scripts, CI/CD reporting, and data-driven testing."
 tags: [api-testing, postman, newman, automation, rest]
 role: qa-engineer
 model: any

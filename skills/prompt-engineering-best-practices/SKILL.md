@@ -2,7 +2,7 @@
 name: Prompt Engineering Best Practices
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Best practices for designing high-quality prompts: Chain-of-Thought, Few-shot, Role Prompting, Self-Consistency, and output structuring. Apply to system, task, and template prompts.
+description: "Best practices for designing high-quality prompts: Chain-of-Thought, Few-shot, Role Prompting, Self-Consistency, and output structuring. Apply to system, task, and template prompts."
 tags: [prompt-engineering, llm, cot, few-shot, role-prompting]
 role: prompt-engineer
 ---

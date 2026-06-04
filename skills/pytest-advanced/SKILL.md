@@ -2,7 +2,7 @@
 name: Pytest Advanced
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Advanced pytest patterns: parametrization, fixtures (session/module/function), conftest.py, plugins (cov, xdist, mock), markers, and CI integration.
+description: "Advanced pytest patterns: parametrization, fixtures (session/module/function), conftest.py, plugins (cov, xdist, mock), markers, and CI integration."
 tags: [pytest, python, testing, fixtures, plugins]
 role: qa-engineer
 model: any

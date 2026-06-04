@@ -2,7 +2,7 @@
 name: Appium Mobile
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Mobile automation with Appium: iOS and Android, gestures, device farms (BrowserStack, Sauce Labs), parallel execution, and CI/CD.
+description: "Mobile automation with Appium: iOS and Android, gestures, device farms (BrowserStack, Sauce Labs), parallel execution, and CI/CD."
 tags: [mobile, appium, ios, android, automation]
 role: qa-engineer
 model: any
