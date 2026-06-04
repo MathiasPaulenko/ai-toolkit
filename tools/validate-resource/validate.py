@@ -22,7 +22,16 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 REQUIRED_SKILL_FIELDS = {"name", "version", "author", "description", "tags"}
-REQUIRED_AGENT_FIELDS = {"name", "version", "author", "description", "tags", "role", "type", "language"}
+REQUIRED_AGENT_FIELDS = {
+    "name",
+    "version",
+    "author",
+    "description",
+    "tags",
+    "role",
+    "type",
+    "language",
+}
 
 PLACEHOLDERS = [
     r"Agent\s+Name",
@@ -56,7 +65,9 @@ def validate_frontmatter(content: str, resource_type: str) -> list[str]:
         errors.append("Frontmatter is not a YAML mapping")
         return errors
 
-    required = REQUIRED_AGENT_FIELDS if resource_type == "agent" else REQUIRED_SKILL_FIELDS
+    required = (
+        REQUIRED_AGENT_FIELDS if resource_type == "agent" else REQUIRED_SKILL_FIELDS
+    )
     missing = required - set(frontmatter.keys())
     if missing:
         errors.append(f"Missing frontmatter fields: {', '.join(sorted(missing))}")
@@ -124,7 +135,11 @@ def main():
         if not root.exists():
             continue
         for item in root.iterdir():
-            if item.is_dir() and not item.name.startswith("_") and not item.name.startswith("."):
+            if (
+                item.is_dir()
+                and not item.name.startswith("_")
+                and not item.name.startswith(".")
+            ):
                 resource_dirs.append(item)
 
     all_ok = True

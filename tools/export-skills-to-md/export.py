@@ -20,7 +20,8 @@ SKILLS_DIR = REPO_ROOT / "skills"
 
 def get_skills() -> list[Path]:
     return sorted(
-        d for d in SKILLS_DIR.iterdir()
+        d
+        for d in SKILLS_DIR.iterdir()
         if d.is_dir() and not d.name.startswith("_") and not d.name.startswith(".")
     )
 
@@ -51,10 +52,14 @@ def build_bundle(skills: list[Path], title: str = "Skills Bundle") -> str:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Export skills to a single markdown file")
+    parser = argparse.ArgumentParser(
+        description="Export skills to a single markdown file"
+    )
     parser.add_argument("skills", nargs="*", help="Skill names to export")
     parser.add_argument("--all", action="store_true", help="Export all skills")
-    parser.add_argument("--output", "-o", default="skills-bundle.md", help="Output file")
+    parser.add_argument(
+        "--output", "-o", default="skills-bundle.md", help="Output file"
+    )
     parser.add_argument("--title", default="Skills Bundle", help="Bundle title")
     parser.add_argument("--list", action="store_true", help="List available skills")
     args = parser.parse_args()
@@ -68,7 +73,9 @@ def main():
         return 0
 
     if not args.all and not args.skills:
-        print("Usage: python export.py --all -o bundle.md | --list | <skill1> [skill2 ...]")
+        print(
+            "Usage: python export.py --all -o bundle.md | --list | <skill1> [skill2 ...]"
+        )
         return 1
 
     targets = available if args.all else [SKILLS_DIR / s for s in args.skills]

@@ -62,7 +62,9 @@ def main():
     content = dest_file.read_text(encoding="utf-8")
 
     description = args.description or prompt_field("Description", f"Skill for {name}")
-    tags = args.tags or prompt_field("Tags (comma-separated)", f"{name}, python, automation")
+    tags = args.tags or prompt_field(
+        "Tags (comma-separated)", f"{name}, python, automation"
+    )
     role = args.role or prompt_field("Role", "developer")
     trigger = args.trigger or prompt_field("Trigger", f"When the user mentions {name}")
 

@@ -59,7 +59,9 @@ def should_ignore(url: str, ignore_patterns: list[str]) -> bool:
     return False
 
 
-def scan_directory(directory: Path, ignore: list[str], timeout: int) -> dict[str, list[str]]:
+def scan_directory(
+    directory: Path, ignore: list[str], timeout: int
+) -> dict[str, list[str]]:
     dead: dict[str, list[str]] = {}
     md_files = list(directory.rglob("*.md"))
 
@@ -76,7 +78,9 @@ def scan_directory(directory: Path, ignore: list[str], timeout: int) -> dict[str
     # Check URLs concurrently
     results: dict[str, tuple[bool, int | None]] = {}
     with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = {executor.submit(check_url, url, timeout): url for url in url_to_files}
+        futures = {
+            executor.submit(check_url, url, timeout): url for url in url_to_files
+        }
         for future in as_completed(futures):
             url = futures[future]
             try:
@@ -95,17 +99,31 @@ def scan_directory(directory: Path, ignore: list[str], timeout: int) -> dict[str
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Check for dead external links in markdown")
+    parser = argparse.ArgumentParser(
+        description="Check for dead external links in markdown"
+    )
     parser.add_argument("path", nargs="?", default=".", help="Directory to scan")
-    parser.add_argument("--timeout", type=int, default=10, help="Request timeout in seconds")
+    parser.add_argument(
+        "--timeout", type=int, default=10, help="Request timeout in seconds"
+    )
     parser.add_argument(
         "--ignore",
         action="append",
         default=[
-            "localhost", "127.0.0.1", "example.com", "example.org",
-            "prometheus:", "influxdb:", "grafana:", "jenkins:", "jira:",
-            "soap.sforce.com", "github.com/org/", "qameta.io",
-            "app", "weather.com",
+            "localhost",
+            "127.0.0.1",
+            "example.com",
+            "example.org",
+            "prometheus:",
+            "influxdb:",
+            "grafana:",
+            "jenkins:",
+            "jira:",
+            "soap.sforce.com",
+            "github.com/org/",
+            "qameta.io",
+            "app",
+            "weather.com",
         ],
         help="URL patterns to ignore",
     )

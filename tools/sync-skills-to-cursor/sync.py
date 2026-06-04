@@ -19,7 +19,8 @@ CURSOR_DIR = REPO_ROOT / ".cursor" / "rules"
 
 def get_skills() -> list[Path]:
     return sorted(
-        d for d in SKILLS_DIR.iterdir()
+        d
+        for d in SKILLS_DIR.iterdir()
         if d.is_dir() and not d.name.startswith("_") and not d.name.startswith(".")
     )
 
