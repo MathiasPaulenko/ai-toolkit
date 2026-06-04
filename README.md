@@ -2,15 +2,15 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (83)
+## Resources (99)
 
 | Category | Count |
 |-----------|----------|
-| [Skills](#skills) | 17 |
+| [Skills](#skills) | 18 |
 | [Agents](#agents) | 4 |
-| [Prompts](#prompts) | 39 |
+| [Prompts](#prompts) | 54 |
 | [Rules](#rules) | 8 |
-| [Workflows](#workflows) | 8 |
+| [Workflows](#workflows) | 9 |
 | [Tools](#tools) | 6 |
 
 ### Skills
@@ -18,6 +18,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | Skill | Tags |
 |-------|------|
 | `behave-bdd` | `python`, `bdd`, `gherkin`, `testing` |
+| `ebook-writer` | `ebook`, `writing`, `publishing`, `content` |
 | `flask-api` | `python`, `flask`, `rest`, `api` |
 | `android-native` | `kotlin`, `jetpack-compose`, `mvvm`, `mobile` |
 | `jinja2-templates` | `python`, `templating`, `flask`, `fastapi` |
@@ -95,6 +96,26 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `generate-flaky-test-diagnosis` | Flakiness |
 | `generate-qa-metrics-dashboard` | KPIs / DORA |
 
+#### Ebook Writing (15)
+
+| Prompt | Focus |
+|--------|---------|
+| `generate-ebook-outline` | Structure and planning |
+| `research-topic-for-ebook` | Content research |
+| `generate-ebook-title-options` | Naming and titles |
+| `write-ebook-introduction` | Opening chapter |
+| `write-ebook-chapter` | Chapter drafting |
+| `write-ebook-conclusion` | Closing chapter |
+| `edit-ebook-chapter` | Revision and editing |
+| `generate-ebook-case-study` | Real-world examples |
+| `generate-ebook-exercises` | Learning reinforcement |
+| `format-ebook-for-export` | PDF/EPUB preparation |
+| `generate-ebook-marketing-copy` | Promotion and sales |
+| `review-ebook-consistency` | Quality checking |
+| `create-ebook-table-of-contents` | TOC generation |
+| `create-ebook-reference-list` | Bibliography |
+| `write-ebook-chapter-summary` | Preview copy |
+
 ### Rules
 
 | Rule | Category |
@@ -120,6 +141,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `bitbucket-pipelines` | Bitbucket pipeline |
 | `kubernetes-deploy` | K8s manifests + Helm |
 | `onboard-new-project` | Initial project setup |
+| `create-ebook` | Ebook creation pipeline |
 
 ### Tools
 
