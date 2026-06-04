@@ -1,0 +1,4 @@
+# Python dependencies for ai-toolkit tools
+# Install: pip install -r tools/requirements.txt
+
+pyyaml>=6.0
