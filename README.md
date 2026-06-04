@@ -2,11 +2,11 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (99)
+## Resources (104)
 
 | Category | Count |
 |-----------|----------|
-| [Skills](#skills) | 18 |
+| [Skills](#skills) | 23 |
 | [Agents](#agents) | 4 |
 | [Prompts](#prompts) | 54 |
 | [Rules](#rules) | 8 |
@@ -35,6 +35,11 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `appian-lowcode` | `appian`, `low-code`, `bpm` |
 | `prestashop-module` | `prestashop`, `php`, `e-commerce` |
 | `octane-alm` | `octane`, `alm`, `defect-management` |
+| `playwright-e2e` | `e2e`, `playwright`, `testing`, `automation` |
+| `testcontainers` | `integration-testing`, `docker`, `databases`, `kafka` |
+| `pytest-advanced` | `pytest`, `python`, `fixtures`, `plugins` |
+| `postman-api-automation` | `api-testing`, `postman`, `newman`, `rest` |
+| `appium-mobile` | `mobile`, `appium`, `ios`, `android` |
 
 ### Agents
 
