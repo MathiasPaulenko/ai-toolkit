@@ -19,43 +19,43 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Skill | Tags |
 |-------|------|
-| `behave-bdd` | `python`, `bdd`, `gherkin`, `testing` |
-| `allure-reports` | `reporting`, `pytest`, `cypress`, `ci-cd` |
-| `robot-framework` | `testing`, `keyword-driven`, `selenium` |
-| `jmeter-load-testing` | `jmeter`, `load-testing`, `performance` |
-| `sonarqube-quality-gates` | `sonarqube`, `quality-gates`, `static-analysis` |
-| `testcontainers` | `integration-testing`, `docker`, `databases`, `kafka` |
-| `pytest-advanced` | `pytest`, `python`, `fixtures`, `plugins` |
-| `postman-api-automation` | `api-testing`, `postman`, `newman`, `rest` |
-| `appium-mobile` | `mobile`, `appium`, `ios`, `android` |
-| `karate-api-testing` | `api-testing`, `karate`, `bdd`, `rest` |
-| `k6-load-testing` | `load-testing`, `k6`, `performance`, `grafana` |
-| `webdriverio` | `e2e`, `webdriverio`, `selenium`, `cross-browser` |
-| `xctest-ios` | `ios`, `xctest`, `swift`, `unit-testing` |
+| [`behave-bdd`](skills/behave-bdd/SKILL.md) | `python`, `bdd`, `gherkin`, `testing` |
+| [`allure-reports`](skills/allure-reports/SKILL.md) | `reporting`, `pytest`, `cypress`, `ci-cd` |
+| [`robot-framework`](skills/robot-framework/SKILL.md) | `testing`, `keyword-driven`, `selenium` |
+| [`jmeter-load-testing`](skills/jmeter-load-testing/SKILL.md) | `jmeter`, `load-testing`, `performance` |
+| [`sonarqube-quality-gates`](skills/sonarqube-quality-gates/SKILL.md) | `sonarqube`, `quality-gates`, `static-analysis` |
+| [`testcontainers`](skills/testcontainers/SKILL.md) | `integration-testing`, `docker`, `databases`, `kafka` |
+| [`pytest-advanced`](skills/pytest-advanced/SKILL.md) | `pytest`, `python`, `fixtures`, `plugins` |
+| [`postman-api-automation`](skills/postman-api-automation/SKILL.md) | `api-testing`, `postman`, `newman`, `rest` |
+| [`appium-mobile`](skills/appium-mobile/SKILL.md) | `mobile`, `appium`, `ios`, `android` |
+| [`karate-api-testing`](skills/karate-api-testing/SKILL.md) | `api-testing`, `karate`, `bdd`, `rest` |
+| [`k6-load-testing`](skills/k6-load-testing/SKILL.md) | `load-testing`, `k6`, `performance`, `grafana` |
+| [`webdriverio`](skills/webdriverio/SKILL.md) | `e2e`, `webdriverio`, `selenium`, `cross-browser` |
+| [`xctest-ios`](skills/xctest-ios/SKILL.md) | `ios`, `xctest`, `swift`, `unit-testing` |
 
 #### Development (12)
 
 | Skill | Tags |
 |-------|------|
-| `flask-api` | `python`, `flask`, `rest`, `api` |
-| `android-native` | `kotlin`, `jetpack-compose`, `mvvm`, `mobile` |
-| `jinja2-templates` | `python`, `templating`, `flask`, `fastapi` |
-| `paramiko-ssh` | `python`, `ssh`, `sftp`, `automation` |
-| `wordpress-themes` | `php`, `wordpress`, `cms`, `frontend` |
-| `flet-desktop` | `python`, `desktop`, `flutter`, `gui` |
-| `sql-server` | `sql-server`, `t-sql`, `mssql`, `azure-sql` |
-| `db2-oracle` | `db2`, `oracle`, `plsql`, `enterprise` |
-| `salesforce-dev` | `salesforce`, `apex`, `lwc`, `crm` |
-| `appian-lowcode` | `appian`, `low-code`, `bpm` |
-| `prestashop-module` | `prestashop`, `php`, `e-commerce` |
-| `octane-alm` | `octane`, `alm`, `defect-management` |
+| [`flask-api`](skills/flask-api/SKILL.md) | `python`, `flask`, `rest`, `api` |
+| [`android-native`](skills/android-native/SKILL.md) | `kotlin`, `jetpack-compose`, `mvvm`, `mobile` |
+| [`jinja2-templates`](skills/jinja2-templates/SKILL.md) | `python`, `templating`, `flask`, `fastapi` |
+| [`paramiko-ssh`](skills/paramiko-ssh/SKILL.md) | `python`, `ssh`, `sftp`, `automation` |
+| [`wordpress-themes`](skills/wordpress-themes/SKILL.md) | `php`, `wordpress`, `cms`, `frontend` |
+| [`flet-desktop`](skills/flet-desktop/SKILL.md) | `python`, `desktop`, `flutter`, `gui` |
+| [`sql-server`](skills/sql-server/SKILL.md) | `sql-server`, `t-sql`, `mssql`, `azure-sql` |
+| [`db2-oracle`](skills/db2-oracle/SKILL.md) | `db2`, `oracle`, `plsql`, `enterprise` |
+| [`salesforce-dev`](skills/salesforce-dev/SKILL.md) | `salesforce`, `apex`, `lwc`, `crm` |
+| [`appian-lowcode`](skills/appian-lowcode/SKILL.md) | `appian`, `low-code`, `bpm` |
+| [`prestashop-module`](skills/prestashop-module/SKILL.md) | `prestashop`, `php`, `e-commerce` |
+| [`octane-alm`](skills/octane-alm/SKILL.md) | `octane`, `alm`, `defect-management` |
 
 #### Content & Writing (2)
 
 | Skill | Tags |
 |-------|------|
-| `ebook-writer` | `ebook`, `writing`, `publishing`, `content` |
-| `prompt-engineering-best-practices` | `prompt-engineering`, `llm`, `cot`, `few-shot`, `role-prompting` |
+| [`ebook-writer`](skills/ebook-writer/SKILL.md) | `ebook`, `writing`, `publishing`, `content` |
+| [`prompt-engineering-best-practices`](skills/prompt-engineering-best-practices/SKILL.md) | `prompt-engineering`, `llm`, `cot`, `few-shot`, `role-prompting` |
 
 ### Agents
 
@@ -63,31 +63,31 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Agent | Type |
 |-------|------|
-| `test-architect` | `review` |
-| `qa-automation-engineer` | `coding` |
-| `performance-tester` | `research` |
-| `qa-lead` | `governance` |
-| `api-tester` | `coding` |
-| `accessibility-tester` | `review` |
-| `prompt-engineer` | `review` |
+| [`test-architect`](agents/test-architect/agent.md) | `review` |
+| [`qa-automation-engineer`](agents/qa-automation-engineer/agent.md) | `coding` |
+| [`performance-tester`](agents/performance-tester/agent.md) | `research` |
+| [`qa-lead`](agents/qa-lead/agent.md) | `governance` |
+| [`api-tester`](agents/api-tester/agent.md) | `coding` |
+| [`accessibility-tester`](agents/accessibility-tester/agent.md) | `review` |
+| [`prompt-engineer`](agents/prompt-engineer/agent.md) | `review` |
 
 #### Development (1)
 
 | Agent | Type |
 |-------|------|
-| `code-reviewer` | `review` |
+| [`code-reviewer`](agents/code-reviewer/agent.md) | `review` |
 
 #### Security (1)
 
 | Agent | Type |
 |-------|------|
-| `security-auditor` | `governance` |
+| [`security-auditor`](agents/security-auditor/agent.md) | `governance` |
 
 #### DevOps (1)
 
 | Agent | Type |
 |-------|------|
-| `devops-automator` | `automation` |
+| [`devops-automator`](agents/devops-automator/agent.md) | `automation` |
 
 ### Prompts (64)
 
@@ -95,81 +95,81 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Prompt | Type |
 |--------|------|
-| `python-expert` | System |
-| `java-spring-expert` | System |
-| `qa-engineer` | System |
-| `generate-api-tests` | Task |
-| `refactor-legacy-code` | Task |
-| `write-tech-documentation` | Task |
-| `create-docker-compose` | Task |
-| `feature-file-template` | Template |
-| `pull-request-template` | Template |
-| `bug-report-template` | Template |
+| [`python-expert`](prompts/system/python-expert.md) | System |
+| [`java-spring-expert`](prompts/system/java-spring-expert.md) | System |
+| [`qa-engineer`](prompts/system/qa-engineer.md) | System |
+| [`generate-api-tests`](prompts/task/generate-api-tests.md) | Task |
+| [`refactor-legacy-code`](prompts/task/refactor-legacy-code.md) | Task |
+| [`write-tech-documentation`](prompts/task/write-tech-documentation.md) | Task |
+| [`create-docker-compose`](prompts/task/create-docker-compose.md) | Task |
+| [`feature-file-template`](prompts/templates/feature-file-template.md) | Template |
+| [`pull-request-template`](prompts/templates/pull-request-template.md) | Template |
+| [`bug-report-template`](prompts/templates/bug-report-template.md) | Template |
 
 #### QA Engineering (30)
 
 | Prompt | Focus |
 |--------|---------|
-| `generate-test-cases-from-requirements` | Test design |
-| `generate-api-test-suite` | API testing |
-| `generate-e2e-test-scenarios` | E2E / POM |
-| `analyze-bug-root-cause` | Bug analysis |
-| `generate-performance-test-plan` | Performance |
-| `generate-security-test-cases` | Security / OWASP |
-| `generate-test-data` | Data generation |
-| `generate-accessibility-test-checklist` | a11y / WCAG |
-| `generate-mobile-test-strategy` | Mobile / Appium |
-| `generate-database-test-scenarios` | DB testing |
-| `generate-regression-test-suite` | Regression |
-| `generate-ci-cd-quality-gates` | Pipeline gates |
-| `generate-test-automation-strategy` | Automation ROI |
-| `review-test-code-quality` | Test review |
-| `generate-load-test-script` | k6 / Locust |
-| `generate-exploratory-test-charter` | Exploratory |
-| `validate-user-story-testability` | INVEST / AC review |
-| `generate-compatibility-test-matrix` | Cross-browser |
-| `generate-test-summary-report` | Reporting |
-| `generate-data-migration-test-plan` | Migration |
-| `generate-api-contract-test` | Pact / Schema |
-| `generate-canary-deployment-health-checks` | Canary deploy |
-| `generate-observability-test-plan` | Monitoring |
-| `generate-disaster-recovery-test-scenarios` | DR / Backup |
-| `generate-qa-interview-questions` | Hiring |
-| `generate-test-data-privacy-compliance` | GDPR / HIPAA |
-| `generate-test-environment-setup-guide` | Environment |
-| `generate-flaky-test-diagnosis` | Flakiness |
-| `generate-qa-metrics-dashboard` | KPIs / DORA |
-| `generate-bdd-scenario` | BDD / Gherkin |
-| `generate-visual-regression-test` | Percy / Chromatic |
-| `generate-mutation-test` | Pitest / Stryker |
-| `generate-qa-risk-analysis` | Risk matrix |
-| `generate-test-data-strategy` | Data masking / GDPR |
-| `generate-accessibility-audit` | WCAG / axe |
-| `generate-chaos-engineering-tests` | Gremlin / Chaos Mesh |
-| `generate-api-fuzzing-scenarios` | Hypothesis / schemathesis |
-| `generate-shift-left-strategy` | Shift-left / TDD |
-| `generate-test-automation-roi-report` | ROI / Business case |
-| `generate-canary-test-strategy` | Canary / Feature flags |
+| [`generate-test-cases-from-requirements`](prompts/qa/generate-test-cases-from-requirements.md) | Test design |
+| [`generate-api-test-suite`](prompts/qa/generate-api-test-suite.md) | API testing |
+| [`generate-e2e-test-scenarios`](prompts/qa/generate-e2e-test-scenarios.md) | E2E / POM |
+| [`analyze-bug-root-cause`](prompts/qa/analyze-bug-root-cause.md) | Bug analysis |
+| [`generate-performance-test-plan`](prompts/qa/generate-performance-test-plan.md) | Performance |
+| [`generate-security-test-cases`](prompts/qa/generate-security-test-cases.md) | Security / OWASP |
+| [`generate-test-data`](prompts/qa/generate-test-data.md) | Data generation |
+| [`generate-accessibility-test-checklist`](prompts/qa/generate-accessibility-test-checklist.md) | a11y / WCAG |
+| [`generate-mobile-test-strategy`](prompts/qa/generate-mobile-test-strategy.md) | Mobile / Appium |
+| [`generate-database-test-scenarios`](prompts/qa/generate-database-test-scenarios.md) | DB testing |
+| [`generate-regression-test-suite`](prompts/qa/generate-regression-test-suite.md) | Regression |
+| [`generate-ci-cd-quality-gates`](prompts/qa/generate-ci-cd-quality-gates.md) | Pipeline gates |
+| [`generate-test-automation-strategy`](prompts/qa/generate-test-automation-strategy.md) | Automation ROI |
+| [`review-test-code-quality`](prompts/qa/review-test-code-quality.md) | Test review |
+| [`generate-load-test-script`](prompts/qa/generate-load-test-script.md) | k6 / Locust |
+| [`generate-exploratory-test-charter`](prompts/qa/generate-exploratory-test-charter.md) | Exploratory |
+| [`validate-user-story-testability`](prompts/qa/validate-user-story-testability.md) | INVEST / AC review |
+| [`generate-compatibility-test-matrix`](prompts/qa/generate-compatibility-test-matrix.md) | Cross-browser |
+| [`generate-test-summary-report`](prompts/qa/generate-test-summary-report.md) | Reporting |
+| [`generate-data-migration-test-plan`](prompts/qa/generate-data-migration-test-plan.md) | Migration |
+| [`generate-api-contract-test`](prompts/qa/generate-api-contract-test.md) | Pact / Schema |
+| [`generate-canary-deployment-health-checks`](prompts/qa/generate-canary-deployment-health-checks.md) | Canary deploy |
+| [`generate-observability-test-plan`](prompts/qa/generate-observability-test-plan.md) | Monitoring |
+| [`generate-disaster-recovery-test-scenarios`](prompts/qa/generate-disaster-recovery-test-scenarios.md) | DR / Backup |
+| [`generate-qa-interview-questions`](prompts/qa/generate-qa-interview-questions.md) | Hiring |
+| [`generate-test-data-privacy-compliance`](prompts/qa/generate-test-data-privacy-compliance.md) | GDPR / HIPAA |
+| [`generate-test-environment-setup-guide`](prompts/qa/generate-test-environment-setup-guide.md) | Environment |
+| [`generate-flaky-test-diagnosis`](prompts/qa/generate-flaky-test-diagnosis.md) | Flakiness |
+| [`generate-qa-metrics-dashboard`](prompts/qa/generate-qa-metrics-dashboard.md) | KPIs / DORA |
+| [`generate-bdd-scenario`](prompts/qa/generate-bdd-scenario.md) | BDD / Gherkin |
+| [`generate-visual-regression-test`](prompts/qa/generate-visual-regression-test.md) | Percy / Chromatic |
+| [`generate-mutation-test`](prompts/qa/generate-mutation-test.md) | Pitest / Stryker |
+| [`generate-qa-risk-analysis`](prompts/qa/generate-qa-risk-analysis.md) | Risk matrix |
+| [`generate-test-data-strategy`](prompts/qa/generate-test-data-strategy.md) | Data masking / GDPR |
+| [`generate-accessibility-audit`](prompts/qa/generate-accessibility-audit.md) | WCAG / axe |
+| [`generate-chaos-engineering-tests`](prompts/qa/generate-chaos-engineering-tests.md) | Gremlin / Chaos Mesh |
+| [`generate-api-fuzzing-scenarios`](prompts/qa/generate-api-fuzzing-scenarios.md) | Hypothesis / schemathesis |
+| [`generate-shift-left-strategy`](prompts/qa/generate-shift-left-strategy.md) | Shift-left / TDD |
+| [`generate-test-automation-roi-report`](prompts/qa/generate-test-automation-roi-report.md) | ROI / Business case |
+| [`generate-canary-test-strategy`](prompts/qa/generate-canary-test-strategy.md) | Canary / Feature flags |
 
 #### Ebook Writing (15)
 
 | Prompt | Focus |
 |--------|---------|
-| `generate-ebook-outline` | Structure and planning |
-| `research-topic-for-ebook` | Content research |
-| `generate-ebook-title-options` | Naming and titles |
-| `write-ebook-introduction` | Opening chapter |
-| `write-ebook-chapter` | Chapter drafting |
-| `write-ebook-conclusion` | Closing chapter |
-| `edit-ebook-chapter` | Revision and editing |
-| `generate-ebook-case-study` | Real-world examples |
-| `generate-ebook-exercises` | Learning reinforcement |
-| `format-ebook-for-export` | PDF/EPUB preparation |
-| `generate-ebook-marketing-copy` | Promotion and sales |
-| `review-ebook-consistency` | Quality checking |
-| `create-ebook-table-of-contents` | TOC generation |
-| `create-ebook-reference-list` | Bibliography |
-| `write-ebook-chapter-summary` | Preview copy |
+| [`generate-ebook-outline`](prompts/ebooks/generate-ebook-outline.md) | Structure and planning |
+| [`research-topic-for-ebook`](prompts/ebooks/research-topic-for-ebook.md) | Content research |
+| [`generate-ebook-title-options`](prompts/ebooks/generate-ebook-title-options.md) | Naming and titles |
+| [`write-ebook-introduction`](prompts/ebooks/write-ebook-introduction.md) | Opening chapter |
+| [`write-ebook-chapter`](prompts/ebooks/write-ebook-chapter.md) | Chapter drafting |
+| [`write-ebook-conclusion`](prompts/ebooks/write-ebook-conclusion.md) | Closing chapter |
+| [`edit-ebook-chapter`](prompts/ebooks/edit-ebook-chapter.md) | Revision and editing |
+| [`generate-ebook-case-study`](prompts/ebooks/generate-ebook-case-study.md) | Real-world examples |
+| [`generate-ebook-exercises`](prompts/ebooks/generate-ebook-exercises.md) | Learning reinforcement |
+| [`format-ebook-for-export`](prompts/ebooks/format-ebook-for-export.md) | PDF/EPUB preparation |
+| [`generate-ebook-marketing-copy`](prompts/ebooks/generate-ebook-marketing-copy.md) | Promotion and sales |
+| [`review-ebook-consistency`](prompts/ebooks/review-ebook-consistency.md) | Quality checking |
+| [`create-ebook-table-of-contents`](prompts/ebooks/create-ebook-table-of-contents.md) | TOC generation |
+| [`create-ebook-reference-list`](prompts/ebooks/create-ebook-reference-list.md) | Bibliography |
+| [`write-ebook-chapter-summary`](prompts/ebooks/write-ebook-chapter-summary.md) | Preview copy |
 
 ### Rules
 
@@ -177,35 +177,35 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Rule | Category |
 |------|-----------|
-| `python-coding-rules` | Python |
-| `java-coding-rules` | Java |
-| `javascript-coding-rules` | JavaScript / TypeScript |
-| `sql-coding-rules` | SQL |
+| [`python-coding-rules`](rules/coding/python-coding-rules.md) | Python |
+| [`java-coding-rules`](rules/coding/java-coding-rules.md) | Java |
+| [`javascript-coding-rules`](rules/coding/javascript-coding-rules.md) | JavaScript / TypeScript |
+| [`sql-coding-rules`](rules/coding/sql-coding-rules.md) | SQL |
 
 #### QA & Testing (7)
 
 | Rule | Category |
 |------|-----------|
-| `pr-review-checklist` | General review |
-| `test-review-rules` | Test quality |
-| `test-automation-rules` | E2E automation |
-| `performance-testing-rules` | Performance |
-| `mobile-testing-rules` | Mobile |
-| `api-testing-rules` | API testing |
-| `prompt-quality-rules` | Prompt engineering |
+| [`pr-review-checklist`](rules/review/pr-review-checklist.md) | General review |
+| [`test-review-rules`](rules/review/test-review-rules.md) | Test quality |
+| [`test-automation-rules`](rules/review/test-automation-rules.md) | E2E automation |
+| [`performance-testing-rules`](rules/review/performance-testing-rules.md) | Performance |
+| [`mobile-testing-rules`](rules/review/mobile-testing-rules.md) | Mobile |
+| [`api-testing-rules`](rules/review/api-testing-rules.md) | API testing |
+| [`prompt-quality-rules`](rules/review/prompt-quality-rules.md) | Prompt engineering |
 
 #### Behavior (2)
 
 | Rule | Category |
 |------|-----------|
-| `response-format-rules` | Formatting |
-| `response-language-rules` | Language |
+| [`response-format-rules`](rules/behavior/response-format-rules.md) | Formatting |
+| [`response-language-rules`](rules/behavior/response-language-rules.md) | Language |
 
 #### CI/CD (1)
 
 | Rule | Category |
 |------|-----------|
-| `ci-cd-testing-rules` | Pipeline testing |
+| [`ci-cd-testing-rules`](rules/review/ci-cd-testing-rules.md) | Pipeline testing |
 
 ### Workflows
 
@@ -213,46 +213,46 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Workflow | Purpose |
 |----------|-----------|
-| `deploy-flask-app` | Docker + nginx + CI/CD deployment |
-| `deploy-spring-boot-app` | JAR + K8s + health checks |
-| `gitlab-ci` | Complete GitLab pipeline |
-| `bitbucket-pipelines` | Bitbucket pipeline |
-| `kubernetes-deploy` | K8s manifests + Helm |
-| `onboard-new-project` | Initial project setup |
+| [`deploy-flask-app`](workflows/deploy-flask-app.md) | Docker + nginx + CI/CD deployment |
+| [`deploy-spring-boot-app`](workflows/deploy-spring-boot-app.md) | JAR + K8s + health checks |
+| [`gitlab-ci`](workflows/gitlab-ci.md) | Complete GitLab pipeline |
+| [`bitbucket-pipelines`](workflows/bitbucket-pipelines.md) | Bitbucket pipeline |
+| [`kubernetes-deploy`](workflows/kubernetes-deploy.md) | K8s manifests + Helm |
+| [`onboard-new-project`](workflows/onboard-new-project.md) | Initial project setup |
 
 #### QA & Testing (5)
 
 | Workflow | Purpose |
 |----------|-----------|
-| `setup-e2e-automation` | Bootstrap E2E automation with CI/CD |
-| `performance-test-session` | Structured performance testing: SLA → script → execute → analyze |
-| `visual-regression-setup` | Configure Chromatic/Percy/Loki with baselines and CI |
-| `bug-triage` | Structured bug triage process |
-| `qa-release-gate` | Quality gate before production release |
+| [`setup-e2e-automation`](workflows/setup-e2e-automation.md) | Bootstrap E2E automation with CI/CD |
+| [`performance-test-session`](workflows/performance-test-session.md) | Structured performance testing: SLA → script → execute → analyze |
+| [`visual-regression-setup`](workflows/visual-regression-setup.md) | Configure Chromatic/Percy/Loki with baselines and CI |
+| [`bug-triage`](workflows/bug-triage.md) | Structured bug triage process |
+| [`qa-release-gate`](workflows/qa-release-gate.md) | Quality gate before production release |
 
 #### Content (1)
 
 | Workflow | Purpose |
 |----------|-----------|
-| `create-ebook` | Ebook creation pipeline |
+| [`create-ebook`](workflows/create-ebook.md) | Ebook creation pipeline |
 
 #### Templates (2)
 
 | Workflow | Purpose |
 |----------|-----------|
-| `create-new-skill` | Bootstrap a skill from template |
-| `create-new-agent` | Bootstrap an agent from template |
+| [`create-new-skill`](workflows/create-new-skill.md) | Bootstrap a skill from template |
+| [`create-new-agent`](workflows/create-new-agent.md) | Bootstrap an agent from template |
 
 ### Tools
 
 | Tool | Function |
 |------|---------|
-| `validate-resource` | Validates frontmatter, kebab-case, placeholders |
-| `generate-skill-scaffold` | Interactive CLI to create skills |
-| `sync-skills-to-cursor` | Copies skills to `.cursor/rules/` |
-| `sync-skills-to-claude` | Copies skills to `.claude/agents/` |
-| `export-skills-to-md` | Concatenates skills into a single markdown |
-| `check-dead-links` | Scans broken URLs in `.md` |
+| [`validate-resource`](tools/validate-resource/README.md) | Validates frontmatter, kebab-case, placeholders |
+| [`generate-skill-scaffold`](tools/generate-skill-scaffold/README.md) | Interactive CLI to create skills |
+| [`sync-skills-to-cursor`](tools/sync-skills-to-cursor/README.md) | Copies skills to `.cursor/rules/` |
+| [`sync-skills-to-claude`](tools/sync-skills-to-claude/README.md) | Copies skills to `.claude/agents/` |
+| [`export-skills-to-md`](tools/export-skills-to-md/README.md) | Concatenates skills into a single markdown |
+| [`check-dead-links`](tools/check-dead-links/README.md) | Scans broken URLs in `.md` |
 
 ## Structure
 
