@@ -2,14 +2,14 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (132)
+## Resources (135)
 
 | Category | Count |
 |-----------|----------|
-| [Skills](#skills) | 26 |
-| [Agents](#agents) | 9 |
+| [Skills](#skills) | 27 |
+| [Agents](#agents) | 10 |
 | [Prompts](#prompts) | 64 |
-| [Rules](#rules) | 13 |
+| [Rules](#rules) | 14 |
 | [Workflows](#workflows) | 14 |
 | [Tools](#tools) | 6 |
 
@@ -50,15 +50,16 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `prestashop-module` | `prestashop`, `php`, `e-commerce` |
 | `octane-alm` | `octane`, `alm`, `defect-management` |
 
-#### Content & Writing (1)
+#### Content & Writing (2)
 
 | Skill | Tags |
 |-------|------|
 | `ebook-writer` | `ebook`, `writing`, `publishing`, `content` |
+| `prompt-engineering-best-practices` | `prompt-engineering`, `llm`, `cot`, `few-shot`, `role-prompting` |
 
 ### Agents
 
-#### QA & Testing (6)
+#### QA & Testing (7)
 
 | Agent | Type |
 |-------|------|
@@ -68,6 +69,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `qa-lead` | `governance` |
 | `api-tester` | `coding` |
 | `accessibility-tester` | `review` |
+| `prompt-engineer` | `review` |
 
 #### Development (1)
 
@@ -180,7 +182,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `javascript-coding-rules` | JavaScript / TypeScript |
 | `sql-coding-rules` | SQL |
 
-#### QA & Testing (6)
+#### QA & Testing (7)
 
 | Rule | Category |
 |------|-----------|
@@ -190,6 +192,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `performance-testing-rules` | Performance |
 | `mobile-testing-rules` | Mobile |
 | `api-testing-rules` | API testing |
+| `prompt-quality-rules` | Prompt engineering |
 
 #### Behavior (2)
 
