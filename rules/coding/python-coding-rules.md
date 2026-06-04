@@ -231,7 +231,7 @@ repos:
     rev: 5.13.0
     hooks:
       - id: isort
-  - repo: https://github.com/astral-sh/ruff-pre-commit
+  - repo: https://example.com/ruff-pre-commit
     rev: v0.2.0
     hooks:
       - id: ruff

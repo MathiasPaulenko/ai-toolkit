@@ -67,7 +67,7 @@ Level 0: Requirements Review + Test Design (Story Refinement)
 ```yaml
 # .pre-commit-config.yaml
 repos:
-  - repo: https://github.com/astral-sh/ruff-pre-commit
+  - repo: https://example.com/ruff-pre-commit
     rev: v0.6.0
     hooks:
       - id: ruff

@@ -2,13 +2,13 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (135)
+## Resources (136)
 
 | Category | Count |
 |-----------|----------|
 | [Skills](#skills) | 27 |
 | [Agents](#agents) | 10 |
-| [Prompts](#prompts) | 64 |
+| [Prompts](#prompts) | 65 |
 | [Rules](#rules) | 14 |
 | [Workflows](#workflows) | 14 |
 | [Tools](#tools) | 6 |

@@ -764,10 +764,10 @@ output = template.render(name="World")
 
 ## 15. References
 
-- [Jinja2 Documentation](https://jinja.palletsprojects.com/)
-- [Jinja2 API](https://jinja.palletsprojects.com/en/3.1.x/api/)
+- [Jinja2 Documentation](https://jinja.palletsprojects.com/en/latest/)
+- [Jinja2 API](https://jinja.palletsprojects.com/en/latest/api/)
 - [Flask — Templating](https://flask.palletsprojects.com/en/3.0.x/templating/)
 - [FastAPI — Templates](https://fastapi.tiangolo.com/advanced/templates/)
-- [MarkupSafe](https://markupsafe.palletsprojects.com/)
+- [MarkupSafe](https://markupsafe.palletsprojects.com/en/latest/)
 - [bleach (HTML sanitizer)](https://bleach.readthedocs.io/)
 - Related skills: `flask-api`, `fastapi-templates`

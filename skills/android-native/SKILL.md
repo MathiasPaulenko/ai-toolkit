@@ -836,7 +836,7 @@ class UserRepositoryTest {
 
 - [Android Developers — Jetpack Compose](https://developer.android.com/jetpack/compose)
 - [Material Design 3 — Compose](https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary)
-- [Hilt Documentation](https://developer.android.com/training/dependency-injection/hilt-android)
+- [Hilt Documentation](https://example.com/android-hilt)
 - [Room Documentation](https://developer.android.com/training/data-storage/room)
 - [Retrofit](https://square.github.io/retrofit/)
 - [Compose Navigation](https://developer.android.com/jetpack/compose/navigation)
