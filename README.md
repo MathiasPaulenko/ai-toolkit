@@ -2,7 +2,7 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (109)
+## Resources (112)
 
 | Category | Count |
 |-----------|----------|
@@ -10,7 +10,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | [Agents](#agents) | 4 |
 | [Prompts](#prompts) | 59 |
 | [Rules](#rules) | 8 |
-| [Workflows](#workflows) | 9 |
+| [Workflows](#workflows) | 12 |
 | [Tools](#tools) | 6 |
 
 ### Skills
@@ -153,6 +153,9 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `kubernetes-deploy` | K8s manifests + Helm |
 | `onboard-new-project` | Initial project setup |
 | `create-ebook` | Ebook creation pipeline |
+| `setup-e2e-automation` | Bootstrap E2E automation with CI/CD |
+| `performance-test-session` | Structured performance testing: SLA → script → execute → analyze |
+| `visual-regression-setup` | Configure Chromatic/Percy/Loki with baselines and CI |
 
 ### Tools
 
