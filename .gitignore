@@ -23,5 +23,11 @@ output/
 dist/
 build/
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
 # Reference files
 ref/
