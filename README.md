@@ -15,26 +15,15 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 ### Skills
 
+#### Testing & QA (13)
+
 | Skill | Tags |
 |-------|------|
 | `behave-bdd` | `python`, `bdd`, `gherkin`, `testing` |
-| `ebook-writer` | `ebook`, `writing`, `publishing`, `content` |
-| `flask-api` | `python`, `flask`, `rest`, `api` |
-| `android-native` | `kotlin`, `jetpack-compose`, `mvvm`, `mobile` |
-| `jinja2-templates` | `python`, `templating`, `flask`, `fastapi` |
 | `allure-reports` | `reporting`, `pytest`, `cypress`, `ci-cd` |
 | `robot-framework` | `testing`, `keyword-driven`, `selenium` |
-| `paramiko-ssh` | `python`, `ssh`, `sftp`, `automation` |
-| `wordpress-themes` | `php`, `wordpress`, `cms`, `frontend` |
-| `sonarqube-quality-gates` | `sonarqube`, `quality-gates`, `static-analysis` |
-| `flet-desktop` | `python`, `desktop`, `flutter`, `gui` |
-| `sql-server` | `sql-server`, `t-sql`, `mssql`, `azure-sql` |
-| `db2-oracle` | `db2`, `oracle`, `plsql`, `enterprise` |
 | `jmeter-load-testing` | `jmeter`, `load-testing`, `performance` |
-| `salesforce-dev` | `salesforce`, `apex`, `lwc`, `crm` |
-| `appian-lowcode` | `appian`, `low-code`, `bpm` |
-| `prestashop-module` | `prestashop`, `php`, `e-commerce` |
-| `octane-alm` | `octane`, `alm`, `defect-management` |
+| `sonarqube-quality-gates` | `sonarqube`, `quality-gates`, `static-analysis` |
 | `testcontainers` | `integration-testing`, `docker`, `databases`, `kafka` |
 | `pytest-advanced` | `pytest`, `python`, `fixtures`, `plugins` |
 | `postman-api-automation` | `api-testing`, `postman`, `newman`, `rest` |
@@ -44,21 +33,61 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `webdriverio` | `e2e`, `webdriverio`, `selenium`, `cross-browser` |
 | `xctest-ios` | `ios`, `xctest`, `swift`, `unit-testing` |
 
+#### Development (12)
+
+| Skill | Tags |
+|-------|------|
+| `flask-api` | `python`, `flask`, `rest`, `api` |
+| `android-native` | `kotlin`, `jetpack-compose`, `mvvm`, `mobile` |
+| `jinja2-templates` | `python`, `templating`, `flask`, `fastapi` |
+| `paramiko-ssh` | `python`, `ssh`, `sftp`, `automation` |
+| `wordpress-themes` | `php`, `wordpress`, `cms`, `frontend` |
+| `flet-desktop` | `python`, `desktop`, `flutter`, `gui` |
+| `sql-server` | `sql-server`, `t-sql`, `mssql`, `azure-sql` |
+| `db2-oracle` | `db2`, `oracle`, `plsql`, `enterprise` |
+| `salesforce-dev` | `salesforce`, `apex`, `lwc`, `crm` |
+| `appian-lowcode` | `appian`, `low-code`, `bpm` |
+| `prestashop-module` | `prestashop`, `php`, `e-commerce` |
+| `octane-alm` | `octane`, `alm`, `defect-management` |
+
+#### Content & Writing (1)
+
+| Skill | Tags |
+|-------|------|
+| `ebook-writer` | `ebook`, `writing`, `publishing`, `content` |
+
 ### Agents
+
+#### QA & Testing (6)
 
 | Agent | Type |
 |-------|------|
-| `code-reviewer` | `review` |
 | `test-architect` | `review` |
-| `security-auditor` | `governance` |
-| `devops-automator` | `automation` |
 | `qa-automation-engineer` | `coding` |
 | `performance-tester` | `research` |
 | `qa-lead` | `governance` |
 | `api-tester` | `coding` |
 | `accessibility-tester` | `review` |
 
-### Prompts (39)
+#### Development (1)
+
+| Agent | Type |
+|-------|------|
+| `code-reviewer` | `review` |
+
+#### Security (1)
+
+| Agent | Type |
+|-------|------|
+| `security-auditor` | `governance` |
+
+#### DevOps (1)
+
+| Agent | Type |
+|-------|------|
+| `devops-automator` | `automation` |
+
+### Prompts (64)
 
 #### System / Task / Templates (9)
 
@@ -142,40 +171,74 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 ### Rules
 
+#### Coding Standards (4)
+
 | Rule | Category |
 |------|-----------|
-| `python-coding-rules` | Coding |
-| `java-coding-rules` | Coding |
-| `javascript-coding-rules` | Coding |
-| `sql-coding-rules` | Coding |
-| `pr-review-checklist` | Review |
-| `test-review-rules` | Review |
-| `response-format-rules` | Behavior |
-| `response-language-rules` | Behavior |
-| `test-automation-rules` | Review |
-| `performance-testing-rules` | Review |
-| `mobile-testing-rules` | Review |
-| `api-testing-rules` | Review |
-| `ci-cd-testing-rules` | Review |
+| `python-coding-rules` | Python |
+| `java-coding-rules` | Java |
+| `javascript-coding-rules` | JavaScript / TypeScript |
+| `sql-coding-rules` | SQL |
+
+#### QA & Testing (6)
+
+| Rule | Category |
+|------|-----------|
+| `pr-review-checklist` | General review |
+| `test-review-rules` | Test quality |
+| `test-automation-rules` | E2E automation |
+| `performance-testing-rules` | Performance |
+| `mobile-testing-rules` | Mobile |
+| `api-testing-rules` | API testing |
+
+#### Behavior (2)
+
+| Rule | Category |
+|------|-----------|
+| `response-format-rules` | Formatting |
+| `response-language-rules` | Language |
+
+#### CI/CD (1)
+
+| Rule | Category |
+|------|-----------|
+| `ci-cd-testing-rules` | Pipeline testing |
 
 ### Workflows
 
+#### DevOps & Deployment (6)
+
 | Workflow | Purpose |
 |----------|-----------|
-| `create-new-skill` | Bootstrap a skill from template |
-| `create-new-agent` | Bootstrap an agent from template |
 | `deploy-flask-app` | Docker + nginx + CI/CD deployment |
 | `deploy-spring-boot-app` | JAR + K8s + health checks |
 | `gitlab-ci` | Complete GitLab pipeline |
 | `bitbucket-pipelines` | Bitbucket pipeline |
 | `kubernetes-deploy` | K8s manifests + Helm |
 | `onboard-new-project` | Initial project setup |
-| `create-ebook` | Ebook creation pipeline |
+
+#### QA & Testing (5)
+
+| Workflow | Purpose |
+|----------|-----------|
 | `setup-e2e-automation` | Bootstrap E2E automation with CI/CD |
 | `performance-test-session` | Structured performance testing: SLA → script → execute → analyze |
 | `visual-regression-setup` | Configure Chromatic/Percy/Loki with baselines and CI |
 | `bug-triage` | Structured bug triage process |
 | `qa-release-gate` | Quality gate before production release |
+
+#### Content (1)
+
+| Workflow | Purpose |
+|----------|-----------|
+| `create-ebook` | Ebook creation pipeline |
+
+#### Templates (2)
+
+| Workflow | Purpose |
+|----------|-----------|
+| `create-new-skill` | Bootstrap a skill from template |
+| `create-new-agent` | Bootstrap an agent from template |
 
 ### Tools
 
