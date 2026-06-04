@@ -1,16 +1,16 @@
 # Tools
 
-Scripts, utilidades y recursos técnicos auxiliares.
+Scripts, utilities, and auxiliary technical resources.
 
-## Categorías sugeridas
+## Suggested Categories
 
-- `scripts/` — Scripts de shell, Python, Node, etc
-- `validators/` — Validadores de sintaxis o formato
-- `generators/` — Generadores de código o configuración
-- `converters/` — Conversores entre formatos
+- `scripts/` — Shell, Python, Node, etc. scripts
+- `validators/` — Syntax or format validators
+- `generators/` — Code or configuration generators
+- `converters/` — Format converters
 
-## Convención
+## Convention
 
-- Cada tool va en su subcarpeta con un `README.md` explicando uso e instalación
-- Preferir lenguajes comunes: Python, Bash, Node.js
-- Incluir `requirements.txt`, `package.json` o equivalente si aplica
+- Each tool goes in its own subfolder with a `README.md` explaining usage and installation
+- Prefer common languages: Python, Bash, Node.js
+- Include `requirements.txt`, `package.json`, or equivalent if applicable

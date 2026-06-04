@@ -1,25 +1,25 @@
 # Prompts
 
-Colección de prompts organizados por tipo.
+Collection of prompts organized by type.
 
-## Estructura
+## Structure
 
-- `system/` — Prompts de sistema para configurar el comportamiento base del modelo
-- `task/` — Prompts para tareas específicas (refactor, testing, documentación, etc)
-- `templates/` — Plantillas parametrizables para reutilizar con variables
+- `system/` — System prompts to configure the base model behavior
+- `task/` — Prompts for specific tasks (refactor, testing, documentation, etc)
+- `templates/` — Parametrizable templates to reuse with variables
 
-## Convención de archivo
+## File Convention
 
-Cada prompt es un archivo `.md` con el siguiente formato:
+Each prompt is a `.md` file with the following format:
 
 ```markdown
 ---
 role: system | task | template
-description: qué hace
+description: what it does
 model: gpt-4o | claude-sonnet | any
 ---
 
-Contenido del prompt...
+Prompt content...
 ```
 
-Usar `{{variable}}` para plantillas parametrizables.
+Use `{{variable}}` for parametrizable templates.

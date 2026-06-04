@@ -1,10 +1,10 @@
 # Workflows
 
-Procedimientos paso a paso para tareas repetitivas.
+Step-by-step procedures for repetitive tasks.
 
-## Formato
+## Format
 
-Cada workflow es un archivo `.md` con esta estructura:
+Each workflow is a `.md` file with this structure:
 
 ```markdown
 # Workflow Name

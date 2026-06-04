@@ -13,12 +13,12 @@ Thumbs.db
 *.bak
 *.log
 
-# Local configs (personal, no versionar)
+# Local configs (personal, do not version)
 *.local
 *.private
 .env
 
-# Outputs generados
+# Generated outputs
 output/
 dist/
 build/
@@ -28,6 +28,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.egg-info/
+.pytest_cache/
 
 # Reference files
 ref/

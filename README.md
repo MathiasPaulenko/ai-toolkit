@@ -1,10 +1,10 @@
 # ai-toolkit
 
-Repositorio personal de recursos de IA: prompts, skills, agents, rules, workflows y herramientas creados para obtener resultados consistentes y estructurados con LLMs.
+Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Recursos (83)
+## Resources (83)
 
-| Categoría | Cantidad |
+| Category | Count |
 |-----------|----------|
 | [Skills](#skills) | 17 |
 | [Agents](#agents) | 4 |
@@ -48,7 +48,7 @@ Repositorio personal de recursos de IA: prompts, skills, agents, rules, workflow
 
 #### System / Task / Templates (9)
 
-| Prompt | Tipo |
+| Prompt | Type |
 |--------|------|
 | `python-expert` | System |
 | `java-spring-expert` | System |
@@ -63,7 +63,7 @@ Repositorio personal de recursos de IA: prompts, skills, agents, rules, workflow
 
 #### QA Engineering (30)
 
-| Prompt | Enfoque |
+| Prompt | Focus |
 |--------|---------|
 | `generate-test-cases-from-requirements` | Test design |
 | `generate-api-test-suite` | API testing |
@@ -97,7 +97,7 @@ Repositorio personal de recursos de IA: prompts, skills, agents, rules, workflow
 
 ### Rules
 
-| Rule | Categoría |
+| Rule | Category |
 |------|-----------|
 | `python-coding-rules` | Coding |
 | `java-coding-rules` | Coding |
@@ -106,82 +106,82 @@ Repositorio personal de recursos de IA: prompts, skills, agents, rules, workflow
 | `pr-review-checklist` | Review |
 | `test-review-rules` | Review |
 | `response-format-rules` | Behavior |
-| `bilingual-rules` | Behavior |
+| `response-language-rules` | Behavior |
 
 ### Workflows
 
-| Workflow | Propósito |
+| Workflow | Purpose |
 |----------|-----------|
-| `create-new-skill` | Bootstrap de skill desde template |
-| `create-new-agent` | Bootstrap de agent desde template |
-| `deploy-flask-app` | Despliegue Docker + nginx + CI/CD |
+| `create-new-skill` | Bootstrap a skill from template |
+| `create-new-agent` | Bootstrap an agent from template |
+| `deploy-flask-app` | Docker + nginx + CI/CD deployment |
 | `deploy-spring-boot-app` | JAR + K8s + health checks |
-| `gitlab-ci` | Pipeline GitLab completa |
-| `bitbucket-pipelines` | Pipeline Bitbucket |
-| `kubernetes-deploy` | Manifiestos K8s + Helm |
-| `onboard-new-project` | Setup inicial de proyecto |
+| `gitlab-ci` | Complete GitLab pipeline |
+| `bitbucket-pipelines` | Bitbucket pipeline |
+| `kubernetes-deploy` | K8s manifests + Helm |
+| `onboard-new-project` | Initial project setup |
 
 ### Tools
 
-| Tool | Función |
+| Tool | Function |
 |------|---------|
-| `validate-resource` | Valida frontmatter, kebab-case, placeholders |
-| `generate-skill-scaffold` | CLI interactivo para crear skills |
-| `sync-skills-to-cursor` | Copia skills a `.cursor/rules/` |
-| `sync-skills-to-claude` | Copia skills a `.claude/agents/` |
-| `export-skills-to-md` | Concatena skills en un solo markdown |
-| `check-dead-links` | Escanea URLs rotas en `.md` |
+| `validate-resource` | Validates frontmatter, kebab-case, placeholders |
+| `generate-skill-scaffold` | Interactive CLI to create skills |
+| `sync-skills-to-cursor` | Copies skills to `.cursor/rules/` |
+| `sync-skills-to-claude` | Copies skills to `.claude/agents/` |
+| `export-skills-to-md` | Concatenates skills into a single markdown |
+| `check-dead-links` | Scans broken URLs in `.md` |
 
-## Estructura
+## Structure
 
-| Carpeta | Contenido |
+| Folder | Content |
 |---------|-----------|
-| `prompts/` | Prompts de sistema, tareas y plantillas reutilizables |
-| `skills/` | Skills estructurados con `SKILL.md` y assets |
-| `agents/` | Definiciones de agentes (`agent.md`, knowledge, tools) |
-| `rules/` | Reglas de código, revisión y comportamiento |
-| `workflows/` | Procedimientos paso a paso para flujos repetitivos |
-| `tools/` | Utilidades, scripts y recursos técnicos |
-| `AGENTS.md` | Estándares y convenciones globales del repositorio |
-| `justfile` | Comandos comunes (`just validate`, `just export`, etc.) |
-| `.devin/` | Workflows específicos para Devin |
-| `.cursor/` | Reglas y prompts para Cursor |
+| `prompts/` | System, task, and reusable template prompts |
+| `skills/` | Structured skills with `SKILL.md` and assets |
+| `agents/` | Agent definitions (`agent.md`, knowledge, tools) |
+| `rules/` | Code, review, and behavior rules |
+| `workflows/` | Step-by-step procedures for repetitive tasks |
+| `tools/` | Utilities, scripts, and technical resources |
+| `AGENTS.md` | Global repository conventions and agent standards |
+| `justfile` | Common commands (`just validate`, `just export`, etc.) |
+| `.devin/` | Devin-specific workflows |
+| `.cursor/` | Rules and prompts for Cursor |
 
-## Convenciones
+## Conventions
 
-- Cada recurso va en su carpeta con nombre en `kebab-case`
-- Skills y agents llevan un `README.md` o `SKILL.md` / `agent.md`
-- Se usa frontmatter YAML para metadatos (autor, versión, tags, trigger)
-- Material de referencia técnica va en `references/`; ejecutables y plantillas en `assets/`
-- Las plantillas de ejemplo están en `_template/` dentro de cada categoría
+- Each resource goes in its own folder with a `kebab-case` name
+- Skills and agents include a `README.md` or `SKILL.md` / `agent.md`
+- YAML frontmatter is used for metadata (author, version, tags, trigger)
+- Technical reference material goes in `references/`; executables and templates in `assets/`
+- Example templates are in `_template/` within each category
 
-## Uso rápido
+## Quick Start
 
-Copiar el recurso deseado al contexto del modelo o referenciarlo desde la configuración del IDE (Cursor Rules, Devin Workflows, etc).
+Copy the desired resource into the model context or reference it from your IDE configuration (Cursor Rules, Devin Workflows, etc.).
 
-## Comandos
+## Commands
 
 ```bash
-# Validar todos los recursos
+# Validate all resources
 just validate
 
-# Generar skill nuevo (interactivo)
+# Generate a new skill (interactive)
 just generate-skill
 
-# Exportar skills a markdown
+# Export skills to markdown
 just export
 
-# Verificar links rotos
+# Check for broken links
 just check-links
 
-# Ejecutar todas las validaciones
+# Run all validations
 just check
 ```
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo [MIT](LICENSE).
+This project is licensed under [MIT](LICENSE).
 
-Para uso comercial o empresarial, consulta las expectativas de atribución en [NOTICE.md](NOTICE.md).
+For commercial or enterprise use, see the attribution expectations in [NOTICE.md](NOTICE.md).
 
 Copyright (c) 2026 Mathias Paulenko Echeverz

@@ -1,27 +1,27 @@
 # Rules
 
-Conjunto de reglas para estandarizar código, revisiones y comportamiento.
+Set of rules to standardize code, reviews, and behavior.
 
-## Estructura
+## Structure
 
-- `coding/` — Reglas de estilo, patrones y restricciones de código
-- `review/` — Checklists y criterios para code review
-- `behavior/` — Reglas de comportamiento del asistente (tono, formato, idioma)
+- `coding/` — Style, patterns, and code restriction rules
+- `review/` — Checklists and criteria for code review
+- `behavior/` — Assistant behavior rules (tone, format, language)
 
-## Formato
+## Format
 
-Cada rule set es un archivo `.md` con reglas numeradas o categorizadas.
+Each rule set is a `.md` file with numbered or categorized rules.
 
-Ejemplo:
+Example:
 
 ```markdown
 # Python Coding Rules
 
 ## General
-1. Usar type hints en todas las funciones públicas
-2. Máximo 80 caracteres por línea
+1. Use type hints in all public functions
+2. Maximum 80 characters per line
 
 ## Imports
-1. Orden: stdlib > third-party > local
-2. Evitar importaciones circulares
+1. Order: stdlib > third-party > local
+2. Avoid circular imports
 ```
