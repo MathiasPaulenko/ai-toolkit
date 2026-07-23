@@ -2,12 +2,11 @@
 name: Generate Disaster Recovery Test Scenarios
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Define disaster recovery test scenarios: backup restoration, failover, data corruption handling, and RTO/RPO validation.
+description: "Define disaster recovery test scenarios: backup restoration, failover, data corruption handling, and RTO/RPO validation."
 tags: [qa, disaster-recovery, backup, failover, rto, rpo, resilience]
 role: qa-engineer
 model: any
-trigger: When the user asks for disaster recovery testing, backup validation, failover testing, or business continuity tests.
----
+trigger: When the user asks for disaster recovery testing, backup validation, failover testing, or business continuity tests.---
 
 # Generate Disaster Recovery Test Scenarios
 

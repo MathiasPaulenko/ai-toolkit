@@ -2,12 +2,11 @@
 name: CI/CD Testing Rules
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Rules for integrating testing into CI/CD pipelines: parallel execution, artifact management, flaky test handling, coverage gates, and deployment validation.
+description: "Rules for integrating testing into CI/CD pipelines: parallel execution, artifact management, flaky test handling, coverage gates, and deployment validation."
 tags: [ci-cd, pipeline, testing, automation, rules]
 role: qa-automation-engineer
 type: rules
-language: en
----
+language: en---
 
 # CI/CD Testing Rules
 

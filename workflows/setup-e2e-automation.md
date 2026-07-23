@@ -2,10 +2,9 @@
 name: Setup E2E Automation
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Bootstrap end-to-end automation from zero: choose framework, configure project, write first tests, integrate with CI/CD, and establish maintenance practices.
+description: "Bootstrap end-to-end automation from zero: choose framework, configure project, write first tests, integrate with CI/CD, and establish maintenance practices."
 tags: [workflow, e2e, automation, playwright, cypress, selenium]
-role: qa-automation-engineer
----
+role: qa-automation-engineer---
 
 # Setup E2E Automation
 

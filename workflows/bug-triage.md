@@ -2,10 +2,9 @@
 name: Bug Triage
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Structured bug triage process: intake, classification, prioritization, assignment, and resolution tracking. Ensures no bug falls through the cracks.
+description: "Structured bug triage process: intake, classification, prioritization, assignment, and resolution tracking. Ensures no bug falls through the cracks."
 tags: [workflow, bug-triage, qa, process, defect-management]
-role: qa-lead
----
+role: qa-lead---
 
 # Bug Triage
 

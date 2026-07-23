@@ -2,12 +2,11 @@
 name: Review Test Code Quality
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Review test code for quality issues: flakiness, poor assertions, over-mocking, test interdependence, and maintainability problems.
+description: "Review test code for quality issues: flakiness, poor assertions, over-mocking, test interdependence, and maintainability problems."
 tags: [qa, test-review, code-quality, flakiness, assertions, mocking]
 role: qa-engineer
 model: any
-trigger: When the user asks to review test code, check test quality, or identify flaky tests.
----
+trigger: When the user asks to review test code, check test quality, or identify flaky tests.---
 
 # Review Test Code Quality
 

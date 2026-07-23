@@ -191,5 +191,5 @@ If the user asks for a penetration test plan:
 - [OWASP Top 10](https://owasp.org/Top10/)
 - [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
 - [CWE/SANS Top 25](https://example.com/cwe-top25)
-- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cybersecurity-framework)
 - Related skills: `cloud-design-patterns`, `clean-code`

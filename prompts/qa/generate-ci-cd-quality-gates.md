@@ -2,12 +2,11 @@
 name: Generate CI/CD Quality Gates
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Define CI/CD quality gates for automated testing: code coverage thresholds, static analysis, security scanning, and deployment criteria.
+description: "Define CI/CD quality gates for automated testing: code coverage thresholds, static analysis, security scanning, and deployment criteria."
 tags: [qa, ci-cd, quality-gates, coverage, sonarqube, pipeline]
 role: qa-engineer
 model: any
-trigger: When the user asks for CI/CD quality gates, pipeline testing, coverage thresholds, or deployment criteria.
----
+trigger: When the user asks for CI/CD quality gates, pipeline testing, coverage thresholds, or deployment criteria.---
 
 # Generate CI/CD Quality Gates
 

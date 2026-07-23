@@ -2,12 +2,11 @@
 name: Mobile Testing Rules
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Rules for testing mobile applications: iOS and Android, gestures, real device vs emulator trade-offs, Appium best practices, and CI integration.
+description: "Rules for testing mobile applications: iOS and Android, gestures, real device vs emulator trade-offs, Appium best practices, and CI integration."
 tags: [mobile, testing, appium, ios, android]
 role: mobile-testing-rules
 type: rules
-language: en
----
+language: en---
 
 # Mobile Testing Rules
 

@@ -2,12 +2,11 @@
 name: Generate Canary Deployment Health Checks
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Define health checks and rollback criteria for canary deployments: error rates, latency, business metrics, and gradual traffic shifting.
+description: "Define health checks and rollback criteria for canary deployments: error rates, latency, business metrics, and gradual traffic shifting."
 tags: [qa, canary, deployment, monitoring, rollback, production]
 role: qa-engineer
 model: any
-trigger: When the user asks for canary deployment, blue-green deployment, production health checks, or deployment verification.
----
+trigger: When the user asks for canary deployment, blue-green deployment, production health checks, or deployment verification.---
 
 # Generate Canary Deployment Health Checks
 

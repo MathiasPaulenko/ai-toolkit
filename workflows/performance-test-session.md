@@ -2,10 +2,9 @@
 name: Performance Test Session
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Structured performance testing session: define SLAs, script scenarios, execute tests, analyze bottlenecks, and report findings with actionable recommendations.
+description: "Structured performance testing session: define SLAs, script scenarios, execute tests, analyze bottlenecks, and report findings with actionable recommendations."
 tags: [workflow, performance, load-testing, sla, profiling]
-role: performance-tester
----
+role: performance-tester---
 
 # Performance Test Session
 

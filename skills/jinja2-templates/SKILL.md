@@ -768,6 +768,6 @@ output = template.render(name="World")
 - [Jinja2 API](https://jinja.palletsprojects.com/en/latest/api/)
 - [Flask — Templating](https://flask.palletsprojects.com/en/3.0.x/templating/)
 - [FastAPI — Templates](https://fastapi.tiangolo.com/advanced/templates/)
-- [MarkupSafe](https://markupsafe.palletsprojects.com/en/latest/)
+- [MarkupSafe](https://markupsafe.palletsprojects.com/)
 - [bleach (HTML sanitizer)](https://bleach.readthedocs.io/)
 - Related skills: `flask-api`, `fastapi-templates`

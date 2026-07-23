@@ -2,12 +2,11 @@
 name: Validate User Story Testability
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Review user stories for testability issues: missing acceptance criteria, ambiguous requirements, untestable statements, and suggest improvements.
+description: "Review user stories for testability issues: missing acceptance criteria, ambiguous requirements, untestable statements, and suggest improvements."
 tags: [qa, user-stories, acceptance-criteria, testability, requirements]
 role: qa-engineer
 model: any
-trigger: When the user asks to review user stories, check acceptance criteria, or validate testability of requirements.
----
+trigger: When the user asks to review user stories, check acceptance criteria, or validate testability of requirements.---
 
 # Validate User Story Testability
 

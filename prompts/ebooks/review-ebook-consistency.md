@@ -2,12 +2,11 @@
 name: Review Ebook Consistency
 version: 1.0.0
 author: Mathias Paulenko Echeverz
-description: Review an ebook manuscript for internal consistency: terminology, tone, formatting, character names, timeline, and factual accuracy.
+description: "Review an ebook manuscript for internal consistency: terminology, tone, formatting, character names, timeline, and factual accuracy."
 tags: [ebook, consistency, review, quality, manuscript]
 role: editor
 model: any
-trigger: When the user asks to review an ebook for consistency, proofread, or quality-check a manuscript.
----
+trigger: When the user asks to review an ebook for consistency, proofread, or quality-check a manuscript.---
 
 # Review Ebook Consistency
 
