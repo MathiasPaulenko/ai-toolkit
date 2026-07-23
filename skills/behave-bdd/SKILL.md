@@ -301,7 +301,7 @@ def step_logged_in_as_admin(context):
     assert context.browser.current_url.endswith('/admin')
 ```
 
-Use sparingly â€” prefer helper functions for shared logic. `execute_steps` is best for reusing **Given** sequences in integration/E2E tests.
+Use sparingly — prefer helper functions for shared logic. `execute_steps` is best for reusing **Given** sequences in integration/E2E tests.
 
 ### `@capture` Decorator (per-step capture control)
 

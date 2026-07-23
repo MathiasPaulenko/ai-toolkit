@@ -853,6 +853,6 @@ robot-tests:
 - [RequestsLibrary Documentation](https://marketsquare.github.io/robotframework-requests/)
 - [DatabaseLibrary Documentation](https://github.com/franz-see/Robotframework-Database-Library)
 - [Robot Framework Built-in Keywords](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
-- [pabot â€” Parallel Executor](https://pabot.org/)
+- [pabot — Parallel Executor](https://pabot.org/)
 - [Robot Framework Listener Interface](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#listener-interface)
 - Related skills: `selenium-automation`, `behave-bdd`, `playwright-best-practices`, `postman`

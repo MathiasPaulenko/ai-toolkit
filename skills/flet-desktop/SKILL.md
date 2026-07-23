@@ -190,10 +190,10 @@ flet pack main.py --name MyApp --icon icon.png
 ```
 
 Options:
-- `--name` â€” application name
-- `--icon` â€” `.png` or `.ico`
-- `--distpath` â€” output directory
-- `--add-data` â€” bundle additional files
+- `--name` — application name
+- `--icon` — `.png` or `.ico`
+- `--distpath` — output directory
+- `--add-data` — bundle additional files
 
 ### macOS App Bundle
 

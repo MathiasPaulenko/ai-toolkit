@@ -17,29 +17,29 @@ Professional API testing with Postman and Newman.
 
 ```
 Collection: E-Commerce API
-â”œâ”€â”€ 1. Auth
-â”‚   â”œâ”€â”€ POST /auth/login
-â”‚   â””â”€â”€ POST /auth/refresh
-â”œâ”€â”€ 2. Products
-â”‚   â”œâ”€â”€ GET /products
-â”‚   â”œâ”€â”€ GET /products/:id
-â”‚   â””â”€â”€ POST /products
-â”œâ”€â”€ 3. Cart
-â”‚   â”œâ”€â”€ POST /cart/items
-â”‚   â”œâ”€â”€ PUT /cart/items/:id
-â”‚   â””â”€â”€ DELETE /cart/items/:id
-â”œâ”€â”€ 4. Orders
-â”‚   â”œâ”€â”€ POST /orders
-â”‚   â””â”€â”€ GET /orders/:id
-â””â”€â”€ 5. Checkout
-    â””â”€â”€ POST /checkout
+├── 1. Auth
+│   ├── POST /auth/login
+│   └── POST /auth/refresh
+├── 2. Products
+│   ├── GET /products
+│   ├── GET /products/:id
+│   └── POST /products
+├── 3. Cart
+│   ├── POST /cart/items
+│   ├── PUT /cart/items/:id
+│   └── DELETE /cart/items/:id
+├── 4. Orders
+│   ├── POST /orders
+│   └── GET /orders/:id
+└── 5. Checkout
+    └── POST /checkout
 ```
 
 ## 2. Request Best Practices
 
 ### Naming Convention
-`[METHOD] /path â€” expected behavior`  
-Example: `GET /products/404 â€” returns 404 for unknown product`
+`[METHOD] /path — expected behavior`  
+Example: `GET /products/404 — returns 404 for unknown product`
 
 ### Folder Organization
 - Group by resource/domain

@@ -86,13 +86,13 @@ add_action('wp_enqueue_scripts', function () {
 
 | Request | Template Used |
 |---------|---------------|
-| Single post | `single.php` â†’ `singular.php` â†’ `index.php` |
-| Page | `page-{slug}.php` â†’ `page-{id}.php` â†’ `page.php` |
-| Archive | `archive-{post_type}.php` â†’ `archive.php` |
-| Category | `category-{slug}.php` â†’ `category.php` |
+| Single post | `single.php` → `singular.php` → `index.php` |
+| Page | `page-{slug}.php` → `page-{id}.php` → `page.php` |
+| Archive | `archive-{post_type}.php` → `archive.php` |
+| Category | `category-{slug}.php` → `category.php` |
 | Search | `search.php` |
 | 404 | `404.php` |
-| Home (blog) | `home.php` â†’ `index.php` |
+| Home (blog) | `home.php` → `index.php` |
 | Front page | `front-page.php` |
 
 ## 5. Custom Post Types

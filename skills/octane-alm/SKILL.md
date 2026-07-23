@@ -126,7 +126,7 @@ class OctaneClient:
 ## 4. Defect Management Workflow
 
 ```
-New â†’ Open â†’ Fixed â†’ Closed
+New → Open → Fixed → Closed
   |      |
   +----> Reopened
 ```

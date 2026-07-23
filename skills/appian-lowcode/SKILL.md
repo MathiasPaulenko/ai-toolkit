@@ -16,9 +16,9 @@ trigger: When the user mentions Appian, low-code, BPM, process models, SAIL, dat
 ### Basic Process
 
 ```
-Start Event â†’ User Input Task â†’ Exclusive Gateway â†’ [Approved] â†’ Write to Database â†’ End Event
+Start Event → User Input Task → Exclusive Gateway → [Approved] → Write to Database → End Event
                                     |
-                                    +-- [Rejected] â†’ Send Notification â†’ End Event
+                                    +-- [Rejected] → Send Notification → End Event
 ```
 
 ### Node Types
@@ -126,14 +126,14 @@ a!gridField(
 
 ```
 Employee
-â”œâ”€â”€ id (Number, Primary Key)
-â”œâ”€â”€ firstName (Text, Required)
-â”œâ”€â”€ lastName (Text, Required)
-â”œâ”€â”€ email (Text, Required, Unique)
-â”œâ”€â”€ department (Text, Dropdown)
-â”œâ”€â”€ hireDate (Date)
-â”œâ”€â”€ isActive (Boolean, Default: true)
-â””â”€â”€ managerId (Number, Foreign Key â†’ Employee.id)
+├── id (Number, Primary Key)
+├── firstName (Text, Required)
+├── lastName (Text, Required)
+├── email (Text, Required, Unique)
+├── department (Text, Dropdown)
+├── hireDate (Date)
+├── isActive (Boolean, Default: true)
+└── managerId (Number, Foreign Key → Employee.id)
 ```
 
 ### Querying
@@ -242,13 +242,13 @@ a!localVariables(
 
 ```
 Application Package
-â”œâ”€â”€ Process Models
-â”œâ”€â”€ SAIL Interfaces
-â”œâ”€â”€ Data Stores & Records
-â”œâ”€â”€ Expression Rules
-â”œâ”€â”€ Connected Systems
-â”œâ”€â”€ Document Templates
-â””â”€â”€ Security: Groups & Folders
+├── Process Models
+├── SAIL Interfaces
+├── Data Stores & Records
+├── Expression Rules
+├── Connected Systems
+├── Document Templates
+└── Security: Groups & Folders
 ```
 
 ### Deployment Steps

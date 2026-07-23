@@ -666,7 +666,7 @@ API.Version=v2.1
 - [ ] Add `environment.properties` for context (browser, OS, API version)
 - [ ] Use `categories.json` to group failures by root cause
 - [ ] Do not commit generated HTML reports to version control
-- [ ] Use nested steps for complex workflows (login â†’ navigate â†’ perform action)
+- [ ] Use nested steps for complex workflows (login → navigate → perform action)
 - [ ] Set `allure.description` or `allure.description_html` for complex test logic
 
 ---
