@@ -1,4 +1,4 @@
-﻿---
+---
 name: sql-server
 version: 1.0.0
 author: Mathias Paulenko Echeverz

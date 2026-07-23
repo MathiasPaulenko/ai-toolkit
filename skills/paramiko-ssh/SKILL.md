@@ -1,4 +1,4 @@
-﻿---
+---
 name: paramiko-ssh
 version: 1.0.0
 author: Mathias Paulenko Echeverz

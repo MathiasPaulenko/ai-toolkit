@@ -1,4 +1,4 @@
-﻿---
+---
 name: pytest-advanced
 version: 1.0.0
 author: Mathias Paulenko Echeverz

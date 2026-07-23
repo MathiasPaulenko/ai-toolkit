@@ -1,4 +1,4 @@
-﻿---
+---
 name: prompt-engineering-best-practices
 version: 1.0.0
 author: Mathias Paulenko Echeverz

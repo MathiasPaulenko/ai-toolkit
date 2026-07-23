@@ -1,4 +1,4 @@
-﻿---
+---
 name: prestashop-module
 version: 1.0.0
 author: Mathias Paulenko Echeverz

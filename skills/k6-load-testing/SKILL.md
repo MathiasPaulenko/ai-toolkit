@@ -1,4 +1,4 @@
-﻿---
+---
 name: k6-load-testing
 version: 1.0.0
 author: Mathias Paulenko Echeverz

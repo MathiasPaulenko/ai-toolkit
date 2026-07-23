@@ -1,4 +1,4 @@
-﻿---
+---
 name: appian-lowcode
 version: 1.0.0
 author: Mathias Paulenko Echeverz

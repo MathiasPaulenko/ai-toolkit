@@ -1,4 +1,4 @@
-﻿---
+---
 name: ebook-writer
 version: 1.0.0
 author: Mathias Paulenko Echeverz
