@@ -1,5 +1,5 @@
----
-name: Flask API
+﻿---
+name: flask-api
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Production-grade skill for building REST APIs with Flask. Covers app factory, blueprints, extensions, configuration, testing, serialization, error handling, pagination, Docker, and deployment.

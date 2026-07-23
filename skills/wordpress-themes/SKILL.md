@@ -1,5 +1,5 @@
----
-name: WordPress Theme Development
+﻿---
+name: wordpress-themes
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: WordPress theme development standards. Covers theme structure, template hierarchy, custom post types, ACF integration, enqueueing assets, security, and performance best practices.
@@ -86,13 +86,13 @@ add_action('wp_enqueue_scripts', function () {
 
 | Request | Template Used |
 |---------|---------------|
-| Single post | `single.php` → `singular.php` → `index.php` |
-| Page | `page-{slug}.php` → `page-{id}.php` → `page.php` |
-| Archive | `archive-{post_type}.php` → `archive.php` |
-| Category | `category-{slug}.php` → `category.php` |
+| Single post | `single.php` â†’ `singular.php` â†’ `index.php` |
+| Page | `page-{slug}.php` â†’ `page-{id}.php` â†’ `page.php` |
+| Archive | `archive-{post_type}.php` â†’ `archive.php` |
+| Category | `category-{slug}.php` â†’ `category.php` |
 | Search | `search.php` |
 | 404 | `404.php` |
-| Home (blog) | `home.php` → `index.php` |
+| Home (blog) | `home.php` â†’ `index.php` |
 | Front page | `front-page.php` |
 
 ## 5. Custom Post Types

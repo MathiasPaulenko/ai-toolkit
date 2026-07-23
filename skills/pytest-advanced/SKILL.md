@@ -1,5 +1,5 @@
----
-name: Pytest Advanced
+﻿---
+name: pytest-advanced
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "Advanced pytest patterns: parametrization, fixtures (session/module/function), conftest.py, plugins (cov, xdist, mock), markers, and CI integration."
@@ -17,14 +17,14 @@ Master pytest for professional Python testing.
 
 ```
 tests/
-├── conftest.py          # Shared fixtures, hooks, plugins
-├── unit/
-│   ├── test_models.py
-│   └── test_services.py
-├── integration/
-│   └── test_api.py
-└── e2e/
-    └── test_flows.py
+â”œâ”€â”€ conftest.py          # Shared fixtures, hooks, plugins
+â”œâ”€â”€ unit/
+â”‚   â”œâ”€â”€ test_models.py
+â”‚   â””â”€â”€ test_services.py
+â”œâ”€â”€ integration/
+â”‚   â””â”€â”€ test_api.py
+â””â”€â”€ e2e/
+    â””â”€â”€ test_flows.py
 pytest.ini               # Markers, testpaths, addopts
 pyproject.toml           # Coverage thresholds, tool config
 ```
@@ -105,7 +105,7 @@ addopts = -v --tb=short --strict-markers
 ```
 
 ```python
-# conftest.py — hook to add custom CLI option
+# conftest.py â€” hook to add custom CLI option
 def pytest_addoption(parser):
     parser.addoption("--run-slow", action="store_true", default=False,
                      help="run slow tests")

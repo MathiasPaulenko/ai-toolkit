@@ -1,5 +1,5 @@
----
-name: DB2 and Oracle
+﻿---
+name: db2-oracle
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Enterprise database development for IBM DB2 and Oracle. Covers PL/SQL, SQL/PL, partitioning, performance tuning, XML/JSON handling, and migration patterns.

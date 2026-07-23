@@ -1,5 +1,5 @@
----
-name: Paramiko SSH
+﻿---
+name: paramiko-ssh
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: SSH automation with Paramiko. Covers connection handling, command execution, file transfer (SFTP), key-based auth, bastion hosts, and async patterns for remote server management.

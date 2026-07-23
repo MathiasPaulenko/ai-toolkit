@@ -1,5 +1,5 @@
----
-name: Android Native
+﻿---
+name: android-native
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Production-grade skill for native Android development with Jetpack Compose, MVVM, Hilt, Room, and Compose Navigation. Covers project setup, UI, architecture, DI, persistence, networking, and testing.
@@ -793,7 +793,7 @@ class UserRepositoryTest {
 ## 9. Best Practices Checklist
 
 - [ ] Application Factory pattern: `@HiltAndroidApp` in `Application` class
-- [ ] Compose state is unidirectional: ViewModel → StateFlow → Composable
+- [ ] Compose state is unidirectional: ViewModel â†’ StateFlow â†’ Composable
 - [ ] `collectAsStateWithLifecycle()` used instead of `collectAsState()`
 - [ ] UI state represented as sealed interface (`Loading`, `Success`, `Error`)
 - [ ] Repository pattern with local/remote data sources
@@ -834,8 +834,8 @@ class UserRepositoryTest {
 
 ## 11. References
 
-- [Android Developers — Jetpack Compose](https://developer.android.com/jetpack/compose)
-- [Material Design 3 — Compose](https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary)
+- [Android Developers â€” Jetpack Compose](https://developer.android.com/jetpack/compose)
+- [Material Design 3 â€” Compose](https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary)
 - [Hilt Documentation](https://example.com/android-hilt)
 - [Room Documentation](https://developer.android.com/training/data-storage/room)
 - [Retrofit](https://square.github.io/retrofit/)

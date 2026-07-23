@@ -1,5 +1,5 @@
----
-name: Prompt Engineering Best Practices
+﻿---
+name: prompt-engineering-best-practices
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "Best practices for designing high-quality prompts: Chain-of-Thought, Few-shot, Role Prompting, Self-Consistency, and output structuring. Apply to system, task, and template prompts."
@@ -130,7 +130,7 @@ Output:
 ### Few-Shot with Reasoning
 
 ```markdown
-## Example 1 — Test Case Generation
+## Example 1 â€” Test Case Generation
 Requirement: "Users can log in with email and password."
 Reasoning: This is a happy-path authentication test. Need valid credentials, login action, and dashboard assertion.
 Output:
@@ -138,7 +138,7 @@ Output:
 |----|----------|-------|----------|
 | TC-01 | Valid login | 1. Enter email 2. Enter password 3. Click Login | Dashboard loads |
 
-## Example 2 — Edge Case
+## Example 2 â€” Edge Case
 Requirement: "Users can log in with email and password."
 Reasoning: This tests the boundary of empty password field, which should trigger validation before API call.
 Output:

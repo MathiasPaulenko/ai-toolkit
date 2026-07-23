@@ -1,5 +1,5 @@
----
-name: Ebook Writer
+﻿---
+name: ebook-writer
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Comprehensive ebook creation skill covering outlining, chapter writing, editing, formatting, and marketing. Supports technical, educational, and narrative ebooks.
@@ -26,7 +26,7 @@ End-to-end skill for creating professional ebooks with AI assistance.
 ## 2. The Ebook Creation Pipeline
 
 ```
-Idea → Research → Outline → Write → Edit → Format → Publish → Market
+Idea â†’ Research â†’ Outline â†’ Write â†’ Edit â†’ Format â†’ Publish â†’ Market
 ```
 
 ### Phase 1: Ideation (1-2 hours)
@@ -118,15 +118,15 @@ Before publishing, verify:
 ## 6. Related Prompts
 
 Use these prompts from `prompts/ebooks/`:
-- `generate-ebook-outline` — Structure and planning
-- `research-topic-for-ebook` — Content research
-- `generate-ebook-title-options` — Naming
-- `write-ebook-introduction` — Opening chapter
-- `write-ebook-chapter` — Chapter drafting
-- `write-ebook-conclusion` — Closing chapter
-- `edit-ebook-chapter` — Revision
-- `generate-ebook-case-study` — Real-world examples
-- `generate-ebook-exercises` — Learning reinforcement
-- `format-ebook-for-export` — PDF/EPUB preparation
-- `generate-ebook-marketing-copy` — Promotion
-- `review-ebook-consistency` — Quality check
+- `generate-ebook-outline` â€” Structure and planning
+- `research-topic-for-ebook` â€” Content research
+- `generate-ebook-title-options` â€” Naming
+- `write-ebook-introduction` â€” Opening chapter
+- `write-ebook-chapter` â€” Chapter drafting
+- `write-ebook-conclusion` â€” Closing chapter
+- `edit-ebook-chapter` â€” Revision
+- `generate-ebook-case-study` â€” Real-world examples
+- `generate-ebook-exercises` â€” Learning reinforcement
+- `format-ebook-for-export` â€” PDF/EPUB preparation
+- `generate-ebook-marketing-copy` â€” Promotion
+- `review-ebook-consistency` â€” Quality check

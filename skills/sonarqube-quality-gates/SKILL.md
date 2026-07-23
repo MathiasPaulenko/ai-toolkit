@@ -1,5 +1,5 @@
----
-name: SonarQube Quality Gates
+﻿---
+name: sonarqube-quality-gates
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: SonarQube quality gate configuration, coverage rules, custom profiles, and CI/CD integration for maintaining code quality across projects.
@@ -15,7 +15,7 @@ trigger: When the user mentions SonarQube, quality gates, code coverage threshol
 
 | Term | Definition |
 |------|------------|
-| **Quality Gate** | Pass/fail conditions a project must meet (e.g., coverage ≥ 80%). |
+| **Quality Gate** | Pass/fail conditions a project must meet (e.g., coverage â‰¥ 80%). |
 | **Quality Profile** | Set of active rules for a language (e.g., Sonar way for Python). |
 | **Issue** | Code smell, bug, or vulnerability detected by a rule. |
 | **Measure** | Metric value (coverage, duplication, complexity). |
@@ -27,8 +27,8 @@ Default conditions for overall code and new code:
 
 | Metric | Threshold |
 |--------|-----------|
-| Coverage | ≥ 80% |
-| Duplicated Lines | ≤ 3% |
+| Coverage | â‰¥ 80% |
+| Duplicated Lines | â‰¤ 3% |
 | Maintainability Rating | A |
 | Reliability Rating | A |
 | Security Rating | A |

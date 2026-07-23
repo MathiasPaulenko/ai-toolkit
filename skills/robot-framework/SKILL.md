@@ -1,5 +1,5 @@
----
-name: Robot Framework
+﻿---
+name: robot-framework
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Production-grade skill for Robot Framework keyword-driven testing. Covers project structure, keywords, variables, libraries (Selenium, Requests, Database), resources, setup/teardown, tags, CLI execution, and CI/CD integration.
@@ -853,6 +853,6 @@ robot-tests:
 - [RequestsLibrary Documentation](https://marketsquare.github.io/robotframework-requests/)
 - [DatabaseLibrary Documentation](https://github.com/franz-see/Robotframework-Database-Library)
 - [Robot Framework Built-in Keywords](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
-- [pabot — Parallel Executor](https://pabot.org/)
+- [pabot â€” Parallel Executor](https://pabot.org/)
 - [Robot Framework Listener Interface](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#listener-interface)
 - Related skills: `selenium-automation`, `behave-bdd`, `playwright-best-practices`, `postman`

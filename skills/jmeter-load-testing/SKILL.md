@@ -1,5 +1,5 @@
----
-name: JMeter Load Testing
+﻿---
+name: jmeter-load-testing
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Load and performance testing with Apache JMeter. Covers test plan design, thread groups, samplers, assertions, listeners, distributed testing, and CI/CD integration.
@@ -15,17 +15,17 @@ trigger: When the user mentions JMeter, load testing, performance testing, stres
 
 ```
 Test Plan
-├── Thread Group
-│   ├── HTTP Request Defaults
-│   ├── HTTP Cookie Manager
-│   ├── HTTP Header Manager
-│   ├── CSV Data Set Config
-│   ├── HTTP Request (Login)
-│   ├── HTTP Request (Get Data)
-│   └── HTTP Request (Submit)
-├── View Results Tree (Debug)
-├── Summary Report
-└── Response Assertions
+â”œâ”€â”€ Thread Group
+â”‚   â”œâ”€â”€ HTTP Request Defaults
+â”‚   â”œâ”€â”€ HTTP Cookie Manager
+â”‚   â”œâ”€â”€ HTTP Header Manager
+â”‚   â”œâ”€â”€ CSV Data Set Config
+â”‚   â”œâ”€â”€ HTTP Request (Login)
+â”‚   â”œâ”€â”€ HTTP Request (Get Data)
+â”‚   â””â”€â”€ HTTP Request (Submit)
+â”œâ”€â”€ View Results Tree (Debug)
+â”œâ”€â”€ Summary Report
+â””â”€â”€ Response Assertions
 ```
 
 ## 2. Thread Group Configuration

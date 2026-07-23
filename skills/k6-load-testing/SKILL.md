@@ -1,5 +1,5 @@
----
-name: k6 Load Testing
+﻿---
+name: k6-load-testing
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "Modern load testing with k6: JavaScript scripting, Grafana dashboards, cloud execution, thresholds, extensions, and CI/CD integration."

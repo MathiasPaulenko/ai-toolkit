@@ -1,5 +1,5 @@
----
-name: Behave BDD
+﻿---
+name: behave-bdd
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Production-grade skill for BDD testing with Python Behave (v1.3.0+). Covers Gherkin, step implementations, environment hooks, fixtures, tags, data tables, scenario outlines, formatters, and CI/CD integration.
@@ -301,7 +301,7 @@ def step_logged_in_as_admin(context):
     assert context.browser.current_url.endswith('/admin')
 ```
 
-Use sparingly — prefer helper functions for shared logic. `execute_steps` is best for reusing **Given** sequences in integration/E2E tests.
+Use sparingly â€” prefer helper functions for shared logic. `execute_steps` is best for reusing **Given** sequences in integration/E2E tests.
 
 ### `@capture` Decorator (per-step capture control)
 

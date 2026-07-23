@@ -1,5 +1,5 @@
----
-name: Karate API Testing
+﻿---
+name: karate-api-testing
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "API testing with Karate DSL: REST, GraphQL, gRPC, mocking, parallel execution, CI/CD integration, and data-driven tests."

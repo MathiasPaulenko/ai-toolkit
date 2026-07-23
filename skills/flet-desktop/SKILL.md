@@ -1,5 +1,5 @@
----
-name: Flet Desktop
+﻿---
+name: flet-desktop
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Desktop application development with Flet (Flutter-based Python). Covers UI layout, state management, navigation, file handling, packaging, and cross-platform distribution.
@@ -190,10 +190,10 @@ flet pack main.py --name MyApp --icon icon.png
 ```
 
 Options:
-- `--name` — application name
-- `--icon` — `.png` or `.ico`
-- `--distpath` — output directory
-- `--add-data` — bundle additional files
+- `--name` â€” application name
+- `--icon` â€” `.png` or `.ico`
+- `--distpath` â€” output directory
+- `--add-data` â€” bundle additional files
 
 ### macOS App Bundle
 

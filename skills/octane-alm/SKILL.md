@@ -1,5 +1,5 @@
----
-name: Octane ALM
+﻿---
+name: octane-alm
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Micro Focus ALM Octane integration guide. Covers REST API, entity management, defect tracking, test automation integration, and CI/CD pipeline reporting.
@@ -126,7 +126,7 @@ class OctaneClient:
 ## 4. Defect Management Workflow
 
 ```
-New → Open → Fixed → Closed
+New â†’ Open â†’ Fixed â†’ Closed
   |      |
   +----> Reopened
 ```

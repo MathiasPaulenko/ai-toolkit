@@ -1,5 +1,5 @@
----
-name: XCTest iOS
+﻿---
+name: xctest-ios
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "Native iOS testing with XCTest: unit tests, UI automation, performance, snapshot testing, parallel execution, and CI/CD with Xcode Cloud."

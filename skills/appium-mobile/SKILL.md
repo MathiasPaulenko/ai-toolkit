@@ -1,5 +1,5 @@
----
-name: Appium Mobile
+﻿---
+name: appium-mobile
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "Mobile automation with Appium: iOS and Android, gestures, device farms (BrowserStack, Sauce Labs), parallel execution, and CI/CD."
@@ -17,18 +17,18 @@ Mobile test automation with Appium for iOS and Android.
 
 ```
 Appium Test Suite
-├── tests/
-│   ├── conftest.py         # Driver fixtures
-│   ├── test_login.py
-│   ├── test_checkout.py
-│   └── pages/
-│       ├── base_page.py
-│       ├── login_page.py
-│       └── home_page.py
-├── capabilities/
-│   ├── android.json        # Device configs
-│   └── ios.json
-└── pytest.ini
+â”œâ”€â”€ tests/
+â”‚   â”œâ”€â”€ conftest.py         # Driver fixtures
+â”‚   â”œâ”€â”€ test_login.py
+â”‚   â”œâ”€â”€ test_checkout.py
+â”‚   â””â”€â”€ pages/
+â”‚       â”œâ”€â”€ base_page.py
+â”‚       â”œâ”€â”€ login_page.py
+â”‚       â””â”€â”€ home_page.py
+â”œâ”€â”€ capabilities/
+â”‚   â”œâ”€â”€ android.json        # Device configs
+â”‚   â””â”€â”€ ios.json
+â””â”€â”€ pytest.ini
 ```
 
 ## 2. Driver Setup
@@ -106,7 +106,7 @@ class LoginPage:
 
 | Strategy | Android | iOS | Best Practice |
 |----------|---------|-----|---------------|
-| `ACCESSIBILITY_ID` | `content-desc` | `accessibilityLabel` | Preferred — stable |
+| `ACCESSIBILITY_ID` | `content-desc` | `accessibilityLabel` | Preferred â€” stable |
 | `ID` | `resource-id` | `name` (limited) | Good for unique IDs |
 | `XPATH` | Any XML path | Any XML path | Slow; use sparingly |
 | `CLASS_NAME` | `android.widget.Button` | `XCUIElementTypeButton` | For type filtering |

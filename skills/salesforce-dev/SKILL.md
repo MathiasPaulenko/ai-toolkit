@@ -1,5 +1,5 @@
----
-name: Salesforce Development
+﻿---
+name: salesforce-dev
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Salesforce development guide. Covers Apex triggers, Lightning Web Components (LWC), SOQL, SOSL, platform events, and deployment via SFDX.

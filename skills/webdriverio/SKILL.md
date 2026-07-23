@@ -1,5 +1,5 @@
 ---
-name: WebdriverIO
+name: webdriverio
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "WebdriverIO for E2E testing: Page Object Model, selectors, cross-browser execution, mobile emulation, visual regression, and CI/CD integration."

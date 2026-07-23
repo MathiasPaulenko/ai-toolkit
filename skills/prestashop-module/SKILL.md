@@ -1,5 +1,5 @@
----
-name: PrestaShop Module Development
+﻿---
+name: prestashop-module
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: PrestaShop module development guide. Covers module structure, hooks, controllers, database schemas, payment modules, and overrides in PHP/Smarty.

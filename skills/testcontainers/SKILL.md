@@ -1,5 +1,5 @@
 ---
-name: Testcontainers
+name: testcontainers
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: "Integration testing with Testcontainers: PostgreSQL, Redis, Kafka, RabbitMQ, localstack. Spin up real dependencies in Docker for reliable integration tests."

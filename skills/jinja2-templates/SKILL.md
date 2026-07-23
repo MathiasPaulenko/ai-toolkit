@@ -1,5 +1,5 @@
----
-name: Jinja2 Templates
+﻿---
+name: jinja2-templates
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Production-grade skill for Jinja2 templating in Python. Covers syntax, inheritance, macros, filters, tests, escaping, security (autoescape, XSS), Flask/FastAPI integration, and standalone code generation.
@@ -238,7 +238,7 @@ env = Environment(trim_blocks=True, lstrip_blocks=True)
 {# templates/pages/home.html #}
 {% extends "base.html" %}
 
-{% block title %}Home — My App{% endblock %}
+{% block title %}Home â€” My App{% endblock %}
 
 {% block extra_css %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
@@ -270,7 +270,7 @@ env = Environment(trim_blocks=True, lstrip_blocks=True)
 {% endblock %}
 ```
 
-### `super()` — Call Parent Block Content
+### `super()` â€” Call Parent Block Content
 
 ```jinja2
 {% block extra_js %}
@@ -390,7 +390,7 @@ env = Environment(trim_blocks=True, lstrip_blocks=True)
 {{ items | unique }}
 {{ number | round(2) }}
 {{ price | default(0.00) }}
-{{ html_content | safe }}              {# Dangerous — use with care #}
+{{ html_content | safe }}              {# Dangerous â€” use with care #}
 {{ user_input | escape }}              {# Force escaping #}
 ```
 
@@ -504,16 +504,16 @@ app.jinja_env.tests["strong_password"] = is_strong_password
 Jinja2 escapes all output by default in HTML contexts. Never disable this unless you explicitly trust the source.
 
 ```jinja2
-{# SAFE — autoescaped by default #}
+{# SAFE â€” autoescaped by default #}
 {{ user_input }}
 
-{# SAFE — explicit escaping #}
+{# SAFE â€” explicit escaping #}
 {{ user_input | escape }}
 
-{# DANGEROUS — marks as safe, bypasses escaping #}
+{# DANGEROUS â€” marks as safe, bypasses escaping #}
 {{ user_input | safe }}
 
-{# SAFE — if content is from a trusted Markdown parser #}
+{# SAFE â€” if content is from a trusted Markdown parser #}
 {{ markdown_content | markdown | safe }}
 ```
 
@@ -766,8 +766,8 @@ output = template.render(name="World")
 
 - [Jinja2 Documentation](https://jinja.palletsprojects.com/en/latest/)
 - [Jinja2 API](https://jinja.palletsprojects.com/en/latest/api/)
-- [Flask — Templating](https://flask.palletsprojects.com/en/3.0.x/templating/)
-- [FastAPI — Templates](https://fastapi.tiangolo.com/advanced/templates/)
+- [Flask â€” Templating](https://flask.palletsprojects.com/en/3.0.x/templating/)
+- [FastAPI â€” Templates](https://fastapi.tiangolo.com/advanced/templates/)
 - [MarkupSafe](https://markupsafe.palletsprojects.com/en/latest/)
 - [bleach (HTML sanitizer)](https://bleach.readthedocs.io/)
 - Related skills: `flask-api`, `fastapi-templates`

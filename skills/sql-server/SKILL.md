@@ -1,5 +1,5 @@
----
-name: SQL Server
+﻿---
+name: sql-server
 version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: Microsoft SQL Server development guide. Covers T-SQL syntax, stored procedures, indexing strategies, temporal tables, JSON support, Always Encrypted, and Azure SQL specifics.
