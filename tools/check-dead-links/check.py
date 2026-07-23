@@ -13,11 +13,13 @@ Usage:
 
 import argparse
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
 
 import urllib.request
+from http.cookiejar import CookieJar
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 URL_PATTERN = re.compile(r"https?://[^\s\)\]\>\"]+")
@@ -33,19 +35,53 @@ def find_urls(text: str) -> set[str]:
     return set(cleaned)
 
 
+def _request(url: str, method: str, timeout: int) -> tuple[bool, int | None]:
+    req = urllib.request.Request(url, method=method)
+    req.add_header(
+        "User-Agent",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    )
+    req.add_header(
+        "Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    )
+    opener = urllib.request.build_opener(
+        urllib.request.HTTPRedirectHandler(),
+        urllib.request.HTTPCookieProcessor(CookieJar()),
+    )
+    with opener.open(req, timeout=timeout) as resp:
+        return True, resp.getcode()
+
+
 def check_url(url: str, timeout: int = 10) -> tuple[bool, int | None]:
-    try:
-        req = urllib.request.Request(url, method="HEAD")
-        req.add_header("User-Agent", "Mozilla/5.0 (ai-toolkit link checker)")
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return True, resp.getcode()
-    except urllib.error.HTTPError as e:
-        # 403 may be blocked by bot protection; treat as OK-ish
-        if e.code == 403:
-            return True, 403
-        return False, e.code
-    except Exception:
-        return False, None
+    # Some sites reject or rate-limit HEAD requests; fall back to GET.
+    # Retry on transient network errors with a short backoff.
+    methods = ("HEAD", "GET")
+    for method in methods:
+        for attempt in range(3):
+            try:
+                return _request(url, method, timeout)
+            except urllib.error.HTTPError as e:
+                # 403/429 may be bot protection or rate limits; retry once, then accept.
+                if e.code in {403, 429} and attempt < 2:
+                    time.sleep(1.5 * (attempt + 1))
+                    continue
+                if e.code == 403:
+                    return True, 403
+                if method == "GET":
+                    return False, e.code
+                # If HEAD fails with a server error, try GET before giving up.
+                if e.code >= 500:
+                    break
+                return False, e.code
+            except Exception:
+                if attempt < 2:
+                    time.sleep(1.5 * (attempt + 1))
+                    continue
+                # Fall back to GET if HEAD consistently fails at network level.
+                if method == "HEAD":
+                    break
+                return False, None
+    return False, None
 
 
 def should_ignore(url: str, ignore_patterns: list[str]) -> bool:
@@ -77,7 +113,7 @@ def scan_directory(
 
     # Check URLs concurrently
     results: dict[str, tuple[bool, int | None]] = {}
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         futures = {
             executor.submit(check_url, url, timeout): url for url in url_to_files
         }
