@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "wavexis": {
+      "command": "uvx",
+      "args": ["wavexis-mcp", "--caps", "core,devtools,a11y"]
+    }
+  }
+}

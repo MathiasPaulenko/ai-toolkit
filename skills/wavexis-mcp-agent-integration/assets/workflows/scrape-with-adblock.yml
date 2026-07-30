@@ -1,0 +1,12 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - block:
+      pattern: "*.ads.example.com/*"
+  - block:
+      pattern: "*.analytics.example.com/*"
+  - scrape:
+      format: markdown
+  - screenshot:
+      full_page: true

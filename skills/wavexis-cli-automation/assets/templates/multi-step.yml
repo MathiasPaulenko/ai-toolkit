@@ -1,0 +1,23 @@
+actions:
+  - navigate: https://example.com/login
+  - wait_for:
+      selector: "#username"
+      visible: true
+  - fill:
+      selector: "#username"
+      text: admin@example.com
+  - fill:
+      selector: "#password"
+      text: changeme
+  - click:
+      selector: "#submit"
+  - wait_for:
+      selector: ".dashboard"
+      visible: true
+      timeout: 10000
+  - screenshot:
+      full_page: true
+      output: dashboard.png
+  - eval:
+      expression: document.title
+      assert: "== Dashboard"

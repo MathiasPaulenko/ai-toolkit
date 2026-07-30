@@ -1,0 +1,8 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - screenshot:
+      full_page: true
+  - scrape:
+      format: markdown

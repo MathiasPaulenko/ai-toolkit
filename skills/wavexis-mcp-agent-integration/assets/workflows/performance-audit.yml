@@ -1,0 +1,18 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - cwv:
+      budget:
+        LCP_ms: 2500
+        CLS: 0.1
+        INP_ms: 200
+  - lighthouse:
+      categories:
+        - performance
+        - accessibility
+      form_factor: mobile
+  - assert:
+      expression: "document.querySelector('.hero').offsetHeight > 100"
+      expected: "true"
+      op: equals

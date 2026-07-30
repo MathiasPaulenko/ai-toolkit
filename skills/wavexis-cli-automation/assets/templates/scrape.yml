@@ -1,0 +1,18 @@
+actions:
+  - block:
+      pattern: "*/ads/*"
+  - navigate: https://example.com
+  - wait_for:
+      selector: "article"
+      timeout: 15000
+  - scrape:
+      selector: "article"
+      format: markdown
+      output: content.md
+  - scrape:
+      selector: "h1"
+      format: text
+      output: title.txt
+  - screenshot:
+      full_page: true
+      output: proof.png

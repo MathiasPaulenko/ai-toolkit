@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wavexis": {
+      "command": "uvx",
+      "args": ["wavexis-mcp", "--caps", "all"]
+    }
+  }
+}

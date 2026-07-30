@@ -1,0 +1,18 @@
+actions:
+  - navigate: https://staging.example.com
+  - wait_for:
+      selector: body
+      visible: true
+  - eval:
+      expression: document.title
+      assert: "== My App - Staging"
+  - eval:
+      expression: document.querySelector("#status").textContent
+      assert: "contains Operational"
+  - screenshot:
+      output: ci-screenshot.png
+  - cwv:
+      budget:
+        lcp_ms: 2500
+        cls: 0.1
+        inp_ms: 200

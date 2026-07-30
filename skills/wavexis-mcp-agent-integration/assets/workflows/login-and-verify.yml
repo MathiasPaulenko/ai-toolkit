@@ -1,0 +1,21 @@
+actions:
+  - navigate:
+      url: https://example.com/login
+      wait_until: networkidle
+  - fill:
+      selector: "#username"
+      text: admin
+  - fill:
+      selector: "#password"
+      text: password123
+  - click:
+      selector: "#login-button"
+  - wait_for:
+      selector: ".dashboard"
+      visible: true
+      timeout: 10000
+  - screenshot:
+      full_page: true
+  - assert_url:
+      expected: https://example.com/dashboard
+      op: contains

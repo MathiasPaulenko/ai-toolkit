@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "wavexis": {
+      "url": "http://localhost:8765"
+    }
+  }
+}

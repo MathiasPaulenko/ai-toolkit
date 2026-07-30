@@ -1,0 +1,8 @@
+actions:
+  - navigate: https://example.com
+  - wait_for:
+      selector: body
+      visible: true
+  - screenshot:
+      full_page: true
+      output: screenshot.png
