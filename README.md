@@ -312,6 +312,60 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 - Technical reference material goes in `references/`; executables and templates in `assets/`
 - Example templates are in `_template/` within each category
 
+## Install Skills
+
+Use the `skills.sh` script to install all skills from this repository into your IDE's skills directory (Windsurf, Cursor, etc.).
+
+### Prerequisites
+
+- Bash shell (Linux, macOS, WSL, or Git Bash on Windows)
+- This repository cloned locally
+
+### Install all skills
+
+```bash
+# Clone the repository
+git clone https://github.com/MathiasPaulenko/ai-toolkit.git
+cd ai-toolkit
+
+# Install skills to the default Windsurf directory
+bash tools/skills.sh
+```
+
+### Install to a custom directory
+
+```bash
+# Specify a custom target directory
+bash tools/skills.sh /path/to/your/ide/skills
+```
+
+### View skill statistics
+
+```bash
+# Show installed skill metrics (count, size, heaviest skills)
+bash tools/skills.sh --stats
+
+# Stats for a custom directory
+bash tools/skills.sh --stats /path/to/your/ide/skills
+```
+
+### What the script does
+
+- Copies every skill folder that contains a `SKILL.md` file
+- Skips the `_template/` directory
+- Replaces existing skills with the latest version
+- Reports progress per skill (`✅ installed` / `⚠️ skipped`)
+
+### Default target directory
+
+The default target is the Windsurf skills directory:
+
+```text
+C:\Users\<username>\.codeium\windsurf\skills
+```
+
+Override it by passing a path as the first argument.
+
 ## Quick Start
 
 Copy the desired resource into the model context or reference it from your IDE configuration (Cursor Rules, Devin Workflows, etc.).
