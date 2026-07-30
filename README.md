@@ -2,18 +2,36 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (136)
+## Resources (156)
 
 | Category | Count |
 |-----------|----------|
-| [Skills](#skills) | 27 |
-| [Agents](#agents) | 10 |
+| [Skills](#skills) | 40 |
+| [Agents](#agents) | 13 |
 | [Prompts](#prompts) | 65 |
-| [Rules](#rules) | 14 |
-| [Workflows](#workflows) | 14 |
+| [Rules](#rules) | 15 |
+| [Workflows](#workflows) | 17 |
 | [Tools](#tools) | 6 |
 
 ### Skills
+
+#### Wave Ecosystem (13)
+
+| Skill | Tags |
+|-------|------|
+| [`wave-ecosystem-guide`](skills/wave-ecosystem-guide/SKILL.md) | `wave`, `ecosystem`, `overview`, `tool-selection` |
+| [`wavexis-cli-automation`](skills/wavexis-cli-automation/SKILL.md) | `wavexis`, `cli`, `automation`, `yaml` |
+| [`wavexis-mcp-agent-integration`](skills/wavexis-mcp-agent-integration/SKILL.md) | `mcp`, `wavexis`, `llm`, `agent-integration` |
+| [`cdpwave-testing`](skills/cdpwave-testing/SKILL.md) | `cdp`, `chrome`, `testing`, `async` |
+| [`bidiwave-cross-browser`](skills/bidiwave-cross-browser/SKILL.md) | `bidi`, `cross-browser`, `firefox`, `edge` |
+| [`wavexis-web-scraping`](skills/wavexis-web-scraping/SKILL.md) | `scraping`, `wavexis`, `extraction`, `css-selectors` |
+| [`wavexis-performance-audit`](skills/wavexis-performance-audit/SKILL.md) | `performance`, `cwv`, `lighthouse`, `wavexis` |
+| [`wavexis-accessibility`](skills/wavexis-accessibility/SKILL.md) | `accessibility`, `axe-core`, `wcag`, `a11y-tree` |
+| [`wavexis-ci-cd`](skills/wavexis-ci-cd/SKILL.md) | `ci-cd`, `assertions`, `visual-regression`, `github-actions` |
+| [`wavexis-network-testing`](skills/wavexis-network-testing/SKILL.md) | `network`, `har`, `mocking`, `throttling` |
+| [`wavexis-session-recording`](skills/wavexis-session-recording/SKILL.md) | `session-recording`, `replay`, `yaml`, `ci-cd` |
+| [`cdpwave-debugging`](skills/cdpwave-debugging/SKILL.md) | `debugging`, `breakpoints`, `cpu-profiling`, `heap-snapshots` |
+| [`bidiwave-network-interception`](skills/bidiwave-network-interception/SKILL.md) | `network-interception`, `bidi`, `mocking`, `request-modification` |
 
 #### Testing & QA (13)
 
@@ -58,6 +76,14 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | [`prompt-engineering-best-practices`](skills/prompt-engineering-best-practices/SKILL.md) | `prompt-engineering`, `llm`, `cot`, `few-shot`, `role-prompting` |
 
 ### Agents
+
+#### Wave Ecosystem (3)
+
+| Agent | Type |
+|-------|------|
+| [`wave-automation-engineer`](agents/wave-automation-engineer/agent.md) | `coding` |
+| [`wave-test-architect`](agents/wave-test-architect/agent.md) | `review` |
+| [`wave-mcp-orchestrator`](agents/wave-mcp-orchestrator/agent.md) | `automation` |
 
 #### QA & Testing (7)
 
@@ -173,7 +199,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 ### Rules
 
-#### Coding Standards (4)
+#### Coding Standards (5)
 
 | Rule | Category |
 |------|-----------|
@@ -181,6 +207,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | [`java-coding-rules`](rules/coding/java-coding-rules.md) | Java |
 | [`javascript-coding-rules`](rules/coding/javascript-coding-rules.md) | JavaScript / TypeScript |
 | [`sql-coding-rules`](rules/coding/sql-coding-rules.md) | SQL |
+| [`wave-ecosystem-rules`](rules/coding/wave-ecosystem-rules.md) | Wave Ecosystem |
 
 #### QA & Testing (7)
 
@@ -208,6 +235,14 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | [`ci-cd-testing-rules`](rules/review/ci-cd-testing-rules.md) | Pipeline testing |
 
 ### Workflows
+
+#### Wave Ecosystem (3)
+
+| Workflow | Purpose |
+|----------|-----------|
+| [`wave-cross-browser-test`](workflows/wave-cross-browser-test.md) | Cross-browser testing with bidiwave + cdpwave |
+| [`wave-ci-visual-regression`](workflows/wave-ci-visual-regression.md) | Visual regression testing in GitHub Actions |
+| [`wave-mcp-setup`](workflows/wave-mcp-setup.md) | wavexis-mcp setup across IDEs |
 
 #### DevOps & Deployment (6)
 
