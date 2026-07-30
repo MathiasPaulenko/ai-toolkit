@@ -1,0 +1,57 @@
+name: Performance Gate
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main]
+
+jobs:
+  performance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install wavexis
+        run: pip install wavexis[cdp]
+
+      - name: Install Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update && sudo apt-get install -y google-chrome-stable
+
+      - name: Run CWV audit
+        run: |
+          wavexis cwv ${{ secrets.STAGING_URL }} \
+            --budget ci-budget.json \
+            --assert \
+            --mobile \
+            --throttle \
+            --repeats 3 \
+            --output cwv-results.json
+
+      - name: Run Lighthouse audit
+        run: |
+          wavexis lighthouse ${{ secrets.STAGING_URL }} \
+            --categories performance,accessibility \
+            --form-factor mobile \
+            --throttle \
+            --budget lighthouse-budget.json \
+            --assert \
+            --output lighthouse-report.html \
+            --format html
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-results
+          path: |
+            cwv-results.json
+            lighthouse-report.html

@@ -1,0 +1,14 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - crawl:
+      depth: 3
+      url_filter: "*/blog/*"
+      url_exclude:
+        - "*/blog/page/*"
+        - "*/blog/tag/*"
+        - "*/blog/category/*"
+      delay: 2
+      format: markdown
+      output_dir: ./scraped-blog/

@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  wavexis:
+    image: ghcr.io/mathiaspaulenko/wavexis:latest
+    ports:
+      - "9222:9222"
+    environment:
+      - WAVEXIS_PORT=9222
+      - WAVEXIS_RATE_LIMIT=10
+      - WAVEXIS_MAX_SESSIONS=5
+      - WAVEXIS_HEADLESS=true
+      - WAVEXIS_TIMEOUT=30000
+    volumes:
+      - ./output:/app/output
+      - ./baselines:/app/baselines
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9222/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped

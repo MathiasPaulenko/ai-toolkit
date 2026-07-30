@@ -1,0 +1,31 @@
+actions:
+  - navigate:
+      url: https://staging.example.com
+      wait_until: networkidle
+  - assert:
+      title: "== Welcome"
+      url: "matches https://staging\\.example\\.com"
+      text: "contains Sign In"
+      text: "!contains Error"
+  - screenshot:
+      full_page: true
+      output: ./screenshots/staging.png
+  - cwv:
+      mobile: true
+      throttle: true
+      budget:
+        LCP_ms: 2500
+        CLS: 0.1
+        INP_ms: 200
+  - axe:
+      tags:
+        - wcag2a
+        - wcag2aa
+      impact_threshold: serious
+      assert: true
+      output: ./axe-results.json
+  - visual_diff:
+      baseline: ./baselines/homepage.png
+      threshold: 0.1
+      assert: diff_percentage <= 0.1
+      output: ./diffs/homepage-diff.png

@@ -1,0 +1,27 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - cwv:
+      budget:
+        LCP_ms: 2500
+        CLS: 0.1
+        INP_ms: 200
+  - lighthouse:
+      categories:
+        - performance
+        - accessibility
+        - best-practices
+        - seo
+      form_factor: mobile
+  - perf:
+      trace: true
+      output: trace.json
+  - perf:
+      coverage: true
+      output: js-coverage.json
+  - perf:
+      css_coverage: true
+      output: css-coverage.json
+  - screenshot:
+      full_page: true

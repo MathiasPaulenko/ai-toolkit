@@ -1,0 +1,19 @@
+actions:
+  - navigate:
+      url: https://protected.example.com
+      wait_until: networkidle
+  - stealth:
+      enabled: true
+      user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      extra_args:
+        - "--disable-blink-features=AutomationControlled"
+        - "--window-size=1920,1080"
+  - wait_for:
+      selector: ".content"
+      visible: true
+      timeout: 10000
+  - scrape:
+      format: json
+      selector: "[data-product-id]"
+  - screenshot:
+      full_page: true

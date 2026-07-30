@@ -1,0 +1,48 @@
+session:
+  name: Form Fill Flow
+  description: Record a form submission flow with validation
+  recorded_at: "2024-01-15T11:00:00Z"
+  viewport: "1280x720"
+
+actions:
+  - navigate:
+      url: https://example.com/form
+      wait_until: networkidle
+  - wait_for:
+      selector: "#contact-form"
+      state: visible
+  - input:
+      selector: "#first-name"
+      value: "Alice"
+      clear: true
+  - input:
+      selector: "#last-name"
+      value: "Smith"
+      clear: true
+  - input:
+      selector: "#email"
+      value: "alice.smith@example.com"
+      clear: true
+  - input:
+      selector: "#phone"
+      value: "+1-555-123-4567"
+      clear: true
+  - select:
+      selector: "#country"
+      value: "US"
+  - input:
+      selector: "#message"
+      value: "This is a test message for the form fill session."
+      clear: true
+  - click:
+      selector: "#submit"
+  - wait_for:
+      selector: ".success-message"
+      state: visible
+      timeout: 10000
+  - assert:
+      text: "contains Submitted"
+      text: "!contains Error"
+  - screenshot:
+      full_page: true
+      output: ./screenshots/form-fill-result.png

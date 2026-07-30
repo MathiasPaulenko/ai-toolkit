@@ -1,0 +1,34 @@
+session:
+  name: Login Flow
+  description: Record a standard login flow from landing to dashboard
+  recorded_at: "2024-01-15T10:30:00Z"
+  viewport: "1280x720"
+
+actions:
+  - navigate:
+      url: https://example.com/login
+      wait_until: networkidle
+  - wait_for:
+      selector: "#login-form"
+      state: visible
+  - input:
+      selector: "#username"
+      value: "${TEST_USERNAME}"
+      clear: true
+  - input:
+      selector: "#password"
+      value: "${TEST_PASSWORD}"
+      clear: true
+  - click:
+      selector: "#submit"
+  - wait_for:
+      selector: ".dashboard"
+      state: visible
+      timeout: 15000
+  - assert:
+      url: "matches https://example\\.com/dashboard"
+      text: "contains Welcome"
+      text: "!contains Error"
+  - screenshot:
+      full_page: true
+      output: ./screenshots/login-result.png

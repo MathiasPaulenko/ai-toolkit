@@ -1,0 +1,18 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - a11y_tree:
+      output: a11y-tree.json
+  - axe:
+      tags:
+        - wcag2a
+        - wcag2aa
+        - wcag21a
+        - wcag21aa
+        - wcag22a
+        - wcag22aa
+      impact_threshold: moderate
+      output: axe-results.json
+  - screenshot:
+      full_page: true

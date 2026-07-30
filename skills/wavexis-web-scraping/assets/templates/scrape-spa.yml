@@ -1,0 +1,11 @@
+actions:
+  - navigate:
+      url: https://spa.example.com
+      wait_until: networkidle
+  - wait_for:
+      selector: ".app-loaded"
+      visible: true
+      timeout: 15000
+  - scrape:
+      format: markdown
+      selector: "main"

@@ -1,0 +1,26 @@
+actions:
+  - mock:
+      url: "*/api/users"
+      status: 200
+      body: '{"users": [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]}'
+      content_type: application/json
+  - mock:
+      url: "*/api/products"
+      status: 200
+      body: '{"products": [{"id": 1, "name": "Widget", "price": 9.99}]}'
+      content_type: application/json
+  - mock:
+      url: "*/api/error"
+      status: 500
+      body: '{"error": "Internal Server Error"}'
+      content_type: application/json
+      delay: 0
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - assert:
+      text: "contains Alice"
+      text: "!contains Error"
+  - screenshot:
+      full_page: true
+      output: ./screenshots/mock-test.png

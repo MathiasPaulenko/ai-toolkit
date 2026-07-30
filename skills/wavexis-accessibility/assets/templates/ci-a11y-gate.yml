@@ -1,0 +1,49 @@
+name: Accessibility Gate
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main]
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install wavexis
+        run: pip install wavexis[cdp]
+
+      - name: Install Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update && sudo apt-get install -y google-chrome-stable
+
+      - name: Run axe-core audit
+        run: |
+          wavexis axe ${{ secrets.STAGING_URL }} \
+            --tags wcag2a,wcag2aa,wcag21a,wcag21aa,wcag22a,wcag22aa \
+            --impact-threshold moderate \
+            --assert \
+            --output axe-results.json
+
+      - name: Capture a11y tree
+        if: always()
+        run: |
+          wavexis a11y_tree ${{ secrets.STAGING_URL }} --output a11y-tree.json
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: a11y-results
+          path: |
+            axe-results.json
+            a11y-tree.json

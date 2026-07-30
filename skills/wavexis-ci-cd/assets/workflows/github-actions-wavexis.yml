@@ -1,0 +1,79 @@
+name: Wavexis CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main]
+
+jobs:
+  wavexis-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install wavexis
+        run: pip install wavexis[cdp]
+
+      - name: Install Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update && sudo apt-get install -y google-chrome-stable
+
+      - name: Run navigation assertions
+        run: |
+          wavexis navigate https://staging.example.com \
+            --assert 'title == "Welcome"' \
+            --assert 'text contains "Sign In"' \
+            --assert 'url matches "https://staging\.example\.com"' \
+            --output result.json
+
+      - name: Run CWV gate
+        run: |
+          wavexis cwv https://staging.example.com \
+            --mobile --throttle \
+            --assert 'lcp_ms <= 2500' \
+            --assert 'cls <= 0.1' \
+            --assert 'inp_ms <= 200' \
+            --output cwv.json
+
+      - name: Run accessibility gate
+        run: |
+          wavexis axe https://staging.example.com \
+            --tags wcag2a,wcag2aa \
+            --impact-threshold serious \
+            --assert \
+            --output axe.json
+
+      - name: Run visual regression
+        run: |
+          wavexis visual-diff https://staging.example.com \
+            --baseline ./baselines/homepage.png \
+            --threshold 0.1 \
+            --assert 'diff_percentage <= 0.1' \
+            --output ./diffs/homepage-diff.png
+
+      - name: Batch smoke tests
+        run: |
+          wavexis batch ./urls/staging.txt \
+            --assert 'status_code == 200' \
+            --assert 'title !matches ".*Error.*"' \
+            --output-dir ./smoke-results/
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wavexis-results
+          path: |
+            result.json
+            cwv.json
+            axe.json
+            diffs/
+            smoke-results/

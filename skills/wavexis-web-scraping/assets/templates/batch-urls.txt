@@ -1,0 +1,13 @@
+# Batch URL list template for wavexis
+# One URL per line. Lines starting with # are comments.
+# Blank lines are ignored.
+#
+# Usage:
+#   wavexis batch urls.txt --format markdown --output-dir ./results/
+#   wavexis batch urls.txt --stealth --delay 2 --output-dir ./results/
+
+https://example.com/page-1
+https://example.com/page-2
+https://example.com/page-3
+https://example.com/page-4
+https://example.com/page-5

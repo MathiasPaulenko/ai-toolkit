@@ -1,0 +1,20 @@
+actions:
+  - navigate:
+      url: https://example.com
+      wait_until: networkidle
+  - har:
+      url_filter: "*/api/*"
+      include_bodies: true
+      output: api-traffic.har
+  - click:
+      selector: "#load-more"
+  - wait_for:
+      selector: ".results"
+      timeout: 10000
+  - har_stop:
+      output: full-traffic.har
+  - inspect:
+      url_filter: "*/api/*"
+      output: api-inspection.json
+  - screenshot:
+      full_page: true

@@ -1,0 +1,10 @@
+{
+  "lcp_ms": 2500,
+  "cls": 0.1,
+  "inp_ms": 200,
+  "fcp_ms": 1800,
+  "tbt_ms": 200,
+  "tti_ms": 3800,
+  "speed_index_ms": 3400,
+  "ttfb_ms": 800
+}

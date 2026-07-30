@@ -1,0 +1,15 @@
+actions:
+  - throttle:
+      profile: slow-3g
+  - navigate:
+      url: https://example.com
+      wait_until: load
+      timeout: 60000
+  - cwv:
+      mobile: true
+      output: cwv-throttled.json
+  - inspect:
+      output: network-throttled.json
+  - screenshot:
+      full_page: true
+      output: ./screenshots/throttled.png
