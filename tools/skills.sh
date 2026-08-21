@@ -6,7 +6,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SOURCE_DIR="${SCRIPT_DIR}/skills"
+REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+SOURCE_DIR="${REPO_DIR}/skills"
 DEFAULT_TARGET="/mnt/c/Users/mathi/.codeium/windsurf/skills"
 
 show_stats() {
