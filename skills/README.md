@@ -112,12 +112,43 @@ in `assets/`.
 
 ## Installation
 
-Use the `skills.sh` script to install all skills into your IDE
-skills directory:
+Use the `tools/skills.sh` script to install all skills from this
+repository into your IDE skills directory.
+
+### Install all skills (default directory)
+
+The default target is the Windsurf skills directory:
 
 ```bash
 bash tools/skills.sh
 ```
+
+### Install to a custom directory
+
+Pass the target path as the first argument:
+
+```bash
+bash tools/skills.sh /path/to/your/ide/skills
+```
+
+### View installation statistics
+
+Show skill metrics (count, size, heaviest skills) in the target
+directory:
+
+```bash
+bash tools/skills.sh --stats
+
+# Stats for a custom directory
+bash tools/skills.sh --stats /path/to/your/ide/skills
+```
+
+### What the script does
+
+- Copies every skill folder that contains a `SKILL.md` file.
+- Skips the `_template/` directory.
+- Replaces existing skills with the latest version.
+- Reports progress per skill (`✅ installed` / `⚠️ skipped`).
 
 ## Validation
 
