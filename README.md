@@ -2,7 +2,7 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (160)
+## Resources (161)
 
 | Category | Count |
 | --- | --- |
@@ -205,6 +205,12 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | [`create-ebook-table-of-contents`](prompts/ebooks/create-ebook-table-of-contents.md) | TOC generation |
 | [`create-ebook-reference-list`](prompts/ebooks/create-ebook-reference-list.md) | Bibliography |
 | [`write-ebook-chapter-summary`](prompts/ebooks/write-ebook-chapter-summary.md) | Preview copy |
+
+#### SEO (1)
+
+| Prompt | Focus |
+| --- | --- |
+| [`complete-seo-audit`](prompts/seo/complete-seo-audit.md) | Website SEO audit |
 
 ### Rules
 
