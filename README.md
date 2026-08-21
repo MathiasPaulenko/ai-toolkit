@@ -2,11 +2,11 @@
 
 Personal repository of AI resources: prompts, skills, agents, rules, workflows, and tools created to obtain consistent and structured results with LLMs.
 
-## Resources (156)
+## Resources (160)
 
 | Category | Count |
-|-----------|----------|
-| [Skills](#skills) | 40 |
+| --- | --- |
+| [Skills](#skills) | 44 |
 | [Agents](#agents) | 13 |
 | [Prompts](#prompts) | 65 |
 | [Rules](#rules) | 15 |
@@ -18,7 +18,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Wave Ecosystem (13)
 
 | Skill | Tags |
-|-------|------|
+| --- | --- |
 | [`wave-ecosystem-guide`](skills/wave-ecosystem-guide/SKILL.md) | `wave`, `ecosystem`, `overview`, `tool-selection` |
 | [`wavexis-cli-automation`](skills/wavexis-cli-automation/SKILL.md) | `wavexis`, `cli`, `automation`, `yaml` |
 | [`wavexis-mcp-agent-integration`](skills/wavexis-mcp-agent-integration/SKILL.md) | `mcp`, `wavexis`, `llm`, `agent-integration` |
@@ -36,7 +36,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Testing & QA (13)
 
 | Skill | Tags |
-|-------|------|
+| --- | --- |
 | [`behave-bdd`](skills/behave-bdd/SKILL.md) | `python`, `bdd`, `gherkin`, `testing` |
 | [`allure-reports`](skills/allure-reports/SKILL.md) | `reporting`, `pytest`, `cypress`, `ci-cd` |
 | [`robot-framework`](skills/robot-framework/SKILL.md) | `testing`, `keyword-driven`, `selenium` |
@@ -54,7 +54,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Development (12)
 
 | Skill | Tags |
-|-------|------|
+| --- | --- |
 | [`flask-api`](skills/flask-api/SKILL.md) | `python`, `flask`, `rest`, `api` |
 | [`android-native`](skills/android-native/SKILL.md) | `kotlin`, `jetpack-compose`, `mvvm`, `mobile` |
 | [`jinja2-templates`](skills/jinja2-templates/SKILL.md) | `python`, `templating`, `flask`, `fastapi` |
@@ -71,16 +71,25 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Content & Writing (2)
 
 | Skill | Tags |
-|-------|------|
+| --- | --- |
 | [`ebook-writer`](skills/ebook-writer/SKILL.md) | `ebook`, `writing`, `publishing`, `content` |
 | [`prompt-engineering-best-practices`](skills/prompt-engineering-best-practices/SKILL.md) | `prompt-engineering`, `llm`, `cot`, `few-shot`, `role-prompting` |
+
+#### SEO (4)
+
+| Skill | Tags |
+| --- | --- |
+| [`google-seo-fundamentals`](skills/google-seo-fundamentals/SKILL.md) | `google-search`, `seo-fundamentals`, `search-essentials`, `helpful-content`, `ai-seo` |
+| [`google-crawling-indexing`](skills/google-crawling-indexing/SKILL.md) | `google-search`, `crawling`, `indexing`, `robots-txt`, `sitemaps` |
+| [`google-ranking-appearance`](skills/google-ranking-appearance/SKILL.md) | `google-search`, `ranking`, `search-appearance`, `structured-data`, `rich-results` |
+| [`google-seo-monitoring`](skills/google-seo-monitoring/SKILL.md) | `google-search`, `search-console`, `google-analytics`, `monitoring`, `debugging` |
 
 ### Agents
 
 #### Wave Ecosystem (3)
 
 | Agent | Type |
-|-------|------|
+| --- | --- |
 | [`wave-automation-engineer`](agents/wave-automation-engineer/agent.md) | `coding` |
 | [`wave-test-architect`](agents/wave-test-architect/agent.md) | `review` |
 | [`wave-mcp-orchestrator`](agents/wave-mcp-orchestrator/agent.md) | `automation` |
@@ -88,7 +97,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### QA & Testing (7)
 
 | Agent | Type |
-|-------|------|
+| --- | --- |
 | [`test-architect`](agents/test-architect/agent.md) | `review` |
 | [`qa-automation-engineer`](agents/qa-automation-engineer/agent.md) | `coding` |
 | [`performance-tester`](agents/performance-tester/agent.md) | `research` |
@@ -100,19 +109,19 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Development (1)
 
 | Agent | Type |
-|-------|------|
+| --- | --- |
 | [`code-reviewer`](agents/code-reviewer/agent.md) | `review` |
 
 #### Security (1)
 
 | Agent | Type |
-|-------|------|
+| --- | --- |
 | [`security-auditor`](agents/security-auditor/agent.md) | `governance` |
 
 #### DevOps (1)
 
 | Agent | Type |
-|-------|------|
+| --- | --- |
 | [`devops-automator`](agents/devops-automator/agent.md) | `automation` |
 
 ### Prompts (64)
@@ -120,7 +129,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### System / Task / Templates (9)
 
 | Prompt | Type |
-|--------|------|
+| --- | --- |
 | [`python-expert`](prompts/system/python-expert.md) | System |
 | [`java-spring-expert`](prompts/system/java-spring-expert.md) | System |
 | [`qa-engineer`](prompts/system/qa-engineer.md) | System |
@@ -135,7 +144,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### QA Engineering (30)
 
 | Prompt | Focus |
-|--------|---------|
+| --- | --- |
 | [`generate-test-cases-from-requirements`](prompts/qa/generate-test-cases-from-requirements.md) | Test design |
 | [`generate-api-test-suite`](prompts/qa/generate-api-test-suite.md) | API testing |
 | [`generate-e2e-test-scenarios`](prompts/qa/generate-e2e-test-scenarios.md) | E2E / POM |
@@ -180,7 +189,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Ebook Writing (15)
 
 | Prompt | Focus |
-|--------|---------|
+| --- | --- |
 | [`generate-ebook-outline`](prompts/ebooks/generate-ebook-outline.md) | Structure and planning |
 | [`research-topic-for-ebook`](prompts/ebooks/research-topic-for-ebook.md) | Content research |
 | [`generate-ebook-title-options`](prompts/ebooks/generate-ebook-title-options.md) | Naming and titles |
@@ -202,7 +211,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Coding Standards (5)
 
 | Rule | Category |
-|------|-----------|
+| --- | --- |
 | [`python-coding-rules`](rules/coding/python-coding-rules.md) | Python |
 | [`java-coding-rules`](rules/coding/java-coding-rules.md) | Java |
 | [`javascript-coding-rules`](rules/coding/javascript-coding-rules.md) | JavaScript / TypeScript |
@@ -212,7 +221,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### QA & Testing (7)
 
 | Rule | Category |
-|------|-----------|
+| --- | --- |
 | [`pr-review-checklist`](rules/review/pr-review-checklist.md) | General review |
 | [`test-review-rules`](rules/review/test-review-rules.md) | Test quality |
 | [`test-automation-rules`](rules/review/test-automation-rules.md) | E2E automation |
@@ -224,14 +233,14 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Behavior (2)
 
 | Rule | Category |
-|------|-----------|
+| --- | --- |
 | [`response-format-rules`](rules/behavior/response-format-rules.md) | Formatting |
 | [`response-language-rules`](rules/behavior/response-language-rules.md) | Language |
 
 #### CI/CD (1)
 
 | Rule | Category |
-|------|-----------|
+| --- | --- |
 | [`ci-cd-testing-rules`](rules/review/ci-cd-testing-rules.md) | Pipeline testing |
 
 ### Workflows
@@ -239,7 +248,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Wave Ecosystem (3)
 
 | Workflow | Purpose |
-|----------|-----------|
+| --- | --- |
 | [`wave-cross-browser-test`](workflows/wave-cross-browser-test.md) | Cross-browser testing with bidiwave + cdpwave |
 | [`wave-ci-visual-regression`](workflows/wave-ci-visual-regression.md) | Visual regression testing in GitHub Actions |
 | [`wave-mcp-setup`](workflows/wave-mcp-setup.md) | wavexis-mcp setup across IDEs |
@@ -247,7 +256,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### DevOps & Deployment (6)
 
 | Workflow | Purpose |
-|----------|-----------|
+| --- | --- |
 | [`deploy-flask-app`](workflows/deploy-flask-app.md) | Docker + nginx + CI/CD deployment |
 | [`deploy-spring-boot-app`](workflows/deploy-spring-boot-app.md) | JAR + K8s + health checks |
 | [`gitlab-ci`](workflows/gitlab-ci.md) | Complete GitLab pipeline |
@@ -258,7 +267,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### QA & Testing (5)
 
 | Workflow | Purpose |
-|----------|-----------|
+| --- | --- |
 | [`setup-e2e-automation`](workflows/setup-e2e-automation.md) | Bootstrap E2E automation with CI/CD |
 | [`performance-test-session`](workflows/performance-test-session.md) | Structured performance testing: SLA → script → execute → analyze |
 | [`visual-regression-setup`](workflows/visual-regression-setup.md) | Configure Chromatic/Percy/Loki with baselines and CI |
@@ -268,20 +277,20 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 #### Content (1)
 
 | Workflow | Purpose |
-|----------|-----------|
+| --- | --- |
 | [`create-ebook`](workflows/create-ebook.md) | Ebook creation pipeline |
 
 #### Templates (2)
 
 | Workflow | Purpose |
-|----------|-----------|
+| --- | --- |
 | [`create-new-skill`](workflows/create-new-skill.md) | Bootstrap a skill from template |
 | [`create-new-agent`](workflows/create-new-agent.md) | Bootstrap an agent from template |
 
 ### Tools
 
 | Tool | Function |
-|------|---------|
+| --- | --- |
 | [`validate-resource`](tools/validate-resource/README.md) | Validates frontmatter, kebab-case, placeholders |
 | [`generate-skill-scaffold`](tools/generate-skill-scaffold/README.md) | Interactive CLI to create skills |
 | [`sync-skills-to-cursor`](tools/sync-skills-to-cursor/README.md) | Copies skills to `.cursor/rules/` |
@@ -292,7 +301,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 ## Structure
 
 | Folder | Content |
-|---------|-----------|
+| --- | --- |
 | `prompts/` | System, task, and reusable template prompts |
 | `skills/` | Structured skills with `SKILL.md` and assets |
 | `agents/` | Agent definitions (`agent.md`, knowledge, tools) |

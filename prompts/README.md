@@ -6,6 +6,7 @@ Collection of prompts organized by type.
 
 - `system/` — System prompts to configure the base model behavior
 - `task/` — Prompts for specific tasks (refactor, testing, documentation, etc)
+- `seo/` — Prompts for SEO audits, analysis, and optimization workflows
 - `templates/` — Parametrizable templates to reuse with variables
 
 ## File Convention

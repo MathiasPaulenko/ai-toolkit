@@ -1,0 +1,89 @@
+# Google Search Central Index: Ranking and Search Appearance
+
+> The page titles in this index are in English because they mirror the official English Google Search Central navigation. The skills use English operational guidance and link to these official pages.
+
+Complete list of subsections in this documentation area.
+
+## Ranking and search appearance
+
+- [Overview](https://developers.google.com/search/docs/appearance?hl=en)
+- [AI features](https://developers.google.com/search/docs/appearance/ai-features?hl=en)
+- [Byline dates](https://developers.google.com/search/docs/appearance/publication-dates?hl=en)
+- [Favicons](https://developers.google.com/search/docs/appearance/favicon-in-search?hl=en)
+- [Featured snippets](https://developers.google.com/search/docs/appearance/featured-snippets?hl=en)
+- [Flexible Sampling](https://developers.google.com/search/docs/appearance/flexible-sampling?hl=en)
+- [Google Discover](https://developers.google.com/search/docs/appearance/google-discover?hl=en)
+- [Images](https://developers.google.com/search/docs/appearance/google-images?hl=en)
+- Local features
+  - [Business details](https://developers.google.com/search/docs/appearance/establish-business-details?hl=en)
+  - [Top Places List](https://developers.google.com/search/docs/appearance/top-places-list?hl=en)
+  - [Opting out of local search results](https://search.google.com/search-console/opt-out?hl=en)
+- Page experience
+  - [Understanding page experience](https://developers.google.com/search/docs/appearance/page-experience?hl=en)
+  - [Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals?hl=en)
+  - [Interstitials and dialogs](https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials?hl=en)
+- [Preferred sources](https://developers.google.com/search/docs/appearance/preferred-sources?hl=en)
+- Ranking systems
+  - [A guide to Google Search ranking systems](https://developers.google.com/search/docs/appearance/ranking-systems-guide?hl=en)
+  - [Reviews system](https://developers.google.com/search/docs/appearance/reviews-system?hl=en)
+- Ranking updates
+  - [List of ranking updates](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history?hl=en)
+  - [Core updates](https://developers.google.com/search/docs/appearance/core-updates?hl=en)
+  - [Spam updates](https://developers.google.com/search/docs/appearance/spam-updates?hl=en)
+- [Site names](https://developers.google.com/search/docs/appearance/site-names?hl=en)
+- [Sitelinks](https://developers.google.com/search/docs/appearance/sitelinks?hl=en)
+- [Snippets](https://developers.google.com/search/docs/appearance/snippet?hl=en)
+- Structured data
+  - [Understand how structured data works](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=en)
+  - [Structured data general guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies?hl=en)
+  - [Enriched search results](https://developers.google.com/search/docs/appearance/enriched-search-results?hl=en)
+  - [Generate structured data with JavaScript](https://developers.google.com/search/docs/appearance/structured-data/generate-structured-data-with-javascript?hl=en)
+  - Feature guides
+    - [All structured data features](https://developers.google.com/search/docs/appearance/structured-data/search-gallery?hl=en)
+    - [Article](https://developers.google.com/search/docs/appearance/structured-data/article?hl=en)
+    - [Book actions](https://developers.google.com/search/docs/appearance/structured-data/book?hl=en)
+    - [Breadcrumb](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb?hl=en)
+    - [Carousel](https://developers.google.com/search/docs/appearance/structured-data/carousel?hl=en)
+    - [Course list](https://developers.google.com/search/docs/appearance/structured-data/course?hl=en)
+    - [Dataset](https://developers.google.com/search/docs/appearance/structured-data/dataset?hl=en)
+    - [Discussion forum](https://developers.google.com/search/docs/appearance/structured-data/discussion-forum?hl=en)
+    - [Education Q&A](https://developers.google.com/search/docs/appearance/structured-data/education-qa?hl=en)
+    - [Employer aggregate rating](https://developers.google.com/search/docs/appearance/structured-data/employer-rating?hl=en)
+    - [Fact check](https://developers.google.com/search/docs/appearance/structured-data/factcheck?hl=en)
+    - [Event](https://developers.google.com/search/docs/appearance/structured-data/event?hl=en)
+    - [Image metadata](https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata?hl=en)
+    - [Job posting](https://developers.google.com/search/docs/appearance/structured-data/job-posting?hl=en)
+    - [Local business](https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=en)
+    - [Math solver](https://developers.google.com/search/docs/appearance/structured-data/math-solvers?hl=en)
+    - [Movie carousel](https://developers.google.com/search/docs/appearance/structured-data/movie?hl=en)
+    - [Organization](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=en)
+    - Shopping
+      - [Overview](https://developers.google.com/search/docs/appearance/structured-data/product?hl=en)
+      - [Product snippet](https://developers.google.com/search/docs/appearance/structured-data/product-snippet?hl=en)
+      - [Merchant listing](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing?hl=en)
+      - [Variants](https://developers.google.com/search/docs/appearance/structured-data/product-variants?hl=en)
+      - [Loyalty program](https://developers.google.com/search/docs/appearance/structured-data/loyalty-program?hl=en)
+      - [Merchant return policy](https://developers.google.com/search/docs/appearance/structured-data/return-policy?hl=en)
+      - [Merchant shipping policy](https://developers.google.com/search/docs/appearance/structured-data/shipping-policy?hl=en)
+    - [Profile page](https://developers.google.com/search/docs/appearance/structured-data/profile-page?hl=en)
+    - [Q&A](https://developers.google.com/search/docs/appearance/structured-data/qapage?hl=en)
+    - [Recipe](https://developers.google.com/search/docs/appearance/structured-data/recipe?hl=en)
+    - [Review snippet](https://developers.google.com/search/docs/appearance/structured-data/review-snippet?hl=en)
+    - [Software app](https://developers.google.com/search/docs/appearance/structured-data/software-app?hl=en)
+    - [Speakable](https://developers.google.com/search/docs/appearance/structured-data/speakable?hl=en)
+    - [Subscription and paywalled content](https://developers.google.com/search/docs/appearance/structured-data/paywalled-content?hl=en)
+    - [Vacation rental](https://developers.google.com/search/docs/appearance/structured-data/vacation-rental?hl=en)
+    - [Video](https://developers.google.com/search/docs/appearance/structured-data/video?hl=en)
+- [Title links](https://developers.google.com/search/docs/appearance/title-link?hl=en)
+- Translated features
+  - [Translated results](https://developers.google.com/search/docs/appearance/translated-results?hl=en)
+  - [Ad networks and translation-related Google Search features](https://developers.google.com/search/docs/appearance/ad-network-and-translation?hl=en)
+- [Videos](https://developers.google.com/search/docs/appearance/video?hl=en)
+- [Visual Elements gallery](https://developers.google.com/search/docs/appearance/visual-elements-gallery?hl=en)
+- Web Stories
+  - [Enable Web Stories on Google](https://developers.google.com/search/docs/appearance/enable-web-stories?hl=en)
+  - [Best practices for creating Web Stories](https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices?hl=en)
+  - [Web Story content policy](https://developers.google.com/search/docs/appearance/web-stories-content-policy?hl=en)
+- Early Adopters Program
+  - [Package tracking](https://developers.google.com/search/docs/appearance/package-tracking?hl=en)
+  - [Structured data carousels (beta)](https://developers.google.com/search/docs/appearance/structured-data/carousels-beta?hl=en)
