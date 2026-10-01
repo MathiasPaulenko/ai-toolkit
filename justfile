@@ -95,8 +95,8 @@ export:
 # Export all prompts to a single markdown file
 export-prompts:
     @mkdir -p {{export_dir}}
-    {{python}} tools/export-skills-to-md/export.py --output {{export_dir}}/prompts-bundle.md || true
-    @echo "Use: find prompts -name '*.md' -exec cat {} + > {{export_dir}}/prompts-bundle.md"
+    @find prompts -name '*.md' ! -name 'README.md' -exec cat {} + > {{export_dir}}/prompts-bundle.md
+    @echo "Exported prompts to {{export_dir}}/prompts-bundle.md"
 
 # Export everything (skills + prompts)
 export-all: export export-prompts
