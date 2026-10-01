@@ -8,7 +8,12 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 SOURCE_DIR="${REPO_DIR}/skills"
-DEFAULT_TARGET="/mnt/c/Users/mathi/.codeium/windsurf/skills"
+# Detect Windows mount style: WSL uses /mnt/c, Git Bash uses /c
+if [[ -d /mnt/c ]]; then
+    DEFAULT_TARGET="/mnt/c/Users/mathi/.codeium/windsurf/skills"
+else
+    DEFAULT_TARGET="/c/Users/mathi/.codeium/windsurf/skills"
+fi
 
 show_stats() {
     local target="${1:-$DEFAULT_TARGET}"

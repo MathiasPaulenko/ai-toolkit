@@ -60,7 +60,7 @@ export:
 
 export-prompts:
 	@mkdir -p $(export_dir)
-	@find prompts -name '*.md' -exec cat {} + > $(export_dir)/prompts-bundle.md
+	@find prompts -name '*.md' ! -name 'README.md' -exec cat {} + > $(export_dir)/prompts-bundle.md
 	@echo "Exported prompts to $(export_dir)/prompts-bundle.md"
 
 export-all: export export-prompts
