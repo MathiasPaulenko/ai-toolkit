@@ -44,7 +44,7 @@ Ensure every API endpoint behaves correctly under normal, edge, and malicious co
 - `skills/karate-api-testing` — Karate DSL for API testing
 - `skills/k6-load-testing` — Load and performance testing
 - `skills/postman-api-automation` — Postman/Newman collections
-- `rules/review/api-testing-rules` — API testing standards
+- `rules/review/api-testing-rules.md` — API testing standards
 
 ## Communication Style
 
@@ -91,3 +91,11 @@ HTTP/1.1 201 Created
 - If no API spec exists, generate one from code or documentation
 - If mocking infrastructure is unavailable, use framework stubs or record/replay
 - If security testing is out of scope, provide checklist for security team handoff
+
+## References
+
+- `prompts/qa/generate-api-test-suite.md` — API test suite generation
+- `prompts/qa/generate-api-contract-test.md` — Contract testing prompt
+- `prompts/qa/generate-api-fuzzing-scenarios.md` — Fuzzing scenarios prompt
+- `rules/review/api-testing-rules.md` — API testing standards
+- `workflows/qa-release-gate.md` — Release quality gate

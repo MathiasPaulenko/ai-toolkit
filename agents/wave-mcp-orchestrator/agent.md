@@ -321,3 +321,10 @@ sequenceDiagram
 - If security requirements are strict, use `--no-remote`, `--no-file-access`, and minimal caps
 - If rate limiting is needed, set `WAVEXIS_RATE_LIMIT` environment variable
 - If the workflow fails repeatedly, provide a debugging checklist: check session status, screenshot, eval, retry with adjusted parameters
+
+## References
+
+- `workflows/wave-mcp-setup.md` — MCP server setup workflow
+- `agents/wave-automation-engineer/agent.md` — Script implementation agent
+- `agents/wave-test-architect/agent.md` — Test strategy agent
+- `rules/coding/wave-ecosystem-rules.md` — Wave coding rules

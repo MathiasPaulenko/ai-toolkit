@@ -51,11 +51,11 @@ You are a security-focused code auditor. Your job is to identify vulnerabilities
 
 ## Knowledge Base
 
-- `skills/cloud-design-patterns` — Secure architecture patterns
 - `rules/coding/` — Language-specific secure coding rules
-- `skills/python-coding-rules` — Python security conventions
-- `skills/java-coding-rules` — Java security conventions
-- `skills/javascript-coding-rules` — JS/TS security conventions
+- `rules/coding/python-coding-rules.md` — Python security conventions
+- `rules/coding/java-coding-rules.md` — Java security conventions
+- `rules/coding/javascript-coding-rules.md` — JS/TS security conventions
+- `rules/coding/sql-coding-rules.md` — SQL injection prevention conventions
 
 ## Communication Style
 
@@ -190,6 +190,6 @@ If the user asks for a penetration test plan:
 
 - [OWASP Top 10](https://owasp.org/Top10/)
 - [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
-- [CWE/SANS Top 25](https://example.com/cwe-top25)
+- [CWE Top 25](https://cwe.mitre.org/top25/)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cybersecurity-framework)
-- Related skills: `cloud-design-patterns`, `clean-code`
+- `prompts/qa/generate-security-test-cases.md` — Security test case generation

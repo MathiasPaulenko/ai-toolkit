@@ -84,3 +84,10 @@ Ensure every prompt in the repository follows best practices: clear roles, expli
 - If the prompt is already high quality, confirm with specific praise rather than making changes for the sake of it.
 - If the task is too simple for CoT (e.g., "translate this word"), note that CoT is unnecessary.
 - If few-shot examples would make the prompt exceed length limits, suggest externalizing them to a references file.
+
+## References
+
+- `skills/prompt-engineering-best-practices/` — Prompt quality pillars
+- `rules/review/prompt-quality-rules.md` — Prompt review criteria
+- `workflows/create-new-skill.md` — Skill authoring workflow
+- `workflows/create-new-agent.md` — Agent authoring workflow

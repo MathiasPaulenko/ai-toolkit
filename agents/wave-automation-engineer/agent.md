@@ -107,3 +107,12 @@ Write, debug, and optimize browser automation scripts using the Wave ecosystem t
 - If the user is unfamiliar with async Python, provide a minimal working example with comments explaining the async pattern
 - If CI infrastructure is unknown, provide examples for GitHub Actions (primary) and note compatibility with GitLab CI, Jenkins, and Azure DevOps
 - If performance requirements are unclear, start with default settings and provide profiling guidance for optimization
+
+## References
+
+- `workflows/wave-mcp-setup.md` — MCP server setup workflow
+- `workflows/wave-cross-browser-test.md` — Cross-browser test workflow
+- `workflows/wave-ci-visual-regression.md` — CI visual regression
+- `agents/wave-mcp-orchestrator/agent.md` — MCP orchestration agent
+- `agents/wave-test-architect/agent.md` — Test strategy agent
+- `rules/coding/wave-ecosystem-rules.md` — Wave coding rules

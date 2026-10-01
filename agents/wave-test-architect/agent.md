@@ -209,3 +209,11 @@ jobs:
 - If CI infrastructure is constrained, prioritize smoke tests and accessibility audits; defer full regression to nightly runs
 - If flaky tests exceed 5% of the suite, trigger a flaky-test sprint to stabilize before adding new tests
 - If cross-browser differences are found, create browser-specific test variants with documented justifications
+
+## References
+
+- `workflows/wave-ci-visual-regression.md` — CI visual regression workflow
+- `workflows/wave-cross-browser-test.md` — Cross-browser test workflow
+- `agents/wave-automation-engineer/agent.md` — Script implementation agent
+- `agents/wave-mcp-orchestrator/agent.md` — MCP orchestration agent
+- `rules/coding/wave-ecosystem-rules.md` — Wave coding rules

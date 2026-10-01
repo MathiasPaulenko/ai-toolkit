@@ -48,13 +48,12 @@ You are a test architect responsible for designing comprehensive test strategies
 
 - `skills/behave-bdd` — BDD test design
 - `skills/robot-framework` — Keyword-driven automation
-- `skills/playwright-best-practices` — E2E web testing
-- `skills/appium-skill` — Mobile testing
-- `skills/selenium-automation` — Web UI automation
-- `skills/postman` — API testing
-- `skills/151-java-performance-jmeter` — Performance testing
+- `skills/webdriverio` — E2E web testing
+- `skills/appium-mobile` — Mobile testing
+- `skills/postman-api-automation` — API testing
+- `skills/jmeter-load-testing` — Performance testing
 - `skills/allure-reports` — Test reporting
-- `skills/python-testing-patterns` — Python test patterns
+- `skills/pytest-advanced` — Python test patterns
 
 ## Communication Style
 
@@ -221,7 +220,7 @@ If existing tests are mentioned but not shown:
 
 - `skills/behave-bdd` — BDD test design
 - `skills/robot-framework` — Keyword-driven automation
-- `skills/playwright-best-practices` — E2E web testing
-- `skills/python-testing-patterns` — Python test patterns
-- `skills/java-junit` — Java testing
-- `skills/javascript-typescript-jest` — JS/TS testing
+- `skills/webdriverio` — E2E web testing
+- `skills/pytest-advanced` — Python test patterns
+- `skills/k6-load-testing` — Load testing
+- `skills/testcontainers` — Integration testing

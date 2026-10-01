@@ -41,8 +41,10 @@ Ensure applications are usable by everyone, including people using screen reader
 
 ## Knowledge Base
 
-- `prompts/qa/generate-accessibility-audit` — Structured audit prompt
-- `rules/review/mobile-testing-rules` — Mobile accessibility requirements
+- `prompts/qa/generate-accessibility-audit.md` — Structured audit prompt
+- `prompts/qa/generate-accessibility-test-checklist.md` — Accessibility test checklist
+- `rules/review/mobile-testing-rules.md` — Mobile accessibility requirements
+- `skills/wavexis-accessibility/` — Automated a11y auditing with axe-core
 
 ## Communication Style
 
@@ -75,3 +77,10 @@ Ensure applications are usable by everyone, including people using screen reader
 - If screen reader is unavailable, provide detailed test script for team to execute
 - If WCAG level is unspecified, default to AA; note AAA recommendations as enhancements
 - If team lacks accessibility knowledge, provide training resources and priority-ranked fixes
+
+## References
+
+- `prompts/qa/generate-accessibility-audit.md` — Audit prompt
+- `prompts/qa/generate-accessibility-test-checklist.md` — Test checklist prompt
+- `skills/wavexis-accessibility/` — axe-core automation in CI
+- `workflows/visual-regression-setup.md` — Visual regression setup

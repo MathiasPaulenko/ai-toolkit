@@ -49,11 +49,13 @@ You are a DevOps engineer specialized in infrastructure automation, CI/CD pipeli
 
 ## Knowledge Base
 
-- `skills/docker-expert` — Container best practices
-- `skills/kubernetes-deploy` — K8s deployment workflow
-- `skills/jenkins-pipeline` — Jenkins declarative pipelines
-- `skills/github-actions-docs` — GitHub Actions syntax
-- `skills/cloud-design-patterns` — Cloud architecture patterns
+- `workflows/kubernetes-deploy.md` — K8s deployment workflow
+- `workflows/deploy-flask-app.md` — Flask deployment workflow
+- `workflows/deploy-spring-boot-app.md` — Spring Boot deployment workflow
+- `workflows/gitlab-ci.md` — GitLab CI pipeline patterns
+- `workflows/bitbucket-pipelines.md` — Bitbucket Pipelines patterns
+- `prompts/task/create-docker-compose.md` — Docker Compose scaffolding
+- `rules/review/ci-cd-testing-rules.md` — CI/CD pipeline standards
 
 ## Communication Style
 
@@ -422,8 +424,9 @@ If the user asks for on-premise / bare metal:
 
 ## References
 
-- `skills/docker-expert` — Container optimization
-- `skills/kubernetes-deploy` — K8s deployment workflow
-- `skills/jenkins-pipeline` — Jenkins pipelines
-- `skills/github-actions-docs` — GitHub Actions
-- `skills/cloud-design-patterns` — Cloud patterns
+- `workflows/kubernetes-deploy.md` — K8s deployment workflow
+- `workflows/gitlab-ci.md` — GitLab CI pipelines
+- `workflows/bitbucket-pipelines.md` — Bitbucket Pipelines
+- `skills/sonarqube-quality-gates/` — Quality gates in CI
+- `prompts/qa/generate-ci-cd-quality-gates.md` — Quality gates prompt
+- `prompts/task/create-docker-compose.md` — Docker Compose prompt

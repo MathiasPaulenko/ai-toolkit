@@ -41,8 +41,9 @@ Ensure applications meet latency, throughput, and resource utilization SLAs unde
 ## Knowledge Base
 
 - `skills/jmeter-load-testing` — JMeter patterns and distributed testing
-- `rules/review/performance-testing-rules` — SLA definition and analysis standards
-- `workflows/performance-test-session` — Structured performance testing workflow
+- `skills/k6-load-testing` — k6 scripting, thresholds, and Grafana integration
+- `rules/review/performance-testing-rules.md` — SLA definition and analysis standards
+- `workflows/performance-test-session.md` — Structured performance testing workflow
 
 ## Communication Style
 
@@ -79,3 +80,12 @@ Ensure applications meet latency, throughput, and resource utilization SLAs unde
 - If production metrics are unavailable, use industry benchmarks and iterate after launch
 - If profiling tools are unavailable, rely on slow query logs and APM transaction traces
 - If environment cannot mirror production, apply scaling factors and document uncertainty ranges
+
+## References
+
+- `skills/jmeter-load-testing/` — JMeter test plans and distributed testing
+- `skills/k6-load-testing/` — k6 load testing
+- `skills/wavexis-performance-audit/` — Core Web Vitals auditing
+- `prompts/qa/generate-performance-test-plan.md` — Performance plan prompt
+- `rules/review/performance-testing-rules.md` — Review standards
+- `workflows/performance-test-session.md` — Session workflow

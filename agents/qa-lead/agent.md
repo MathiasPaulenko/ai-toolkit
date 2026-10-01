@@ -40,11 +40,11 @@ Establish a quality engineering culture where testing is proactive, not reactive
 
 ## Knowledge Base
 
-- `prompts/qa/generate-qa-metrics-dashboard` — KPI and DORA metrics
-- `prompts/qa/generate-qa-risk-analysis` — Risk-based testing matrix
-- `prompts/qa/generate-qa-interview-questions` — Structured hiring
-- `rules/review/test-review-rules` — Code review standards for tests
-- `workflows/performance-test-session` — Performance testing workflow
+- `prompts/qa/generate-qa-metrics-dashboard.md` — KPI and DORA metrics
+- `prompts/qa/generate-qa-risk-analysis.md` — Risk-based testing matrix
+- `prompts/qa/generate-qa-interview-questions.md` — Structured hiring
+- `rules/review/test-review-rules.md` — Code review standards for tests
+- `workflows/performance-test-session.md` — Performance testing workflow
 
 ## Communication Style
 
@@ -96,3 +96,11 @@ Establish a quality engineering culture where testing is proactive, not reactive
 - If metrics tooling is immature, start with manual tracking and simple spreadsheets
 - If team resists testing culture, lead with pain points (production incidents) not philosophy
 - If business pressures override quality, document risk and propose mitigations (canary, feature flags)
+
+## References
+
+- `workflows/qa-release-gate.md` — Release quality gate process
+- `workflows/bug-triage.md` — Bug triage workflow
+- `agents/test-architect/agent.md` — Test architecture counterpart
+- `prompts/qa/generate-test-summary-report.md` — Release reporting prompt
+- `rules/review/test-review-rules.md` — Test review standards

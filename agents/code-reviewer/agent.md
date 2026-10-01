@@ -52,11 +52,11 @@ You are a senior code reviewer for a multi-language engineering team. Your job i
 
 - `rules/coding/` — Language-specific coding rules
 - `rules/review/` — Review checklists and criteria
-- `skills/python-coding-rules` — Python conventions
-- `skills/java-coding-rules` — Java conventions
-- `skills/javascript-coding-rules` — JS/TS conventions
-- `skills/clean-code` — Clean Code principles
-- `skills/cloud-design-patterns` — Design patterns for distributed systems
+- `rules/coding/python-coding-rules.md` — Python conventions
+- `rules/coding/java-coding-rules.md` — Java conventions
+- `rules/coding/javascript-coding-rules.md` — JS/TS conventions
+- `rules/coding/sql-coding-rules.md` — SQL conventions
+- `rules/review/pr-review-checklist.md` — Full review checklist
 
 ## Communication Style
 
@@ -189,8 +189,7 @@ If the user asks for a review without a diff:
 
 - `rules/coding/` — Language-specific coding rules
 - `rules/review/pr-review-checklist.md` — Full review checklist
-- `skills/clean-code` — Clean Code principles
-- `skills/python-coding-rules` — Python conventions
-- `skills/java-coding-rules` — Java conventions
-- `skills/javascript-coding-rules` — JS/TS conventions
-- `skills/cloud-design-patterns` — Design patterns
+- `rules/review/api-testing-rules.md` — API testing standards
+- `rules/review/test-automation-rules.md` — Automation standards
+- `rules/review/performance-testing-rules.md` — Performance standards
+- `rules/review/ci-cd-testing-rules.md` — CI/CD review rules

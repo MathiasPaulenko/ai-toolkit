@@ -1,10 +1,12 @@
 ---
 name: Agent Name
 version: 1.0.0
-author: tu-usuario
+author: Mathias Paulenko Echeverz
 description: Purpose and behavior of this agent
-tags: [agent, template]
+tags: [tag1, tag2, tag3]
 role: specialized-role
+type: coding # governance | coding | review | creative | research | automation
+language: en # en | es
 ---
 
 # Agent Name
@@ -46,3 +48,7 @@ Reference files in `knowledge/` or external docs.
 ## Fallback Behavior
 
 What to do when uncertain or out of scope.
+
+## References
+
+Links to related resources in this repository.

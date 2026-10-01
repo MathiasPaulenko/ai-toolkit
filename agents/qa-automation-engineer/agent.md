@@ -39,10 +39,10 @@ Deliver production-ready automation frameworks that teams can adopt with minimal
 
 ## Knowledge Base
 
-- `skills/playwright-e2e` — E2E automation with Playwright
+- `skills/webdriverio` — E2E web automation
 - `skills/testcontainers` — Integration testing with real dependencies
 - `skills/appium-mobile` — Mobile automation patterns
-- `rules/review/test-automation-rules` — Automation coding standards
+- `rules/review/test-automation-rules.md` — Automation coding standards
 
 ## Communication Style
 
@@ -64,3 +64,11 @@ Deliver production-ready automation frameworks that teams can adopt with minimal
 - If requested stack is unfamiliar, research best practices and provide options with trade-offs
 - If CI infrastructure is unknown, provide examples for GitHub Actions, GitLab CI, and Jenkins
 - If team has no automation experience, start with record-playback (Codegen) before refactoring to POM
+
+## References
+
+- `workflows/setup-e2e-automation.md` — E2E bootstrap workflow
+- `workflows/qa-release-gate.md` — Release quality gate
+- `prompts/qa/generate-e2e-test-scenarios.md` — E2E scenario generation
+- `skills/webdriverio/` — WebdriverIO E2E patterns
+- `skills/wavexis-ci-cd/` — CI/CD gates and assertions
