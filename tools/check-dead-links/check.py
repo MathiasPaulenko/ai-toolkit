@@ -13,9 +13,10 @@ Usage:
 
 import argparse
 import re
+import sys
 import time
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
 from http.cookiejar import CookieJar
 from pathlib import Path
 from urllib.parse import urlparse
@@ -72,7 +73,7 @@ def check_url(url: str, timeout: int = 10) -> tuple[bool, int | None]:
                 if e.code >= 500:
                     break
                 return False, e.code
-            except Exception:
+            except OSError:
                 if attempt < 2:
                     time.sleep(1.5 * (attempt + 1))
                     continue
@@ -86,6 +87,9 @@ def check_url(url: str, timeout: int = 10) -> tuple[bool, int | None]:
 def should_ignore(url: str, ignore_patterns: list[str]) -> bool:
     # Skip template variables like {location}, {id}
     if "{" in url or "}" in url:
+        return True
+    # Skip regex-escaped patterns (e.g. https://example\.com in YAML configs)
+    if "\\" in url:
         return True
     parsed = urlparse(url)
     for pattern in ignore_patterns:
@@ -120,7 +124,7 @@ def scan_directory(
             url = futures[future]
             try:
                 results[url] = future.result()
-            except Exception:
+            except CancelledError:
                 results[url] = (False, None)
 
     # Aggregate failures
@@ -134,6 +138,9 @@ def scan_directory(
 
 
 def main():
+    if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(
         description="Check for dead external links in markdown"
     )
@@ -159,6 +166,9 @@ def main():
             "qameta.io",
             "app",
             "weather.com",
+            "dl.google.com",
+            "nonexistent.example",
+            "protected-site.com",
         ],
         help="URL patterns to ignore",
     )
