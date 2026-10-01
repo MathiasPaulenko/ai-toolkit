@@ -12,6 +12,7 @@ Usage:
 import argparse
 import re
 import shutil
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -32,6 +33,9 @@ def prompt_field(name: str, default: str = "") -> str:
 
 
 def main():
+    if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(description="Generate a new skill scaffold")
     parser.add_argument("--name", help="Skill name (kebab-case)")
     parser.add_argument("--description", help="One-line description")

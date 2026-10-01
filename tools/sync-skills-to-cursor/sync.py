@@ -10,6 +10,7 @@ Usage:
 
 import argparse
 import shutil
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -36,6 +37,9 @@ def copy_skill(skill_dir: Path, dest_dir: Path) -> None:
 
 
 def main():
+    if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(description="Sync skills to .cursor/rules")
     parser.add_argument("skills", nargs="*", help="Skill names to sync")
     parser.add_argument("--all", action="store_true", help="Sync all skills")

@@ -11,7 +11,8 @@ Usage:
 """
 
 import argparse
-from datetime import datetime
+import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -34,7 +35,12 @@ def read_skill(skill_dir: Path) -> str | None:
 
 
 def build_bundle(skills: list[Path], title: str = "Skills Bundle") -> str:
-    lines = [f"# {title}", "", f"_Generated on {datetime.now().isoformat()}_", ""]
+    lines = [
+        f"# {title}",
+        "",
+        f"_Generated on {datetime.now(timezone.utc).isoformat()}_",
+        "",
+    ]
 
     for skill_dir in skills:
         content = read_skill(skill_dir)
@@ -52,6 +58,9 @@ def build_bundle(skills: list[Path], title: str = "Skills Bundle") -> str:
 
 
 def main():
+    if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(
         description="Export skills to a single markdown file"
     )
