@@ -8,7 +8,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | --- | --- |
 | [Skills](#skills) | 44 |
 | [Agents](#agents) | 13 |
-| [Prompts](#prompts) | 65 |
+| [Prompts](#prompts) | 66 |
 | [Rules](#rules) | 15 |
 | [Workflows](#workflows) | 17 |
 | [Tools](#tools) | 6 |

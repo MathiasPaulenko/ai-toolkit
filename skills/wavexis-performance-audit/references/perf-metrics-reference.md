@@ -192,6 +192,6 @@ wavexis cwv https://example.com
 
 ## References
 
-- [Web Performance Metrics](https://web.dev/articles/metrics)
+- [Web Performance Metrics](https://web.dev/articles/vitals)
 - [Navigation Timing API](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/Navigation_timing)
 - [Lighthouse Performance Scoring](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring)

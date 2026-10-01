@@ -1,7 +1,7 @@
 ---
 name: Skill Name
 version: 1.0.0
-author: tu-usuario
+author: Mathias Paulenko Echeverz
 description: What this skill does and when to use it
 tags: [template, example]
 trigger: When the user asks for...

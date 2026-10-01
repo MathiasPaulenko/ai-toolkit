@@ -143,7 +143,7 @@ Links to related resources in this repository.
 
 | Element | Format | Example |
 |---------|--------|---------|
-| Agent folder | `kebab-case` | `repo-guardian/` |
+| Agent folder | `kebab-case` | `qa-lead/` |
 | Agent file | `agent.md` | `agent.md` |
 | Knowledge files | `kebab-case.md` | `api-guidelines.md` |
 | Tool scripts | `kebab-case.ext` | `validate.py` |
@@ -153,7 +153,7 @@ Links to related resources in this repository.
 
 | Type | Purpose | Examples |
 |------|---------|----------|
-| `governance` | Enforce standards, review quality | repo-guardian |
+| `governance` | Enforce standards, review quality | qa-lead |
 | `coding` | Write, refactor, debug code | python-refactorer |
 | `review` | PR review, code audit | security-reviewer |
 | `creative` | Generate content, designs | ui-designer |
@@ -183,7 +183,7 @@ Links to related resources in this repository.
 - [ ] `role` and `type` are set.
 
 ### Content
-- [ ] All 8 required sections are present (Role, Objective, Capabilities, Constraints, Knowledge Base, Communication Style, Workflow, Fallback Behavior).
+- [ ] All 9 required sections are present (Role, Objective, Capabilities, Constraints, Knowledge Base, Communication Style, Workflow, Fallback Behavior, References).
 - [ ] No placeholder text (`Agent Name`, `tu-usuario`, `TODO`, etc.).
 - [ ] Constraints are actual prohibitions, not suggestions.
 - [ ] Workflow is numbered and actionable.
@@ -211,5 +211,5 @@ Use the agent content as a system prompt or place in `.aider/agents/`.
 ## References
 
 - `agents/_template/agent.md` — Template
-- `agents/repo-guardian/agent.md` — Benchmark example
+- `agents/qa-lead/agent.md` — Benchmark example
 - `AGENTS.md` — Global repository conventions and agent standards

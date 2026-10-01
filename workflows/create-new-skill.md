@@ -113,9 +113,10 @@ skills/<skill-name>/assets/
 - [ ] Assets are in `assets/`, references in `references/`.
 - [ ] SKILL.md is ≤ 600 lines (externalize if longer).
 
-### 8. Update TODO.md
+### 8. Update Indexes
 
-Mark the skill as completed in `ref/TODO.md` or move to `ref/COMPLETED.md`.
+- Add the skill to `skills/README.md`.
+- Bump the Skills count in the `README.md` resource table.
 
 ### 9. Commit
 

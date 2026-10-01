@@ -252,4 +252,4 @@ echo "Lighthouse performance gate passed"
 
 - [Lighthouse documentation](https://developer.chrome.com/docs/lighthouse/)
 - [Lighthouse performance scoring](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring)
-- [Lighthouse audits](https://developer.chrome.com/docs/lighthouse/best-practices/performance)
+- [Lighthouse audits](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring)

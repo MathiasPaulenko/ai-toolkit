@@ -60,7 +60,7 @@ Rules:
 
 ### 4. Write All Required Sections
 
-Every agent **must** have these 8 sections:
+Every agent **must** have these 9 sections:
 
 1. **Role** — Persona and area of expertise.
 2. **Objective** — Concrete achievement goal.
@@ -70,6 +70,7 @@ Every agent **must** have these 8 sections:
 6. **Communication Style** — Tone, response format, language preference.
 7. **Workflow** — Numbered steps for core task.
 8. **Fallback Behavior** — What to do when uncertain or out of scope.
+9. **References** — Links to related resources in this repository.
 
 ### 5. Write Constraints as Prohibitions
 
@@ -133,16 +134,17 @@ Document them in **Capabilities**:
 
 - [ ] Frontmatter YAML is valid.
 - [ ] `name` matches the folder in `kebab-case`.
-- [ ] All 8 required sections are present.
+- [ ] All 9 required sections are present.
 - [ ] No placeholder text (`Agent Name`, `TODO`, `your-name`).
 - [ ] Constraints are actual prohibitions, not suggestions.
 - [ ] Workflow is numbered and actionable.
 - [ ] References point to existing files in the repo.
 - [ ] `type` is one of: governance, coding, review, creative, research, automation.
 
-### 9. Update TODO.md
+### 9. Update Indexes
 
-Mark the agent as completed in `ref/TODO.md` or move to `ref/COMPLETED.md`.
+- Add the agent to `agents/README.md`.
+- Bump the Agents count in the `README.md` resource table.
 
 ### 10. Commit
 

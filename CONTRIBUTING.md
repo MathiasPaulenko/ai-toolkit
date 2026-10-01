@@ -8,7 +8,7 @@ Thank you for your interest in contributing to ai-toolkit! This document outline
 2. Clone your fork locally:
 
    ```bash
-   git clone https://github.com/<your-username>/ai-toolkit.git
+   git clone https://github.com/MathiasPaulenko/ai-toolkit.git
    cd ai-toolkit
    ```
 

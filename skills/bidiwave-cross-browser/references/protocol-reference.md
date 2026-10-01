@@ -338,6 +338,6 @@ BiDi serializes JavaScript values using a typed RemoteValue format:
 ## References
 
 - [W3C WebDriver BiDi Specification](https://w3c.github.io/webdriver-bidi/)
-- [WebDriver BiDi on MDN](https://developer.mozilla.org/en-US/docs/Web/WebDriver/WebDriver_BiDi)
+- [WebDriver BiDi specification](https://w3c.github.io/webdriver-bidi/)
 - [bidiwave documentation](https://mathiaspaulenko.github.io/bidiwave/)
 - [bidiwave on GitHub](https://github.com/MathiasPaulenko/bidiwave)
