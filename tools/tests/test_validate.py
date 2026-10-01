@@ -3,7 +3,6 @@
 import sys
 from pathlib import Path
 
-
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "validate-resource"))
 
@@ -65,10 +64,28 @@ role: developer
 
 
 def test_validate_placeholders_detects_todo():
-    errors = v.validate_placeholders("Some text with TODO here")
-    assert len(errors) > 0
+    content = """---
+name: Flask API
+version: 1.0.0
+author: Mathias Paulenko Echeverz
+description: TODO fill this in
+tags: [python]
+---
+"""
+    errors = v.validate_frontmatter(content, "skill")
+    assert any("Placeholder" in e for e in errors)
 
 
 def test_validate_placeholders_clean():
-    errors = v.validate_placeholders("This is clean content")
+    # Body mentions of TODO/<agent-name> are legit docs, not flagged.
+    content = """---
+name: Flask API
+version: 1.0.0
+author: Mathias Paulenko Echeverz
+description: Clean description
+tags: [python]
+---
+Body text can mention TODO or <agent-name> as documentation.
+"""
+    errors = v.validate_frontmatter(content, "skill")
     assert len(errors) == 0

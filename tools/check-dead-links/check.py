@@ -14,12 +14,11 @@ Usage:
 import argparse
 import re
 import time
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from http.cookiejar import CookieJar
 from pathlib import Path
 from urllib.parse import urlparse
-
-import urllib.request
-from http.cookiejar import CookieJar
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 URL_PATTERN = re.compile(r"https?://[^\s\)\]\>\"]+")
