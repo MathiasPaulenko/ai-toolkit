@@ -22,7 +22,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-URL_PATTERN = re.compile(r"https?://[^\s\)\]\>\"]+")
+URL_PATTERN = re.compile(r"https?://[^\s\)\]\>\"`]+")
 
 
 def find_urls(text: str) -> set[str]:
@@ -30,7 +30,7 @@ def find_urls(text: str) -> set[str]:
     cleaned = []
     for url in raw:
         # Strip trailing punctuation that isn't part of the URL
-        url = url.rstrip(";,.>\"'<")
+        url = url.rstrip(";,.>\"'<`")
         cleaned.append(url)
     return set(cleaned)
 
