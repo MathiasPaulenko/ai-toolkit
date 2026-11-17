@@ -54,7 +54,7 @@ Rules:
 - `name`: Title Case, matches folder name.
 - `version`: SemVer (`1.0.0`).
 - `author`: Always `Mathias Paulenko Echeverz`.
-- `tags`: 3-5 specific kebab-case tags.
+- `tags`: 3-7 specific kebab-case tags.
 - `type`: One of the valid agent types.
 - `role`: IDE-compatible identifier.
 

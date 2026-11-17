@@ -4,9 +4,18 @@ Step-by-step procedures for repetitive tasks.
 
 ## Format
 
-Each workflow is a `.md` file with this structure:
+Each workflow is a `.md` file with YAML frontmatter followed by this structure:
 
 ```markdown
+---
+name: Workflow Name
+version: 1.0.0
+author: Mathias Paulenko Echeverz
+description: What this workflow does and when to use it
+tags: [workflow, tag2, tag3]
+role: role-identifier
+---
+
 # Workflow Name
 
 ## Description

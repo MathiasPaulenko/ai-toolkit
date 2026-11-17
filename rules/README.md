@@ -10,7 +10,9 @@ Set of rules to standardize code, reviews, and behavior.
 
 ## Format
 
-Each rule set is a `.md` file with numbered or categorized rules.
+Each rule set is a `.md` file with the standard repository frontmatter
+(`name`, `version`, `author`, `description`, `tags`) followed by numbered
+or categorized rules.
 
 Example:
 

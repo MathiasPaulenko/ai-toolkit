@@ -44,8 +44,6 @@ version: 1.0.0
 author: Mathias Paulenko Echeverz
 description: One-line value proposition
 tags: [tag1, tag2, tag3]
-role: primary-role-identifier
-model: any
 trigger: When the user mentions X, Y, or Z.
 ---
 ```
@@ -54,7 +52,7 @@ Rules:
 - `name`: Title Case, descriptive.
 - `version`: SemVer (`1.0.0`).
 - `author`: Always `Mathias Paulenko Echeverz`.
-- `tags`: 3-5 specific kebab-case tags.
+- `tags`: 3-7 specific kebab-case tags.
 - `trigger`: Natural language condition for activation.
 
 ### 4. Write Core Content (~400-500 lines)
@@ -111,7 +109,7 @@ skills/<skill-name>/assets/
 - [ ] Code examples are syntactically valid.
 - [ ] File paths use absolute references in citations.
 - [ ] Assets are in `assets/`, references in `references/`.
-- [ ] SKILL.md is ≤ 600 lines (externalize if longer).
+- [ ] SKILL.md is ≤ 1000 lines (aim for ~400-500; externalize if longer).
 
 ### 8. Update Indexes
 

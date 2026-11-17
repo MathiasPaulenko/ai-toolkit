@@ -35,7 +35,7 @@ tags: [tag1, tag2, tag3]
 Rules:
 - `author` is ALWAYS `Mathias Paulenko Echeverz`.
 - `version` follows SemVer (`1.0.0`).
-- `tags` are 3-5 specific tags, not generic (`ai`, `code`).
+- `tags` are 3-7 specific tags, not generic (`ai`, `code`).
 
 ### File Organization
 
@@ -96,7 +96,7 @@ language: en | es
 | `version` | SemVer (`1.0.0`) |
 | `author` | `Mathias Paulenko Echeverz` |
 | `description` | Single-line value proposition |
-| `tags` | 3-5 specific tags, not generic (`ai`, `code`) |
+| `tags` | 3-7 specific tags, not generic (`ai`, `code`) |
 | `role` | Identifier used by IDEs to load the agent |
 | `type` | Category for grouping agents |
 | `language` | Primary language of responses |
@@ -179,7 +179,7 @@ Links to related resources in this repository.
 - [ ] `version` follows SemVer.
 - [ ] `author` is `Mathias Paulenko Echeverz`.
 - [ ] `description` explains value in one line.
-- [ ] `tags` are specific (3-5 items).
+- [ ] `tags` are specific (3-7 items).
 - [ ] `role` and `type` are set.
 
 ### Content

@@ -36,7 +36,7 @@ Before contributing, please review the [AGENTS.md](AGENTS.md) file for detailed 
 ### Naming
 
 - Folders and files use `kebab-case` (e.g., `my-cool-skill/`, `api-reference.md`)
-- Tags are `kebab-case` and specific (3-5 items, avoid generic tags like `ai` or `code`)
+- Tags are `kebab-case` and specific (3-7 items, avoid generic tags like `ai` or `code`)
 
 ### Frontmatter
 
@@ -118,7 +118,7 @@ just check-links
 - [ ] `name` is descriptive and matches the folder
 - [ ] `version` follows SemVer
 - [ ] `author` is `Mathias Paulenko Echeverz`
-- [ ] `tags` are specific (3-5 items)
+- [ ] `tags` are specific (3-7 items)
 - [ ] No placeholder text (`TODO`, `tu-usuario`, etc.)
 - [ ] Folder name is `kebab-case`
 - [ ] All required sections are present

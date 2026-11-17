@@ -31,7 +31,7 @@ Closes #(issue number)
 - [ ] `name` is descriptive and matches the folder
 - [ ] `version` follows SemVer
 - [ ] `author` is `Mathias Paulenko Echeverz`
-- [ ] `tags` are specific (3-5 items)
+- [ ] `tags` are specific (3-7 items)
 - [ ] No placeholder text (`TODO`, `tu-usuario`, etc.)
 - [ ] Folder name is `kebab-case`
 - [ ] All required sections are present

@@ -98,7 +98,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Agent | Type |
 | --- | --- |
-| [`test-architect`](agents/test-architect/agent.md) | `review` |
+| [`test-architect`](agents/test-architect/agent.md) | `coding` |
 | [`qa-automation-engineer`](agents/qa-automation-engineer/agent.md) | `coding` |
 | [`performance-tester`](agents/performance-tester/agent.md) | `research` |
 | [`qa-lead`](agents/qa-lead/agent.md) | `governance` |
@@ -116,7 +116,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 
 | Agent | Type |
 | --- | --- |
-| [`security-auditor`](agents/security-auditor/agent.md) | `governance` |
+| [`security-auditor`](agents/security-auditor/agent.md) | `review` |
 
 #### DevOps (1)
 
@@ -124,9 +124,9 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | --- | --- |
 | [`devops-automator`](agents/devops-automator/agent.md) | `automation` |
 
-### Prompts (64)
+### Prompts (66)
 
-#### System / Task / Templates (9)
+#### System / Task / Templates (10)
 
 | Prompt | Type |
 | --- | --- |
@@ -141,7 +141,7 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | [`pull-request-template`](prompts/templates/pull-request-template.md) | Template |
 | [`bug-report-template`](prompts/templates/bug-report-template.md) | Template |
 
-#### QA Engineering (30)
+#### QA Engineering (40)
 
 | Prompt | Focus |
 | --- | --- |
@@ -316,8 +316,8 @@ Personal repository of AI resources: prompts, skills, agents, rules, workflows, 
 | `tools/` | Utilities, scripts, and technical resources |
 | `AGENTS.md` | Global repository conventions and agent standards |
 | `justfile` | Common commands (`just validate`, `just export`, etc.) |
-| `.devin/` | Devin-specific workflows |
-| `.cursor/` | Rules and prompts for Cursor |
+| `Makefile` | Same commands without `just` (`make validate`, `make export`, etc.) |
+| `.github/` | Issue/PR templates and CI workflow |
 
 ## Conventions
 
