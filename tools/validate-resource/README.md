@@ -5,9 +5,12 @@ Validates ai-toolkit resources (skills, agents, prompts, rules, workflows) again
 ## Checks
 
 - Frontmatter YAML is valid and contains required fields
+- `version` follows SemVer; `tags` is a list of 3-7 kebab-case strings
+- Agent `type`/`language` are valid enum values
 - Folder and file names are kebab-case
 - No placeholder text (`TODO`, `Agent Name`, etc.)
-- SKILL.md length is within limits (≤ 600 lines)
+- Relative links in `.md` files resolve to existing files
+- SKILL.md length is within limits (≤ 1000 lines)
 - Author field is `Mathias Paulenko Echeverz`
 
 ## Requirements

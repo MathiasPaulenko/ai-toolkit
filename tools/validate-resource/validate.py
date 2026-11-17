@@ -4,8 +4,11 @@ validate-resource: Validates ai-toolkit resources.
 
 Checks:
 - Frontmatter YAML is valid and contains required fields
+- version is SemVer, tags is a list of kebab-case strings
+- Agent type/language are valid enum values
 - Folder and file names are kebab-case
 - No placeholder text in frontmatter values
+- Relative links in .md files resolve to existing files
 - SKILL.md length is within limits (if applicable)
 
 Usage:
@@ -24,6 +27,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 REQUIRED_FIELDS = {"name", "version", "author", "description", "tags"}
 REQUIRED_AGENT_FIELDS = REQUIRED_FIELDS | {"role", "type", "language"}
 
+AGENT_TYPES = {"governance", "coding", "review", "creative", "research", "automation"}
+AGENT_LANGUAGES = {"en", "es"}
+
 AUTHOR = "Mathias Paulenko Echeverz"
 
 # Matched against frontmatter values only — resource bodies legitimately
@@ -39,6 +45,8 @@ PLACEHOLDERS = [
 ]
 
 KEBAB_CASE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
+MD_LINK = re.compile(r"\]\(([^)#\s]+)(?:#[^)]*)?\)")
 
 SKIP_PREFIXES = ("_", ".")
 
@@ -70,6 +78,27 @@ def validate_frontmatter(content: str, resource_type: str) -> list[str]:
     if frontmatter.get("author") != AUTHOR:
         errors.append(f"Author must be '{AUTHOR}'")
 
+    version = frontmatter.get("version")
+    if version is not None and not SEMVER.match(str(version)):
+        errors.append(f"version must be SemVer (X.Y.Z), got '{version}'")
+
+    tags = frontmatter.get("tags")
+    if tags is not None:
+        if not isinstance(tags, list) or not 3 <= len(tags) <= 7:
+            errors.append("tags must be a list of 3-7 items")
+        elif not all(isinstance(t, str) and KEBAB_CASE.match(t) for t in tags):
+            errors.append("tags must be kebab-case strings")
+
+    if resource_type == "agent":
+        agent_type = frontmatter.get("type")
+        if agent_type is not None and agent_type not in AGENT_TYPES:
+            errors.append(f"type must be one of: {', '.join(sorted(AGENT_TYPES))}")
+        language = frontmatter.get("language")
+        if language is not None and language not in AGENT_LANGUAGES:
+            errors.append(
+                f"language must be one of: {', '.join(sorted(AGENT_LANGUAGES))}"
+            )
+
     for key, value in frontmatter.items():
         if not isinstance(value, str):
             continue
@@ -89,6 +118,31 @@ def validate_naming(path: Path) -> list[str]:
             continue
         if not KEBAB_CASE.match(stem):
             errors.append(f"Name is not kebab-case: '{stem}'")
+    return errors
+
+
+def validate_internal_links(path: Path) -> list[str]:
+    """Check that relative markdown links point to existing files.
+
+    Skips links inside fenced code blocks and template-style targets
+    ({var}, ${var}, <var>), which are documentation placeholders.
+    """
+    errors = []
+    text = path.read_text(encoding="utf-8")
+    in_fence = False
+    for line in text.splitlines():
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        for url in MD_LINK.findall(line):
+            if url.startswith(("http://", "https://", "mailto:")):
+                continue
+            if "{" in url or "$" in url or "<" in url:
+                continue
+            if not (path.parent / url).resolve().exists():
+                errors.append(f"Broken internal link: {url}")
     return errors
 
 
@@ -150,6 +204,19 @@ def validate_resource(kind: str, path: Path) -> list[str]:
     return errors
 
 
+LINK_CHECK_SKIP_DIRS = {".git", ".venv", "node_modules", "__pycache__", "exports"}
+
+
+def collect_markdown_files(root: Path) -> list[Path]:
+    if root.is_file():
+        return [root] if root.suffix == ".md" else []
+    return sorted(
+        f
+        for f in root.rglob("*.md")
+        if not any(p in LINK_CHECK_SKIP_DIRS for p in f.parts)
+    )
+
+
 def main():
     if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -178,6 +245,18 @@ def main():
                 print(f"   - {e}")
         else:
             print(f"✅ {path.relative_to(REPO_ROOT)}")
+
+    scan_root = target_path if target != "." else REPO_ROOT
+    link_failures = False
+    for md_file in collect_markdown_files(scan_root):
+        errors = validate_internal_links(md_file)
+        if errors:
+            link_failures = True
+            print(f"\n❌ {md_file.relative_to(REPO_ROOT)} (internal links)")
+            for e in errors:
+                print(f"   - {e}")
+    if link_failures:
+        all_ok = False
 
     if all_ok:
         print("\n✅ All resources valid.")
