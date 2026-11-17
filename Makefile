@@ -76,11 +76,11 @@ sync-all: sync-cursor sync-claude
 	@echo "Synced to Cursor and Claude"
 
 install:
-	pip install -r tools/requirements.txt
+	$(python) -m pip install -r tools/requirements.txt
 
 test:
-	pip install pytest
-	pytest tools/tests/ -v
+	$(python) -m pip install -r tools/requirements-dev.txt
+	$(python) -m pytest tools/tests/ -v
 
 clean:
 	rm -rf $(export_dir)/

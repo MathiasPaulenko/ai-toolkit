@@ -124,7 +124,12 @@ sync-all: sync-cursor sync-claude
 
 # Install Python dependencies for tools
 install:
-    pip install -r tools/requirements.txt
+    {{python}} -m pip install -r tools/requirements.txt
+
+# Run tool tests
+test:
+    {{python}} -m pip install -r tools/requirements-dev.txt
+    {{python}} -m pytest tools/tests/ -v
 
 # Clean generated artifacts
 clean:
@@ -136,7 +141,7 @@ clean:
 # Update version in all resources (use with caution)
 bump-version version:
     @echo "Bumping version to {{version}} — review changes before committing"
-    find . -name '*.md' -exec sed -i 's/^version: .*/version: {{version}}/' {} \;
+    find . -name '*.md' -not -path './.git/*' -not -path './.venv/*' -not -path './exports/*' -exec sed -i '2,/^---$/ s/^version: .*/version: {{version}}/' {} \;
 
 # ═══════════════════════════════════════════════════════
 #  Git Helpers

@@ -1,0 +1,7 @@
+# Dev dependencies for ai-toolkit tools (tests, lint)
+# Install: pip install -r tools/requirements-dev.txt
+
+-r requirements.txt
+
+pytest>=8.0
+ruff>=0.5
