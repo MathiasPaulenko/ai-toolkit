@@ -20,7 +20,24 @@ SKILL_TEMPLATE = REPO_ROOT / "skills" / "_template" / "SKILL.md"
 
 
 def kebab_case(name: str) -> str:
-    return re.sub(r"[^a-z0-9]", "-", name.lower()).strip("-").replace("--", "-")
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def apply_frontmatter(content: str, fields: dict[str, str]) -> str:
+    """Replace `key: value` lines inside the leading YAML frontmatter block."""
+    if not content.startswith("---"):
+        return content
+    end = content.index("---", 3)
+    frontmatter = content[:end]
+    for key, val in fields.items():
+        frontmatter = re.sub(
+            rf"^{key}:.*$",
+            lambda _, k=key, v=val: f"{k}: {v}",
+            frontmatter,
+            count=1,
+            flags=re.MULTILINE,
+        )
+    return frontmatter + content[end:]
 
 
 def prompt_field(name: str, default: str = "") -> str:
@@ -40,7 +57,6 @@ def main():
     parser.add_argument("--name", help="Skill name (kebab-case)")
     parser.add_argument("--description", help="One-line description")
     parser.add_argument("--tags", help="Comma-separated tags")
-    parser.add_argument("--role", help="Primary role identifier")
     parser.add_argument("--trigger", help="Trigger condition")
     args = parser.parse_args()
 
@@ -69,21 +85,18 @@ def main():
     tags = args.tags or prompt_field(
         "Tags (comma-separated)", f"{name}, python, automation"
     )
-    role = args.role or prompt_field("Role", "developer")
     trigger = args.trigger or prompt_field("Trigger", f"When the user mentions {name}")
 
+    tag_list = ", ".join(t.strip() for t in tags.split(","))
     content = content.replace("Skill Name", name.replace("-", " ").title())
-    content = content.replace("One-line description", description)
-    # Update YAML frontmatter fields
-    for key, val in [
-        ("name", name.replace("-", " ").title()),
-        ("description", description),
-        ("tags", f"[{', '.join(t.strip() for t in tags.split(','))}]"),
-        ("role", role),
-        ("trigger", trigger),
-    ]:
-        # Simple replacement for known template patterns
-        pass  # Template frontmatter is generic; user edits manually
+    content = apply_frontmatter(
+        content,
+        {
+            "description": description,
+            "tags": f"[{tag_list}]",
+            "trigger": trigger,
+        },
+    )
 
     dest_file.write_text(content, encoding="utf-8")
 

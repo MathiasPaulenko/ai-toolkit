@@ -23,7 +23,7 @@ python check.py --ignore example.com --ignore localhost
 | Option | Description | Default |
 |--------|-------------|---------|
 | `--timeout` | Request timeout (seconds) | `10` |
-| `--ignore` | URL patterns to skip | `localhost`, `127.0.0.1` |
+| `--ignore` | URL patterns to skip (repeatable; appends to the built-in list — see `--help`) | `localhost`, `127.0.0.1`, `example.com`, internal hosts, ... |
 
 ## Exit codes
 

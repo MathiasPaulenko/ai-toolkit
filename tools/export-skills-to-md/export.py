@@ -12,7 +12,7 @@ Usage:
 
 import argparse
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -38,7 +38,7 @@ def build_bundle(skills: list[Path], title: str = "Skills Bundle") -> str:
     lines = [
         f"# {title}",
         "",
-        f"_Generated on {datetime.now(timezone.utc).isoformat()}_",
+        f"_Generated on {datetime.now(UTC).isoformat()}_",
         "",
     ]
 
@@ -88,11 +88,16 @@ def main():
         return 1
 
     targets = available if args.all else [SKILLS_DIR / s for s in args.skills]
-    bundle = build_bundle(targets, title=args.title)
+    exported = [t for t in targets if (t / "SKILL.md").exists()]
+    for t in targets:
+        if t not in exported:
+            print(f"  ⚠️  Skill not found: {t.name}")
+
+    bundle = build_bundle(exported, title=args.title)
 
     output_path = Path(args.output)
     output_path.write_text(bundle, encoding="utf-8")
-    print(f"✅ Exported {len(targets)} skills to: {output_path.absolute()}")
+    print(f"✅ Exported {len(exported)} skills to: {output_path.absolute()}")
     return 0
 
 

@@ -69,8 +69,8 @@ def check_url(url: str, timeout: int = 10) -> tuple[bool, int | None]:
                     return True, 403
                 if method == "GET":
                     return False, e.code
-                # If HEAD fails with a server error, try GET before giving up.
-                if e.code >= 500:
+                # If HEAD is not allowed or hits a server error, try GET before giving up.
+                if e.code in {405, 501} or e.code >= 500:
                     break
                 return False, e.code
             except OSError:
@@ -91,18 +91,31 @@ def should_ignore(url: str, ignore_patterns: list[str]) -> bool:
     # Skip regex-escaped patterns (e.g. https://example\.com in YAML configs)
     if "\\" in url:
         return True
-    parsed = urlparse(url)
+    host = (urlparse(url).hostname or "").lower()
     for pattern in ignore_patterns:
-        if pattern in parsed.netloc or pattern in url:
+        pattern = pattern.lower()
+        # Plain patterns match the host exactly or as a domain suffix, so
+        # "app" skips https://app/... without swallowing https://appium.io/...
+        if host == pattern or host.endswith("." + pattern):
+            return True
+        # Patterns with a path or scheme component match the full URL.
+        if ("/" in pattern or ":" in pattern) and pattern in url:
             return True
     return False
+
+
+def display_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
 
 
 def scan_directory(
     directory: Path, ignore: list[str], timeout: int
 ) -> dict[str, list[str]]:
     dead: dict[str, list[str]] = {}
-    md_files = list(directory.rglob("*.md"))
+    md_files = [directory] if directory.is_file() else list(directory.rglob("*.md"))
 
     # Collect all unique URLs to check
     url_to_files: dict[str, list[Path]] = {}
@@ -132,7 +145,7 @@ def scan_directory(
         if not ok:
             key = f"{url} (HTTP {code})" if code else url
             for md_file in url_to_files[url]:
-                dead.setdefault(str(md_file.relative_to(REPO_ROOT)), []).append(key)
+                dead.setdefault(display_path(md_file), []).append(key)
 
     return dead
 
@@ -174,12 +187,12 @@ def main():
     )
     args = parser.parse_args()
 
-    target = REPO_ROOT / args.path
+    target = (REPO_ROOT / args.path).resolve()
     if not target.exists():
         print(f"Path not found: {target}")
         return 1
 
-    print(f"Scanning {target.relative_to(REPO_ROOT)} for dead links...\n")
+    print(f"Scanning {display_path(target)} for dead links...\n")
     dead = scan_directory(target, args.ignore, args.timeout)
 
     if not dead:

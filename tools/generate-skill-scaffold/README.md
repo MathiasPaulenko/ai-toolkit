@@ -22,7 +22,6 @@ python generate.py --help
 | `--name` | Skill name (auto kebab-cased) |
 | `--description` | One-line description |
 | `--tags` | Comma-separated tags |
-| `--role` | Primary role identifier |
 | `--trigger` | Trigger condition |
 
 ## Output
